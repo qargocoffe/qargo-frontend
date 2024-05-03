@@ -1,4 +1,4 @@
-import { Header } from "@/components/ui";
+import { Footer, Header } from "@/components/ui";
 
 export default function WebLayout({
  children
@@ -9,6 +9,7 @@ export default function WebLayout({
     <div>
         <Header/>
         {children}
+        <Footer/>
     </div>
   );
 }

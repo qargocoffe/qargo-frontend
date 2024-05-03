@@ -17,7 +17,7 @@ export interface MenuAttributes {
 }
 
 export interface MenuItem {
-    id:    number;
-    title: string;
-    slug:  string;
+    id?:    number;
+    title?: string;
+    slug?:  string;
 }

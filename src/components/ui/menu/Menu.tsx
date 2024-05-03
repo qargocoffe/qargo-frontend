@@ -1,13 +1,19 @@
 'use client'
 
-import { MenuData, MenuAttributes } from "@/interfaces/ui/menu/menu.interface";
+import { MenuAttributes } from "@/interfaces/ui/menu/menu.interface";
+import { useUIStore } from "@/store";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { Sidebar } from "../sidebar/Sidebar";
 
 
 export const Menu = () => {
   const [menu, setMenu] = useState<MenuAttributes | null>(null);
   const [isLoading, setLoading] = useState(true);
+  const openSideMenu = useUIStore(state => state.openSideMenu);
+  const closeSideMenu = useUIStore(state => state.closeSideMenu);
+  const isSideMenuOpen = useUIStore(state => state.isSideMenuOpen);
+
 
   useEffect(() => {
     fetch(
@@ -27,7 +33,8 @@ export const Menu = () => {
   }, []);
 
   return (
-    <nav className="flex justify-between p-5 b">
+    <>
+    <nav className="flex items-center justify-between p-5 b">
       <div className="flex justify-between gap-3 items-center h-6">
         {menu && (
           <Image
@@ -50,6 +57,42 @@ export const Menu = () => {
           />
         )}
       </div>
+
+      <div className="flex gap-4">
+        <Image
+            src={'/logos/lupa.png'}
+            alt='lupa'
+            width={32}
+            height={32}
+          />
+        {isSideMenuOpen && (
+            <Image
+            onClick={closeSideMenu}
+            className="z-20"
+            src={'/logos/close.png'}
+            alt='lupa'
+            width={32}
+            height={32}
+          />
+        )}
+
+        {!isSideMenuOpen && (
+          <Image
+            onClick={openSideMenu}
+            className="z-20"
+            src={'/logos/squads-menu.png'}
+            alt='lupa'
+            width={32}
+            height={32}
+          />
+        )}
+           
+      </div>
     </nav>
+    { menu && isSideMenuOpen && (
+      <Sidebar items={ menu.menu } />
+    )}
+    </>
+    
   );
 };
