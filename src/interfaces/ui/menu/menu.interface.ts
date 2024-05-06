@@ -20,4 +20,5 @@ export interface MenuItem {
     id?:    number;
     title?: string;
     slug?:  string;
+    Items?: MenuItem[]
 }

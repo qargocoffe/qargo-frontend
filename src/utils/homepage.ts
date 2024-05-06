@@ -1,21 +1,17 @@
-import { Blog, BlogsResponse } from "@/interfaces/blog/blog.interface";
+import { HomePage, HomepageResponse } from "@/interfaces";
 
-export const getHomePage = async() :Promise<any | undefined> => {
+export const getHomePage = async() :Promise<HomePage | undefined> => {
     try {
-        const blogsResponse: BlogsResponse = await fetch(`http://localhost:1337/api/homepage?populate=*`)
+        const homepageResponse: HomepageResponse = await fetch(`http://localhost:1337/api/homepage?
+        populate[0]=banners
+        &populate[1]=banners.banner
+        &populate[2]=picture`)
         .then(res => res.json());
     
-  
-    const blogs = blogsResponse.data.map(({ attributes }) => {
-      return {
-        title: attributes.title,
-        description: attributes.description,
-        slug: attributes.slug,
-        thumbnail: attributes.thumbnail,      
-      }
-    })
-  
-    return blogs;
+      const { data: { attributes: { title, description, link, picture,banners } } } = homepageResponse;
+      console.log(title, description, link, picture,banners)
+      
+      return {title, description, link, picture,banners}
   
     } catch (error) {
         return undefined;

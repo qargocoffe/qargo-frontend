@@ -18,7 +18,9 @@ export const Menu = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:1337/api/menu?fields[0]=title&populate[logo][fields][0]=name&populate[logo][fields][1]=url&populate[company][fields][0]=name&populate[company][fields][1]=url&populate[menu][fields][0]=title&populate[menu][fields][1]=slug`
+      `http://localhost:1337/api/menu?fields[0]=title
+      &populate[0]=menu&populate[1]=menu.Items
+      &populate[2]=logo&populate[3]=company`
     )
       .then((res) => res.json())
       .then((data) => {

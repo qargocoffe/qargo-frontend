@@ -18,7 +18,8 @@ const config: Config = {
         beigeStrong: '#917360',
         beigeLight: '#EEECE0',
         lavazzaBlue: '#00377A',
-        gray: '#919191'
+        gray: '#919191',
+        ceramic: '#FEFFFA'
       }
     },
   },
