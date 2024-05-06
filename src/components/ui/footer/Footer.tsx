@@ -3,10 +3,10 @@ import Image from "next/image"
 
 export const Footer = () => {
   return (
-    <footer className="min-h-[500px] text-beige flex flex-col items-center justify-center">
+    <footer className="min-h-[400px] text-beige flex flex-col items-center justify-center">
       <Image className="mb-4" src={'/footer/coffee.png'} alt="Coffe" width={60} height={60} />
       <span className="font-bold mb-4">Follow us</span>
-      <nav className="flex items-center justify-center gap-6 list-none">
+      <nav className="flex items-center justify-center gap-6 list-none px-12">
         <li>
           <a href="instagram.com">
             <Image src={'/footer/social/facebook.png'} alt="Coffe" width={20} height={35} />

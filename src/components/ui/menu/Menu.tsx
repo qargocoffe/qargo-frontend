@@ -5,6 +5,7 @@ import { useUIStore } from "@/store";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Sidebar } from "../sidebar/Sidebar";
+import Link from "next/link";
 
 
 export const Menu = () => {
@@ -37,7 +38,8 @@ export const Menu = () => {
     <nav className="flex items-center justify-between p-5 b">
       <div className="flex justify-between gap-3 items-center h-6">
         {menu && (
-          <Image
+         <Link href={'/'} >
+           <Image
             src={"http://localhost:1337" + menu.logo.data.attributes.url}
             alt={menu.logo.data.attributes.name}
             priority={true}
@@ -45,8 +47,10 @@ export const Menu = () => {
             height={32}
             className="h-[32px]"
           />
+         </Link>
         )}
         {menu && (
+          <Link href={'/'} >
           <Image
             src={"http://localhost:1337" + menu.company.data.attributes.url}
             alt={menu.company.data.attributes.name}
@@ -55,6 +59,7 @@ export const Menu = () => {
             height={22}
             className="h-[22px]"
           />
+          </Link>
         )}
       </div>
 
@@ -64,11 +69,12 @@ export const Menu = () => {
             alt='lupa'
             width={32}
             height={32}
+            className="cursor-pointer"
           />
         {isSideMenuOpen && (
             <Image
             onClick={closeSideMenu}
-            className="z-20"
+            className="z-20 cursor-pointer"
             src={'/logos/close.png'}
             alt='lupa'
             width={32}
@@ -79,7 +85,7 @@ export const Menu = () => {
         {!isSideMenuOpen && (
           <Image
             onClick={openSideMenu}
-            className="z-20"
+            className="z-20 cursor-pointer"
             src={'/logos/squads-menu.png'}
             alt='lupa'
             width={32}

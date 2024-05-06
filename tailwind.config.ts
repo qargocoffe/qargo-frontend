@@ -15,7 +15,10 @@ const config: Config = {
       },
       colors: {
         beige: '#B7AA8C',
-        beigeStrong: '#917360'
+        beigeStrong: '#917360',
+        beigeLight: '#EEECE0',
+        lavazzaBlue: '#00377A',
+        gray: '#919191'
       }
     },
   },

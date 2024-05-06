@@ -11,12 +11,25 @@ export interface Datum {
 export interface Blog {
     title:       string;
     description: string;
-    publishied:  Date;
-    content:     string;
-    slug:        string;
-    createdAt:   Date;
-    updatedAt:   Date;
-    publishedAt: Date;
+    publishied?:  Date;
+    content?:     string;
+    slug?:        string;
+    createdAt?:   Date;
+    updatedAt?:   Date;
+    publishedAt?: Date;
+    thumbnail?:   Thumbnail;
+}
+
+export interface Thumbnail {
+    data: Data;
+}
+export interface Data {
+    id:         number;
+    attributes: DataAttributes;
+}
+
+export interface DataAttributes {
+    url: string;
 }
 
 export interface Meta {
