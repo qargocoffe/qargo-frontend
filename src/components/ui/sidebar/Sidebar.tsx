@@ -52,6 +52,7 @@ export const Sidebar = ({ items }:Props) => {
                 <div key={item.slug}>
                 {/* Links categories */}
                 <Link
+                    key={item.slug}
                     className="flex justify-between text-beigeStrong text-xl duration-300 bg-white border-0 p-4 my-1"
                     href={'/' + item.slug}>
                     <span className="mx-2">{item.title}</span>

@@ -19,7 +19,8 @@ const config: Config = {
         beigeLight: '#EEECE0',
         lavazzaBlue: '#00377A',
         gray: '#919191',
-        ceramic: '#FEFFFA'
+        ceramic: '#FEFFFA',
+        coffeStrong: '#1C0602'
       }
     },
   },

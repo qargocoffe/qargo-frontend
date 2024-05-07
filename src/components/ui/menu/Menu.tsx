@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import { Sidebar } from "../sidebar/Sidebar";
 import Link from "next/link";
 
-
 export const Menu = () => {
   const [menu, setMenu] = useState<MenuAttributes | null>(null);
   const [isLoading, setLoading] = useState(true);
@@ -40,26 +39,14 @@ export const Menu = () => {
     <nav className="flex items-center justify-between p-5 b z-20 relative">
       <div className="flex justify-between gap-3 items-center h-6">
         {menu && (
-         <Link href={'/'} >
-           <Image
-            src={"http://localhost:1337" + menu.logo.data.attributes.url}
-            alt={menu.logo.data.attributes.name}
-            priority={true}
-            width={32}
-            height={32}
-            className="h-[32px]"
-          />
-         </Link>
-        )}
-        {menu && (
           <Link href={'/'} >
           <Image
             src={"http://localhost:1337" + menu.company.data.attributes.url}
             alt={menu.company.data.attributes.name}
             priority={true}
-            width={192}
-            height={22}
-            className="h-[22px]"
+            width={'230'}
+            height={38}
+            className="h-[28px] w-auto"
           />
           </Link>
         )}
