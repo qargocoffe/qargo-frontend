@@ -37,7 +37,7 @@ export const Menu = () => {
 
   return (
     <>
-    <nav className="flex items-center justify-between p-5 b">
+    <nav className="flex items-center justify-between p-5 b z-20 relative">
       <div className="flex justify-between gap-3 items-center h-6">
         {menu && (
          <Link href={'/'} >

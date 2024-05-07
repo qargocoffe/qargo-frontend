@@ -2,6 +2,7 @@ import { BannerMobile } from "@/components/ui";
 import { getBlogs } from "@/utils";
 import { getHomePage } from "@/utils/homepage";
 import Image from "next/image";
+import { BannerHomepage } from '../../components/ui/banner-homepage/BannerHomepage';
 
 export default async function () {
 
@@ -9,10 +10,11 @@ export default async function () {
   const homePage = await getHomePage();
 
   return (
-    <div className="bg-ceramic">
-      <h1 className="text-sm">
-        <article>
-          <Image className="w-full" src={ 'http://localhost:1337' + homePage?.picture.data.attributes.url } alt="Coffe" width={120} height={120} />
+    <div className="bg-ceramic text-sm">
+
+      <BannerHomepage />
+     <article>
+          <Image className="w-full" src={ 'http://localhost:1337' + homePage?.picture.data.attributes.url } alt="Coffe" width={424} height={500} />
           <h2 className="px-7 py-5 text-xl text-lavazzaBlue text-left">{homePage?.title}</h2>
           <div className='px-7 py-2 flex w-full text-center' >
               <p className="mt-4 text-gray text-left">{homePage?.description}</p>
@@ -22,7 +24,6 @@ export default async function () {
             </div>
         </article>
         <BannerMobile typeBanner='blog' data={blogs}/>
-      </h1>
 
     </div>
   );

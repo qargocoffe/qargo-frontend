@@ -41,7 +41,7 @@ export const Sidebar = ({ items }:Props) => {
         {/* Sidemenu */}
         <nav className={
             clsx(
-                "fixed m-0 overflow-auto right-0 top-13 w-[60%] h-auto z-20 shadow-2xl transform transition-all duration-300 md:hidden",
+                "fixed m-0 overflow-auto right-0 top-13 w-[60%] h-auto z-20 shadow-2xl transform transition-all duration-300 l:hidden",
                 {
                     "translate-x-full": !isSideMenuOpen
                 }
@@ -52,7 +52,7 @@ export const Sidebar = ({ items }:Props) => {
                 <div key={item.slug}>
                 {/* Links categories */}
                 <Link
-                    className="flex justify-between text-beigeStrong font-bold text-xl duration-300 bg-white border-0 p-4 my-1"
+                    className="flex justify-between text-beigeStrong text-xl duration-300 bg-white border-0 p-4 my-1"
                     href={'/' + item.slug}>
                     <span className="mx-2">{item.title}</span>
                     {/* Arrow down image in category with subcategory */}
