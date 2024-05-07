@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Pagination } from 'swiper/modules';
-import { BlogCard } from '../blog/BlogCard';
+import { BlogCard } from '../../blog/BlogCard';
 import { Blog } from '@/interfaces/blog/blog.interface';
 
 type Banners = 'blog' | 'banner';

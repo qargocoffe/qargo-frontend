@@ -2,7 +2,7 @@ import { BannerMobile } from "@/components/ui";
 import { getBlogs } from "@/utils";
 import { getHomePage } from "@/utils/homepage";
 import Image from "next/image";
-import { BannerHomepage } from '../../components/ui/banner-homepage/BannerHomepage';
+import { BannerHomepage } from "@/components/ui";
 
 export default async function () {
 

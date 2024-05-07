@@ -1,8 +1,9 @@
 export { ButtonCustomized } from "./button/ButtonCustomized";
 export { BlogCard } from "./blog/BlogCard";
-export { Footer } from "./footer/Footer";
-export { Header } from "./header/Header";
-export { Menu } from "./menu/Menu";
-export { Sidebar } from "./sidebar/Sidebar";
-export { BannerMobile } from "./banner-mobile/BannerMobile";
-
+export { Footer } from "./main/footer/Footer";
+export { Header } from "./main/header/Header";
+export { Menu } from "./main/menu/Menu";
+export { Sidebar } from "./main/sidebar/Sidebar";
+export { BannerMobile } from "./banners/banner-mobile/BannerMobile";
+export { BannerHomepage } from "./banners/banner-homepage/BannerHomepage";
+export { SustainabilityDetail } from "./about/SustainabilityDetail";
