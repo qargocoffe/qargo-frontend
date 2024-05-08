@@ -1,7 +1,11 @@
-import { ButtonCustomized, SustainabilityDetail } from "@/components/ui";
+import { BannerMobile, ButtonCustomized, SustainabilityDetail } from "@/components/ui";
+import { getPartners } from "@/utils/about";
 import Image from "next/image";
 
-export default function NamePage() {
+export default async function () {
+
+  const partners = await getPartners();
+
   return (
     <div className="">
       <section className="w-100 flex justify-around items-center min-h-[300px] relative bottom-[-2rem]">
@@ -37,7 +41,7 @@ export default function NamePage() {
               </p>
               <ButtonCustomized
                 key={'VIEW MORE'}
-                url={'/'}
+                url={'/sustainability'}
                 background={'bg-beigeLight'}
                 fontColor={'text-beige'}
                 title={'VIEW MORE'}
@@ -68,7 +72,11 @@ export default function NamePage() {
           urlImage={'/about/coffee-white3.png'}
           index={3}
           />
-          
+      </section>
+
+      <section>
+        <BannerMobile typeBanner="partner" data={partners} />
+
       </section>
     </div>
   );
