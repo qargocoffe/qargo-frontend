@@ -7,7 +7,7 @@ export default async function () {
   const partners = await getPartners();
 
   return (
-    <div className="">
+    <div className="text-base">
       <section className="w-100 flex justify-around items-center min-h-[300px] relative bottom-[-2rem]">
         <img src="/about/croazan.png" alt="chocolato" className="w-1/2 left-0 h-auto block absolute" />
         <img src="/about/chocolato.png" alt="chocolato" className="w-1/4 h-auto block absolute top-[220px]" />
@@ -76,7 +76,50 @@ export default async function () {
 
       <section>
         <BannerMobile typeBanner="partner" data={partners} />
+      </section>
 
+      <section className="">
+          <article className="flex items-end gap-6 px-6">
+            <figure className="w-1/2 h-auto">
+              <Image src={'/about/sara.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
+            </figure>
+            <div className="w-1/2">
+              <h3 className="text-lavazzaBlue text-xl mb-4">Meet the QargoCoffee family</h3>
+              <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <ButtonCustomized
+                  url={'/team'}
+                  background={'bg-lavazzaBlue'}
+                  fontColor={'text-white'}
+                  title={'VIEW MORE'}          />
+            </div>
+          </article>
+          <article className="px-6 py-6 flex items-end gap-6 mt-12 bg-beigeLight">
+            <figure className="w-1/2 h-auto">
+              <Image src={'/about/drink.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
+            </figure>
+            <div className="w-1/2">
+              <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <ButtonCustomized
+                  url={'/team'}
+                  background={'bg-lavazzaBlue'}
+                  fontColor={'text-white'}
+                  title={'CAREERS'}          />
+            </div>
+          </article>
+          <article className="flex items-end gap-6 px-6 mt-12">
+            
+            <div className="w-1/2">
+              <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <ButtonCustomized
+                  url={'/contact'}
+                  background={'bg-lavazzaBlue'}
+                  fontColor={'text-white'}
+                  title={'CONTACT US'}          />
+            </div>
+            <figure className="w-1/2 h-auto">
+              <Image src={'/about/women-call.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
+            </figure>
+          </article>
       </section>
     </div>
   );

@@ -9,7 +9,6 @@ export const getHomePage = async() :Promise<HomePage | undefined> => {
         .then(res => res.json());
     
       const { data: { attributes: { title, description, link, picture,banners } } } = homepageResponse;
-      console.log(title, description, link, picture,banners)
       
       return {title, description, link, picture,banners}
   

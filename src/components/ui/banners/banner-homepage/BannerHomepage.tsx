@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Pagination } from 'swiper/modules';
+import { ButtonCustomized } from '../../button/ButtonCustomized';
 
 export const BannerHomepage = () => {
 
@@ -22,9 +23,11 @@ export const BannerHomepage = () => {
             backgroundImage: `url('/home/slide1.png')`,
             backgroundRepeat: 'no-repeat'
           }} className={`bg-cover bg-center min-h-[600px] relative`}>
-                <button className="absolute bottom-0 left-0 right-0 w-full p-4 bg-white text-gray-900 text-center">
-                    VIEW 
-                </button>
+                <ButtonCustomized
+                  url={'/team'}
+                  background={'bg-lavazzaBlue'}
+                  fontColor={'text-white'}
+                  title={'VIEW MORE'}          />
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -32,9 +35,11 @@ export const BannerHomepage = () => {
             backgroundImage: `url('/home/slide2.png')`,
             backgroundRepeat: 'no-repeat'            
           }} className={`bg-cover bg-center min-h-[600px] relative`}>
-                <button className="absolute bottom-0 left-0 right-0 w-full p-4 bg-white text-gray-900 text-center">
-                    VIEW 
-                </button>
+                <ButtonCustomized
+                  url={'/team'}
+                  background={'bg-lavazzaBlue'}
+                  fontColor={'text-white'}
+                  title={'VIEW MORE'}          />
             </div>
           </SwiperSlide>
       </Swiper>

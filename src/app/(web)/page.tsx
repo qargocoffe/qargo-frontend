@@ -10,7 +10,7 @@ export default async function () {
   const homePage = await getHomePage();
 
   return (
-    <div className="bg-ceramic text-sm">
+    <div className="bg-ceramic text-base">
 
       <BannerHomepage />
      <article>

@@ -22,6 +22,7 @@ export const Sidebar = ({ items }:Props) => {
     const isSideMenuOpen = useUIStore(state => state.isSideMenuOpen);
     const isSubcategoryOpen = useUIStore(state => state.isSubcategoryOpen);
     const toggleSubcategory = useUIStore(state => state.toggleSubcategory);
+    const closeSideMenu = useUIStore(state => state.closeSideMenu);
 
   return (
 
@@ -54,6 +55,7 @@ export const Sidebar = ({ items }:Props) => {
                 <Link
                     key={item.slug}
                     className="flex justify-between text-beigeStrong text-xl duration-300 bg-white border-0 p-4 my-1"
+                    onClick={() => closeSideMenu }
                     href={'/' + item.slug}>
                     <span className="mx-2">{item.title}</span>
                     {/* Arrow down image in category with subcategory */}
@@ -80,6 +82,7 @@ export const Sidebar = ({ items }:Props) => {
                                 key={subcategory.id}
                                 className=" text-beigeStrong block text-xl 
                                 duration-300  border-0 p-4"
+                                onClick={() => closeSideMenu }
                                 href={'/' + item.slug}>
                                 <span className="ml-7">{subcategory.title}</span>
                             </Link>
