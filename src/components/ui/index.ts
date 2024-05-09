@@ -1,3 +1,5 @@
+export { Legal } from "./main/legal/Legal";
+export {RegisterForm} from "./contact/RegisterForm";
 export { ButtonCustomized } from "./button/ButtonCustomized";
 export { BlogCard } from "./blog/BlogCard";
 export { Footer } from "./main/footer/Footer";
@@ -7,3 +9,4 @@ export { Sidebar } from "./main/sidebar/Sidebar";
 export { BannerMobile } from "./banners/banner-mobile/BannerMobile";
 export { BannerHomepage } from "./banners/banner-homepage/BannerHomepage";
 export { SustainabilityDetail } from "./about/SustainabilityDetail";
+

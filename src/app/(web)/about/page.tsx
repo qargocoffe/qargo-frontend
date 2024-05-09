@@ -7,7 +7,7 @@ export default async function () {
   const partners = await getPartners();
 
   return (
-    <div className="text-base">
+    <div className="text-base bg-whiteBackground">
       <section className="w-100 flex justify-around items-center min-h-[300px] relative bottom-[-2rem]">
         <img src="/about/croazan.png" alt="chocolato" className="w-1/2 left-0 h-auto block absolute" />
         <img src="/about/chocolato.png" alt="chocolato" className="w-1/4 h-auto block absolute top-[220px]" />

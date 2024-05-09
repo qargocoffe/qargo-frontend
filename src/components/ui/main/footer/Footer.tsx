@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export const Footer = () => {
   return (
-    <footer className="min-h-[400px] text-beige flex flex-col items-center justify-center bg-ceramic">
+    <footer className="min-h-[400px] text-beige flex flex-col items-center justify-center bg-whiteBackground">
       <Image className="mb-4" src={'/footer/coffee.png'} alt="Coffe" width={60} height={60} />
       <span className="font-bold mb-4">Follow us</span>
       <nav className="flex items-center justify-center gap-6 list-none px-12">

@@ -20,7 +20,8 @@ const config: Config = {
         lavazzaBlue: '#00377A',
         gray: '#919191',
         ceramic: '#FEFFFA',
-        coffeStrong: '#1C0602'
+        coffeStrong: '#1C0602',
+        whiteBackground: '#FCFBF6'
       }
     },
   },
