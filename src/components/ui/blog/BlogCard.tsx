@@ -15,6 +15,7 @@ export const BlogCard = ({title , description, content, slug, thumbnail}: Blog) 
             <p className='mt-4 text-gray'>{description}</p>
         </div>
         <ButtonCustomized
+        type='link'
         key={title}
         url={slug}
         background={'bg-lavazzaBlue'}

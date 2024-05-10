@@ -28,7 +28,6 @@ export const Menu = () => {
       .then((res) => res.json())
       .then((data) => {
         const { data: { attributes: { logo, company, menu } } } = data;
-        console.log(pathname)
         setMenu({
           logo, 
           company, 

@@ -24,6 +24,7 @@ export const BannerHomepage = () => {
             backgroundRepeat: 'no-repeat'
           }} className={`bg-cover bg-center min-h-[600px] relative`}>
                 <ButtonCustomized
+                  type='link'
                   url={'/team'}
                   background={'bg-lavazzaBlue'}
                   fontColor={'text-white'}
@@ -36,6 +37,7 @@ export const BannerHomepage = () => {
             backgroundRepeat: 'no-repeat'            
           }} className={`bg-cover bg-center min-h-[600px] relative`}>
                 <ButtonCustomized
+                  type='link'
                   url={'/team'}
                   background={'bg-lavazzaBlue'}
                   fontColor={'text-white'}
