@@ -1,4 +1,4 @@
-import { Footer, Header } from "@/components/ui";
+import { Footer, Header, ModalCareers } from "@/components/ui";
 
 export default function WebLayout({
  children
@@ -8,6 +8,7 @@ export default function WebLayout({
   return (
     <div>
         <Header/>
+        <ModalCareers/>
         {children}
         <Footer/>
     </div>

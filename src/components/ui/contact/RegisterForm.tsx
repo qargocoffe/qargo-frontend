@@ -25,7 +25,7 @@ export const RegisterForm = () => {
     <form onSubmit={handleSubmit}>
       <div className='mt-4'>
         <input
-          className='placeholder:px-3 p-2 bg-beigeLight w-full rounded-full hover:border-beige'
+          className='placeholder:px-3 p-3 bg-beigeLight w-full rounded-full hover:border-beige'
           placeholder='Name'
           type="text"
           name="name"
@@ -35,7 +35,7 @@ export const RegisterForm = () => {
       </div>
       <div className='mt-4'>
         <input
-          className='placeholder:px-3 p-2 bg-beigeLight w-full rounded-full hover:border-beige'
+          className='placeholder:px-3 p-3 bg-beigeLight w-full rounded-full hover:border-beige'
           placeholder='Email'
           type="email"
           name="email"
@@ -45,7 +45,7 @@ export const RegisterForm = () => {
       </div>
       <div className='mt-4'>
         <input
-          className='placeholder:px-3 p-2 bg-beigeLight w-full rounded-2xl hover:border-beige min-h-[5rem]'
+          className='placeholder:px-3 p-3 bg-beigeLight w-full rounded-2xl hover:border-beige min-h-[5rem]'
           placeholder='Message'
           type="text"
           name="message"

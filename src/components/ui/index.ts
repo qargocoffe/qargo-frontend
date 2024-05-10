@@ -1,3 +1,5 @@
+export { RegisterCareers } from "./modals/careers/RegisterCareers";
+export {ModalCareers} from "./modals/careers/CareersModal";
 export { BannerCategories } from "./banners/banner-categories/BannerCategories";
 export { Legal } from "./main/legal/Legal";
 export {RegisterForm} from "./contact/RegisterForm";

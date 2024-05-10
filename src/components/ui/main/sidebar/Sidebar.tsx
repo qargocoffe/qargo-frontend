@@ -23,6 +23,8 @@ export const Sidebar = ({ items }:Props) => {
     const isSubcategoryOpen = useUIStore(state => state.isSubcategoryOpen);
     const toggleSubcategory = useUIStore(state => state.toggleSubcategory);
     const closeSideMenu = useUIStore(state => state.closeSideMenu);
+    const isModalOpen = useUIStore(state => state.isModalOpen);
+    const toggleModal = useUIStore(state => state.toggleModal);
 
   return (
 
@@ -78,14 +80,30 @@ export const Sidebar = ({ items }:Props) => {
                         <div className={`flex bg-white justify-between ${
                             isSubcategoryOpen[String(item.slug)] ? '' : 'hidden'
                           }`}>
-                            <Link
-                                key={subcategory.id}
-                                className=" text-beigeStrong block text-xl 
-                                duration-300  border-0 p-4"
-                                onClick={() => closeSideMenu }
-                                href={'/' + subcategory.slug}>
-                                <span className="ml-7">{subcategory.title}</span>
-                            </Link>
+                            {
+                                subcategory.slug !== 'careers'  && (
+                                    <Link
+                                        key={subcategory.id}
+                                        className=" text-beigeStrong block text-xl 
+                                        duration-300  border-0 p-4"
+                                        href={'/' + subcategory.slug}>
+                                        <span className="ml-7" onClick={() => closeSideMenu() }>{subcategory.title}</span>
+                                    </Link>
+                                )
+                            }
+
+                            {
+                                subcategory.slug === 'careers' && (
+                                    <span key={subcategory.id}
+                                    className=" text-beigeStrong block text-xl 
+                                    duration-300  border-0 p-4"
+                                    onClick={() => toggleModal() }>
+                                        <span className="ml-7">
+                                        {subcategory.title}
+                                        </span>
+                                    </span>
+                                )
+                            }
                         </div>
                 
                     ))}
