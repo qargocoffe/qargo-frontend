@@ -4,10 +4,10 @@ import { ButtonCustomized } from '../button/ButtonCustomized'
 
 export const BlogCard = ({title , description, content, slug, thumbnail}: Blog) => {
   return (
-    <div className='min-h-[460px] mt-9 w-full bg-beigeLight text-center' >
+    <div className='w-full text-center min-h-[550px] h-auto' >
         <div className='relative'>
             <h3 className='absolute bg-lavazzaBlue text-white rounded p-1'>Latest News</h3>
-            <img src={'http://localhost:1337/uploads/Blog_0004_Colorado_41de49dd8f.jpg'} />
+            <img src={'/blog/default.png'} />
               
         </div>
         <div className='p-7'>

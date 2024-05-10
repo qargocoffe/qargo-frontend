@@ -20,14 +20,14 @@ export const BannerMobile = ({typeBanner, data }: { typeBanner: Banners, data: a
     <div>
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
         {typeBanner === 'blog' && data.map((blog: Blog) => (
-          <SwiperSlide key={blog.slug}>
+          <SwiperSlide key={blog.slug} className='!h-full bg-beigeLight pb-6 '>
             <BlogCard {...blog} />
           </SwiperSlide>
         ))}
 
 
       {typeBanner === 'partner' &&  data.map((partner: Partner) => (
-          <SwiperSlide key={partner.title}>
+          <SwiperSlide key={partner.title} className='!h-full bg-beigeLight pb-6 '>
             <PartnerSlide {...partner} />
           </SwiperSlide>
         ))}

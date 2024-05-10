@@ -19,9 +19,10 @@ const config: Config = {
         beigeLight: '#EEECE0',
         lavazzaBlue: '#00377A',
         gray: '#919191',
+        grayBackground: '#D8D4D0',
         ceramic: '#FEFFFA',
         coffeStrong: '#1C0602',
-        whiteBackground: '#FCFBF6'
+        whiteBackground: '#FCFBF6',
       }
     },
   },

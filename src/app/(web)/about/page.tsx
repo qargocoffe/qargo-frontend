@@ -4,7 +4,21 @@ import Image from "next/image";
 
 export default async function () {
 
-  const partners = await getPartners();
+  //const partners = await getPartners();
+  const partners = [
+      {
+        title: 'Lavazza',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        logo: '/about/partners/lavazza-logo.png',
+        banner: '/about/partners/lavazza.png',
+      },
+      {
+        title: 'Bindi',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        logo: '/about/partners/lavazza-logo.png',
+        banner: '/about/partners/bindi.png',
+      },
+  ]
 
   return (
     <div className="text-base bg-whiteBackground">
@@ -40,6 +54,7 @@ export default async function () {
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
               <ButtonCustomized
+                type="link"
                 key={'VIEW MORE'}
                 url={'/sustainability'}
                 background={'bg-beigeLight'}
@@ -87,6 +102,7 @@ export default async function () {
               <h3 className="text-lavazzaBlue text-xl mb-4">Meet the QargoCoffee family</h3>
               <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
               <ButtonCustomized
+              type="link"
                   url={'/team'}
                   background={'bg-lavazzaBlue'}
                   fontColor={'text-white'}
@@ -100,6 +116,7 @@ export default async function () {
             <div className="w-1/2">
               <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
               <ButtonCustomized
+              type="link"
                   url={'/team'}
                   background={'bg-lavazzaBlue'}
                   fontColor={'text-white'}
@@ -111,6 +128,7 @@ export default async function () {
             <div className="w-1/2">
               <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
               <ButtonCustomized
+              type="link"
                   url={'/contact'}
                   background={'bg-lavazzaBlue'}
                   fontColor={'text-white'}
