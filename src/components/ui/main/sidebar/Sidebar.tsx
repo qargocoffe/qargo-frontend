@@ -83,7 +83,7 @@ export const Sidebar = ({ items }:Props) => {
                                 className=" text-beigeStrong block text-xl 
                                 duration-300  border-0 p-4"
                                 onClick={() => closeSideMenu }
-                                href={'/' + item.slug}>
+                                href={'/' + subcategory.slug}>
                                 <span className="ml-7">{subcategory.title}</span>
                             </Link>
                         </div>

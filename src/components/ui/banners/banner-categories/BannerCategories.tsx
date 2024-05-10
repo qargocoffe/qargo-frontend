@@ -12,36 +12,50 @@ import './BannerCategories.css';
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { Categories, Category } from '@/interfaces/our-menu/category.interface';
+import { ButtonCustomized } from '@/components/ui';
 
 
-export const BannerCategories = (categories: Category[] ) => {
+export const BannerCategories = ({categories}: any ) => {
   return (
-    <>
+    <div>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={'auto'}
+        spaceBetween={70} // Separate by 25px between sliders
         coverflowEffect={{
           rotate: 0,
-          stretch: 0,
+          stretch: 20,
           depth: 100,
+          scale: 1,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper">
+        className="mySwiper !pt-2">
         
         {
             categories && categories.map((category: Category) => (
-                <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              <SwiperSlide className='!w-[260px] !h-[400px] bg-cover bg-center rounded-xl' style={{
+                backgroundImage: 'url(/our-menu/image1.png)',
+              }}>
+                <div className='h-full flex flex-row justify-center items-end text-center'>
+                <div className='mb-5'>
+                  <ButtonCustomized
+                    type="link"
+                    url={'/team'}
+                    background={'bg-lavazzaBlue'}
+                    fontColor={'text-white'}
+                    title={'FRESH & COOL'}          />
+                </div>
+                </div>
               </SwiperSlide>
             ))
         }
        
       </Swiper>
-    </>
+    </div>
   );
 }
