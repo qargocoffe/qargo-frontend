@@ -10,7 +10,7 @@ export default async function () {
   const homePage = await getHomePage();
 
   return (
-    <div className="bg-ceramic text-base">
+    <div className="bg-ceramic">
 
       <BannerHomepage />
      <article>
@@ -26,7 +26,7 @@ export default async function () {
         <img src="/home/coffee1.png" alt="chocolato" className="w-5/7 left-0 h-auto block absolute" />
         <img src="/home/coffee2.png" alt="chocolato" className="right-0 w-1/3 h-auto block absolute" />
       </section>
-          <h2 className="px-7 py-5 text-3xl text-lavazzaBlue text-left">ITALY’S FINEST  <br />COFFEE & PASTRIES</h2>
+          <h2 className="px-7 py-5 text-2xl tracking-widest font-normal text-lavazzaBlue text-left">ITALY’S FINEST  <br />COFFEE & PASTRIES</h2>
           <div className='px-7 py-2 flex w-full text-center' >
               <p className="mt-4 text-gray text-left">Capturing the essence of Italian tradition and standards, we redefine the essence of coffee culture with unique recipes, taken to a new level with the premium quality of Lavazza, and freshly baked Italian pastries, creating a wide spectrum of flavor profiles and textures.</p>
               <figure className="w-full">

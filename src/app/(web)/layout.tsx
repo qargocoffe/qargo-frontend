@@ -6,7 +6,7 @@ export default function WebLayout({
  children: React.ReactNode;
 }) {
   return (
-    <div>
+    <div className="text-base leading-6">
         <Header/>
         <ModalCareers/>
         {children}

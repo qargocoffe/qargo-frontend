@@ -11,7 +11,7 @@ export const BlogCard = ({title , description, content, slug, thumbnail}: Blog) 
               
         </div>
         <div className='p-7'>
-            <h2 className='text-xl mt-4 text-lavazzaBlue'>{title}</h2>
+            <h2 className='text-2xl mt-4 text-lavazzaBlue'>{title}</h2>
             <p className='mt-4 text-gray'>{description}</p>
         </div>
         <ButtonCustomized

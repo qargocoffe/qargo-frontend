@@ -44,7 +44,7 @@ export const Sidebar = ({ items }:Props) => {
         {/* Sidemenu */}
         <nav className={
             clsx(
-                "fixed m-0 overflow-auto right-0 top-13 w-[60%] h-auto z-20 shadow-2xl transform transition-all duration-300 l:hidden",
+                "fixed m-0 overflow-auto right-0 top-13 w-1/2 tracking-wider h-auto z-20 shadow-2xl transform transition-all duration-300 l:hidden",
                 {
                     "translate-x-full": !isSideMenuOpen
                 }
@@ -56,7 +56,7 @@ export const Sidebar = ({ items }:Props) => {
                 {/* Links categories */}
                 <Link
                     key={item.slug}
-                    className="flex justify-between text-beigeStrong text-xl duration-300 bg-white border-0 p-4 my-1"
+                    className="font-medium flex justify-between text-beigeStrong text-xl duration-300 bg-white border-0 p-4 my-1"
                     onClick={() => closeSideMenu }
                     href={'/' + item.slug}>
                     <span className="mx-2">{item.title}</span>
@@ -84,7 +84,7 @@ export const Sidebar = ({ items }:Props) => {
                                 subcategory.slug !== 'careers'  && (
                                     <Link
                                         key={subcategory.id}
-                                        className=" text-beigeStrong block text-xl 
+                                        className=" text-beigeStrong text-xm font-medium tracking-widest block  
                                         duration-300  border-0 p-4"
                                         href={'/' + subcategory.slug}>
                                         <span className="ml-7" onClick={() => closeSideMenu() }>{subcategory.title}</span>
@@ -95,7 +95,7 @@ export const Sidebar = ({ items }:Props) => {
                             {
                                 subcategory.slug === 'careers' && (
                                     <span key={subcategory.id}
-                                    className=" text-beigeStrong block text-xl 
+                                    className=" text-beigeStrong text-xm font-medium tracking-widest block  
                                     duration-300  border-0 p-4"
                                     onClick={() => toggleModal() }>
                                         <span className="ml-7">

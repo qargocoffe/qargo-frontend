@@ -54,7 +54,7 @@ export const Menu = () => {
 
   return (
     <>
-    <nav className="flex items-center justify-between p-5 b z-20 relative">
+    <nav className="flex items-center justify-between px-3 py-4 b z-20 relative">
       <div className="flex justify-between gap-3 items-center h-6">
           <Link href={'/'} >
           <Image
@@ -73,8 +73,8 @@ export const Menu = () => {
         <Image
             src={'/menu/' + folderIcons + '/search.png'}
             alt='lupa'
-            width={32}
-            height={32}
+            width={28}
+            height={28}
             className="cursor-pointer"
           />
         {isSideMenuOpen && (
@@ -83,8 +83,8 @@ export const Menu = () => {
             className="z-20 cursor-pointer"
             src={'/menu/'+ folderIcons + '/close.png'}
             alt='lupa'
-            width={32}
-            height={32}
+            width={28}
+            height={28}
           />
         )}
 
@@ -94,8 +94,8 @@ export const Menu = () => {
             className="z-20 cursor-pointer"
             src={'/menu/'+ folderIcons +'/squads.png'}
             alt='lupa'
-            width={32}
-            height={32}
+            width={28}
+            height={28}
           />
         )}
            

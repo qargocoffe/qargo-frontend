@@ -19,7 +19,6 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: bg-whiteBackground;
-  line-height: 1.5rem;
     
 }
 
