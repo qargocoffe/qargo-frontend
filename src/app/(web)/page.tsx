@@ -15,6 +15,7 @@ export default async function () {
       <BannerHomepage />
      <article>
      <section
+     
      style={{
        backgroundImage: `url('/home/background-gray.png')`,
        backgroundRepeat: 'no-repeat',
@@ -23,8 +24,8 @@ export default async function () {
        padding: 0,
       }} 
      className="w-100 flex justify-around items-center min-h-[17rem]">
-        <img src="/home/coffee1.png" alt="chocolato" className="w-5/7 left-0 h-auto block absolute" />
-        <img src="/home/coffee2.png" alt="chocolato" className="right-0 w-1/3 h-auto block absolute" />
+        <img src="/home/coffee1.png" alt="chocolato" className="slide-in-left  w-[72%] left-0 h-auto block absolute" />
+        <img src="/home/coffee2.png" alt="chocolato" className="slide-in-right  right-0 w-[52%] h-auto block absolute" />
       </section>
           <h2 className="px-7 py-5 text-2xl tracking-widest font-normal text-lavazzaBlue text-left">ITALY’S FINEST  <br />COFFEE & PASTRIES</h2>
           <div className='px-7 py-2 flex w-full text-center' >

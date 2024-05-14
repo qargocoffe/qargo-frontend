@@ -1,3 +1,6 @@
+export { StoreCollapse } from './visit-us/StoreCollapse';
+export { Map } from "./visit-us/Map";
+export { MapContainer } from "./visit-us/MapContainer";
 export { RegisterCareers } from "./modals/careers/RegisterCareers";
 export {ModalCareers} from "./modals/careers/CareersModal";
 export { BannerCategories } from "./banners/banner-categories/BannerCategories";
@@ -12,5 +15,3 @@ export { Sidebar } from "./main/sidebar/Sidebar";
 export { BannerMobile } from "./banners/banner-mobile/BannerMobile";
 export { BannerHomepage } from "./banners/banner-homepage/BannerHomepage";
 export { SustainabilityDetail } from "./about/SustainabilityDetail";
-
-

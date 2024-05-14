@@ -55,7 +55,7 @@ export const Menu = () => {
   return (
     <>
     <nav className="flex items-center justify-between px-3 py-4 b z-20 relative">
-      <div className="flex justify-between gap-3 items-center h-6">
+      <div className="slide-in-right flex justify-between gap-3 items-center h-6">
           <Link href={'/'} >
           <Image
             src={'/menu/' + folderIcons + '/logo.png'}
@@ -69,7 +69,7 @@ export const Menu = () => {
         
       </div>
 
-      <div className="flex gap-4">
+      <div className="flex gap-4 slide-in-left">
         <Image
             src={'/menu/' + folderIcons + '/search.png'}
             alt='lupa'

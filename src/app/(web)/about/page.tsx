@@ -23,9 +23,9 @@ export default async function () {
   return (
     <div className="text-base bg-whiteBackground">
       <section className="w-100 flex justify-around items-center min-h-[300px] relative bottom-[-2rem]">
-        <img src="/about/croazan.png" alt="chocolato" className="w-1/2 left-0 h-auto block absolute" />
-        <img src="/about/chocolato.png" alt="chocolato" className="w-1/4 h-auto block absolute top-[220px]" />
-        <img src="/about/coffee.png" alt="chocolato" className="right-0 w-1/2 h-auto block absolute" />
+        <img src="/about/croazan.png" alt="chocolato" className="animate-left w-[40%] left-0 h-auto block absolute" />
+        <img src="/about/chocolato.png" alt="chocolato" className="w-[30%] h-auto block absolute left-20 top-[11rem]" />
+        <img src="/about/coffee.png" alt="chocolato" className="animate-right right-0 w-4/5 h-auto block bottom-3 absolute" />
       </section>
 
       <section className="px-6">

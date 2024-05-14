@@ -1,8 +1,10 @@
+import { MapContainer, StoreCollapse } from "@/components/ui";
 
 export default function () {
     return (
       <div>
-        <h1>Visit Us</h1>
+        <MapContainer/>
+        <StoreCollapse/>
       </div>
     );
   }

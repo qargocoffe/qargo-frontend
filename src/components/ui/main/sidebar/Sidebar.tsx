@@ -5,8 +5,6 @@ import { useUIStore } from "@/store"
 import clsx from "clsx"
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
-
 
 interface Props {
     items: MenuItem[];
@@ -14,7 +12,7 @@ interface Props {
 
 interface CategoryState {
     [key: string]: boolean;
-  }
+}
 
 
 export const Sidebar = ({ items }:Props) => {
@@ -44,7 +42,7 @@ export const Sidebar = ({ items }:Props) => {
         {/* Sidemenu */}
         <nav className={
             clsx(
-                "fixed m-0 overflow-auto right-0 top-13 w-1/2 tracking-wider h-auto z-20 shadow-2xl transform transition-all duration-300 l:hidden",
+                "fixed m-0 overflow-auto right-0 top-13 w-1/2 tracking-wider h-auto z-20 shadow-2xl l:hidden",
                 {
                     "translate-x-full": !isSideMenuOpen
                 }
@@ -52,11 +50,11 @@ export const Sidebar = ({ items }:Props) => {
         }>
             {items &&
             items.map((item) => (
-                <div key={item.slug}>
+                <div key={item.slug} className="transition-all duration-300">
                 {/* Links categories */}
                 <Link
                     key={item.slug}
-                    className="font-medium flex justify-between text-beigeStrong text-xl duration-300 bg-white border-0 p-4 my-1"
+                    className="font-medium flex justify-between text-beigeStrong text-xl bg-white border-0 p-4 my-1"
                     onClick={() => closeSideMenu }
                     href={'/' + item.slug}>
                     <span className="mx-2">{item.title}</span>
@@ -77,7 +75,7 @@ export const Sidebar = ({ items }:Props) => {
 
                 {item.Items &&
                     item.Items.map((subcategory) => (
-                        <div className={`flex bg-white justify-between ${
+                        <div key={subcategory.slug} className={`flex bg-white justify-between ${
                             isSubcategoryOpen[String(item.slug)] ? '' : 'hidden'
                           }`}>
                             {
