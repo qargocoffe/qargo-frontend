@@ -79,6 +79,7 @@ export const Menu = () => {
           />
         {isSideMenuOpen && (
             <Image
+            
             onClick={closeSideMenu}
             className="z-20 cursor-pointer"
             src={'/menu/'+ folderIcons + '/close.png'}

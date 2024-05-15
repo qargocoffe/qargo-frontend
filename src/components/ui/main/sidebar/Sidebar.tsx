@@ -42,7 +42,7 @@ export const Sidebar = ({ items }:Props) => {
         {/* Sidemenu */}
         <nav className={
             clsx(
-                "fixed m-0 overflow-auto right-0 top-13 w-1/2 tracking-wider h-auto z-20 shadow-2xl l:hidden",
+                "slide-in-top fixed m-0 overflow-auto right-0 top-13 w-1/2 tracking-wider h-auto z-20 shadow-2xl l:hidden",
                 {
                     "translate-x-full": !isSideMenuOpen
                 }

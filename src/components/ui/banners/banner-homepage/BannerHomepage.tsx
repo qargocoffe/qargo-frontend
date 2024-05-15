@@ -15,7 +15,7 @@ export const BannerHomepage = () => {
     const image2 = '/home/slide2.png';
 
   return (
-    <div className='mb-20 bg-grayBackground'>
+    <div className='slide-in-top mb-20 bg-grayBackground'>
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper !pt-0 m-[-5rem]">
           <SwiperSlide className='!min-h-[600px] md:!min-h-full'>
           <div className='h-full'>
