@@ -3,6 +3,7 @@
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import './BannerMobile.css'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -17,17 +18,26 @@ type Banners = 'blog' | 'banner' | 'partner';
 export const BannerMobile = ({typeBanner, data }: { typeBanner: Banners, data: any}) => {
 
   return (
-    <div>
-        <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+    <div className='bg-beigeLight'>
+        <Swiper pagination={true}
+        navigation={ {
+          nextEl: 'swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        } }
+        id='swiperMobile'
+        modules={[Pagination]} className="mySwiper">
         {typeBanner === 'blog' && data.map((blog: Blog) => (
-          <SwiperSlide key={blog.slug} className='!h-full bg-beigeLight pb-6 '>
+          <SwiperSlide key={blog.slug} className='!h-full pb-6 '>
             <BlogCard {...blog} />
+            <div className="swiper-pagination"></div>
+            <div className="swiper-button-prev"></div>
+            <div className="swiper-button-next"></div>
           </SwiperSlide>
         ))}
 
 
       {typeBanner === 'partner' &&  data.map((partner: Partner) => (
-          <SwiperSlide key={partner.title} className='!h-full bg-beigeLight pb-6 '>
+          <SwiperSlide key={partner.title} className='!h-full pb-6 '>
             <PartnerSlide {...partner} />
           </SwiperSlide>
         ))}

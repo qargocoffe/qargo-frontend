@@ -29,20 +29,20 @@ export const Sidebar = ({ items }:Props) => {
     <>
         {/* Background black */}
         {isSideMenuOpen && (
-            <div className="fixed top-0 w-screen h-screen z-10 bg-black opacity-20"></div>
+            <div className="fixed top-0 w-screen h-screen z-10 bg-black opacity-20" onClick={() => closeSideMenu()}></div>
         )}
 
         {/* Blur */}
 
         {isSideMenuOpen && (
-            <div className="fade-in fixed top-0 left-0 w-screen h-screen z-10 backdrop-filter "></div>
+            <div className="fade-in fixed top-0 left-0 w-screen h-screen z-10 backdrop-filter "  onClick={() => closeSideMenu()}></div>
         )}
         
 
         {/* Sidemenu */}
         <nav className={
             clsx(
-                "slide-in-top fixed m-0 overflow-auto right-0 top-13 w-1/2 tracking-wider h-auto z-20 shadow-2xl l:hidden",
+                "fixed m-0 overflow-auto right-0 top-13 w-1/2 tracking-wider h-auto z-20 shadow-2xl l:hidden",
                 {
                     "translate-x-full": !isSideMenuOpen
                 }
@@ -50,7 +50,11 @@ export const Sidebar = ({ items }:Props) => {
         }>
             {items &&
             items.map((item) => (
-                <div key={item.slug} className="transition-all duration-300">
+                <div key={item.slug} className="transition-all duration-300"  onClick={() => {
+                    if (item.Items && item.Items.length === 0) {
+                        closeSideMenu()
+                    }
+                }}>
                 {/* Links categories */}
                 <Link
                     key={item.slug}
@@ -77,7 +81,9 @@ export const Sidebar = ({ items }:Props) => {
                     item.Items.map((subcategory) => (
                         <div key={subcategory.slug} className={`flex bg-white justify-between ${
                             isSubcategoryOpen[String(item.slug)] ? '' : 'hidden'
-                          }`}>
+                          }`}
+                          onClick={() => closeSideMenu()}
+                          >
                             {
                                 subcategory.slug !== 'careers'  && (
                                     <Link

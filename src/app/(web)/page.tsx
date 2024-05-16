@@ -29,7 +29,7 @@ export default async function () {
       </section>
           <h2 className="px-7 py-5 text-2xl tracking-widest font-normal text-lavazzaBlue text-left">ITALY’S FINEST  <br />COFFEE & PASTRIES</h2>
           <div className='px-7 py-2 flex w-full text-center' >
-              <p className="mt-4 text-gray text-left">Capturing the essence of Italian tradition and standards, we redefine the essence of coffee culture with unique recipes, taken to a new level with the premium quality of Lavazza, and freshly baked Italian pastries, creating a wide spectrum of flavor profiles and textures.</p>
+              <p className="mt-4 mb-14 text-gray text-left">Capturing the essence of Italian tradition and standards, we redefine the essence of coffee culture with unique recipes, taken to a new level with the premium quality of Lavazza, and freshly baked Italian pastries, creating a wide spectrum of flavor profiles and textures.</p>
               <figure className="w-full">
                 <Image className="mb-4" src={'/footer/coffee.png'} alt="Coffe" width={120} height={120} />
               </figure>

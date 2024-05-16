@@ -23,21 +23,21 @@ export default async function () {
   return (
     <div className="text-base bg-whiteBackground">
       <section className="w-100 flex justify-around items-center min-h-[300px] relative bottom-[-2rem]">
-        <img src="/about/croazan.png" alt="chocolato" className="animate-left w-[40%] left-0 h-auto block absolute" />
-        <img src="/about/chocolato.png" alt="chocolato" className="w-[30%] h-auto block absolute left-20 top-[11rem]" />
-        <img src="/about/coffee.png" alt="chocolato" className="animate-right right-0 w-4/5 h-auto block bottom-3 absolute" />
+        <img src="/about/croazan.png" alt="chocolato" className="slide-in-left  w-[40%] left-0 h-auto block absolute" />
+        <img src="/about/chocolato.png" alt="chocolato" className="slide-in-top w-[30%] h-auto block absolute left-20 top-[11rem]" />
+        <img src="/about/coffee.png" alt="chocolato" className="slide-in-right  right-0 w-4/5 h-auto block bottom-3 absolute" />
       </section>
 
       <section className="px-6">
           <div className="text-right text-lavazzaBlue text-4xl pb-4">
-            <h2 className="">Our <br />History</h2>
+            <h2 className="slide-in-right">Our <br />History</h2>
           </div>
-          <p className="text-gray ml-3 text-right mb-11">
+          <p className="text-gray ml-3 text-right mb-11 slide-in-left">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           </p>
 
-          <article className="text-center text-beige rounded-xl bg-beigeLight p-5 mb-11">
-              <h3 className="pb-7 text-2xl">Our Mission</h3>
+          <article className="text-center text-beige rounded-xl bg-beigeLight p-5 mb-11 slide-in-right">
+              <h3 className="pb-7 text-2xl ">Our Mission</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </article>
 

@@ -1,0 +1,10 @@
+#swiperHome {
+    /* Set the position to relative to make sure the pagination stays within */
+    position: relative;
+  }
+  
+  .swiper-pagination{
+    /* Style the pagination container */
+    position: absolute !important;
+    top: 35rem !important;  /* Adjust this value according to your design */
+  } 

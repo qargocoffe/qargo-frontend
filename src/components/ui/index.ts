@@ -1,4 +1,5 @@
-export { StoreCollapse } from './visit-us/StoreCollapse';
+export { Stores } from './visit-us/store/Stores';
+export { StoreCollapse } from './visit-us/store/StoreCollapse';
 export { Map } from "./visit-us/Map";
 export { MapContainer } from "./visit-us/MapContainer";
 export { RegisterCareers } from "./modals/careers/RegisterCareers";

@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={albertSans.className} >{children}</body>
+      <body className={albertSans.className} >{
+      children
+      }</body>
     </html>
   );
 }

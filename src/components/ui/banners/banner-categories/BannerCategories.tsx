@@ -32,7 +32,12 @@ export const BannerCategories = ({categories}: any ) => {
           modifier: 1,
           slideShadows: false,
         }}
+       
         pagination={true}
+        navigation={ {
+          nextEl: 'swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        } }
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper !pt-2">
         
@@ -51,6 +56,9 @@ export const BannerCategories = ({categories}: any ) => {
                     title={'FRESH & COOL'}          />
                 </div>
                 </div>
+                <div className="swiper-pagination"></div>
+                <div className="swiper-button-prev"></div>
+                <div className="swiper-button-next"></div>
               </SwiperSlide>
             ))
         }

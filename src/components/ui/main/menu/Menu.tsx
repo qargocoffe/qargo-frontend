@@ -9,6 +9,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 
+
 export const Menu = () => {
   const [menu, setMenu] = useState<MenuAttributes | null>(null);
   const [folderIcons, setFolderIcons] = useState<string>('white');
@@ -16,6 +17,7 @@ export const Menu = () => {
   const openSideMenu = useUIStore(state => state.openSideMenu);
   const closeSideMenu = useUIStore(state => state.closeSideMenu);
   const isSideMenuOpen = useUIStore(state => state.isSideMenuOpen);
+
 
   const pathname = usePathname(); 
 
@@ -52,10 +54,12 @@ export const Menu = () => {
     getMenu()
   }, [pathname]);
 
+
+
   return (
     <>
     <nav className="flex items-center justify-between px-3 py-4 b z-20 relative">
-      <div className="slide-in-right flex justify-between gap-3 items-center h-6">
+      <div className="slide-in-right flex justify-between gap-3 items-center h-6" onClick={() => closeSideMenu()}>
           <Link href={'/'} >
           <Image
             src={'/menu/' + folderIcons + '/logo.png'}

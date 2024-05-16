@@ -19,7 +19,7 @@ export const useUIStore = create<State>((set) => ({
   isModalOpen: false,
   isSubcategoryOpen: {},
   openSideMenu: () => set({ isSideMenuOpen: true }),
-  closeSideMenu: () => set({ isSideMenuOpen: false }),
+  closeSideMenu: () => set({ isSideMenuOpen: false, isSubcategoryOpen: {} }),
   toggleModal: () => set((prevState) => ({ ...prevState, isSideMenuOpen: false, isModalOpen: !prevState.isModalOpen })),
   toggleSubcategory: (slug: string) => set((prevState) => ({
     ...prevState,
