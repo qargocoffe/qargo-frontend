@@ -13,16 +13,14 @@ export default async function () {
     <div className="bg-ceramic">
 
       <BannerHomepage />
-     <article>
-     <section
-     
-     style={{
+     <article style={{
        backgroundImage: `url('/home/background-gray.png')`,
        backgroundRepeat: 'no-repeat',
        backgroundSize: 'cover',
        margin: 0,
        padding: 0,
-      }} 
+      }}>
+     <section 
      className="w-100 flex justify-around items-center min-h-[17rem]">
         <img src="/home/coffee1.png" alt="chocolato" className="slide-in-left  w-[72%] left-0 h-auto block absolute" />
         <img src="/home/coffee2.png" alt="chocolato" className="slide-in-right  right-0 w-[52%] h-auto block absolute" />

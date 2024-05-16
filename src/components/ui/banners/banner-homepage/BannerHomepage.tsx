@@ -17,7 +17,7 @@ export const BannerHomepage = () => {
     const image2 = '/home/slide2.png';
 
   return (
-    <div className='slide-in-top mb-20 bg-grayBackground '>
+    <div className='fade-in-fwd mb-20 bg-grayBackground '>
       <Swiper pagination={true}
         navigation={ {
           nextEl: 'swiper-button-next',

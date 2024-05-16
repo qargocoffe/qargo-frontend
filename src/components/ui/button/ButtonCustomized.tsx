@@ -15,10 +15,10 @@ interface Props {
 export const ButtonCustomized = ({title, url = '', background, fontColor, type = 'link', icon }: Props) => {
   return (
     <div style={{
-      letterSpacing: '0.23rem'
+      letterSpacing: '0.15rem'
     }} className="my-4 font-bold">
       {
-        type === 'link' && <Link href={url} className={ background +' flex items-center justify-center m-auto max-w-[13rem] gap-2 px-3 py-3 text-center rounded-full text-sm ' + fontColor}>
+        type === 'link' && <Link href={url} className={ background +' flex items-center justify-center m-auto w-auto  min-w-[9rem] max-w-[10rem] gap-2 px-3 py-[0.6rem] text-center rounded-full text-sm ' + fontColor}>
           {title}
           {
             icon && 
@@ -36,7 +36,7 @@ export const ButtonCustomized = ({title, url = '', background, fontColor, type =
       }
 
       {
-        type === 'button' && <button className={ background +' flex items-center justify-center m-auto max-w-[12rem] gap-2 px-3 py-3 text-center rounded-full text-sm ' + fontColor}>
+        type === 'button' && <button className={ background +' flex items-center justify-center m-auto w-auto  min-w-[9rem] max-w-[10rem] gap-2 px-3 py-[0.6rem] text-center rounded-full text-sm ' + fontColor}>
           {title}
           {
             icon && 

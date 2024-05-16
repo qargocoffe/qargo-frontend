@@ -42,7 +42,7 @@ export const Sidebar = ({ items }:Props) => {
         {/* Sidemenu */}
         <nav className={
             clsx(
-                "fixed m-0 overflow-auto right-0 top-13 w-1/2 tracking-wider h-auto z-20 shadow-2xl l:hidden",
+                "scale-up-right fixed m-0 overflow-auto right-0 top-13 w-1/2 tracking-wider h-auto z-20 shadow-2xl l:hidden",
                 {
                     "translate-x-full": !isSideMenuOpen
                 }
@@ -61,7 +61,7 @@ export const Sidebar = ({ items }:Props) => {
                     className="font-medium flex justify-between text-beigeStrong text-xl bg-white border-0 p-4 my-1"
                     onClick={() => closeSideMenu }
                     href={'/' + item.slug}>
-                    <span className="mx-2">{item.title}</span>
+                    <span className="text-focus-in mx-2">{item.title}</span>
                     {/* Arrow down image in category with subcategory */}
 
                     {item.Items && item.Items.length > 0 &&(
@@ -89,7 +89,7 @@ export const Sidebar = ({ items }:Props) => {
                                     <Link
                                         key={subcategory.id}
                                         className=" text-beigeStrong text-xm font-medium tracking-widest block  
-                                        duration-300  border-0 p-4"
+                                        duration-300  text-focus-in border-0 p-4"
                                         href={'/' + subcategory.slug}>
                                         <span className="ml-7" onClick={() => closeSideMenu() }>{subcategory.title}</span>
                                     </Link>
@@ -100,7 +100,7 @@ export const Sidebar = ({ items }:Props) => {
                                 subcategory.slug === 'careers' && (
                                     <span key={subcategory.id}
                                     className=" text-beigeStrong text-xm font-medium tracking-widest block  
-                                    duration-300  border-0 p-4"
+                                    duration-300  text-focus-in border-0 p-4"
                                     onClick={() => toggleModal() }>
                                         <span className="ml-7">
                                         {subcategory.title}

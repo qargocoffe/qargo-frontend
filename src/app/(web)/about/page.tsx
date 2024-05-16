@@ -93,7 +93,7 @@ export default async function () {
         <BannerMobile typeBanner="partner" data={partners} />
       </section>
 
-      <section className="">
+      <section className="mt-6">
           <article className="flex items-end gap-6 px-6">
             <figure className="w-1/2 h-auto">
               <Image src={'/about/sara.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
