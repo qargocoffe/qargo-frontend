@@ -49,10 +49,27 @@ export const BannerHomepage = () => {
           
           </SwiperSlide>
           <SwiperSlide>
-          <div className=''>
-            <img src={image2} className='h-full' alt="" />
-          </div>
+            <div className='absolute flex flex-col place-content-center'>
+                <img src={image2} className='h-full' alt="Menu" />
+                  <div className='bottom-0 absolute m-0 p-0' style={{
+                    position: 'absolute',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    
+                  }}>
+                  <ButtonCustomized
+                    type="link"
+                    key={'VIEW MORE'}
+                    url={'/sustainability'}
+                    background={'bg-beigeLight'}
+                    fontColor={'text-beige'}
+                    title={'VIEW MORE'}
+                    />
+              </div>
+            </div>
+          
           </SwiperSlide>
+          
         
       </Swiper>
     </div>

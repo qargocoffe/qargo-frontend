@@ -56,11 +56,10 @@ export const Sidebar = ({ items }:Props) => {
                     }
                 }}>
                 {/* Links categories */}
-                <Link
-                    key={item.slug}
+                {item.Items!.length > 0 ? (
+                    <span key={item.slug}
                     className="font-medium flex justify-between text-beigeStrong text-xl bg-white border-0 p-4 my-1"
-                    onClick={() => closeSideMenu }
-                    href={'/' + item.slug}>
+                    onClick={() => closeSideMenu }>
                     <span className="text-focus-in mx-2">{item.title}</span>
                     {/* Arrow down image in category with subcategory */}
 
@@ -72,9 +71,19 @@ export const Sidebar = ({ items }:Props) => {
                             alt="Arrow down"
                             height={11}/>
                         </div>
-                    )}
-                </Link>
+                    )}  
+                    </span>
+                ): (
+                <Link
+                    key={item.slug}
+                    className="font-medium flex justify-between text-beigeStrong text-xl bg-white border-0 p-4 my-1"
+                    onClick={() => closeSideMenu }
+                    href={'/' + item.slug}>
+                    <span className="text-focus-in mx-2">{item.title}</span>
                 
+                </Link>
+                )}
+
                 {/* Links subcategories */}
 
                 {item.Items &&
