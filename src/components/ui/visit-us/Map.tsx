@@ -301,7 +301,7 @@ export const Map = () => {
                       placeholder="ENTER CITY OR ZIPCODE"
                       className="slide-in-left placeholder:text-[11px] placeholder:text-gray placeholder:font-bold tracking-widest border-0 rounded-full border-gray-400 pl-3 pr-12 py-2 w-full"
                     />
-                    <img src="/menu/gray/search.png" className="mt-1 mx-0 p-0 absolute right-2 top-0 w-6 " alt="Search Icon" />
+                    <img src="./menu/gray/search.png" className="mt-1 mx-0 p-0 absolute right-2 top-0 w-6 " alt="Search Icon" />
                 </div>
             </div>
 

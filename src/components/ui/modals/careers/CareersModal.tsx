@@ -26,7 +26,7 @@ export const ModalCareers = () => {
                         <figure className="w-[26px]">
                         <Image
                             className="z-20 cursor-pointer"
-                            src={'/modal/close.png'}
+                            src={'./modal/close.png'}
                             onClick={() => toggleModal() }
                             alt='lupa'
                             width={27}
@@ -46,7 +46,7 @@ export const ModalCareers = () => {
                             href={'/'}> 
                             <span className="bg-lavazzaBlue text-white flex items-center justify-center m-auto w-auto  min-w-[9rem] max-w-[11rem] px-2  py-[0.6rem] text-center rounded-full text-sm font-bold">
                                 VIEW OFFERS
-                                <Image className="ml-1" src={'/modal/linkedin.png'} width={26} height={26} alt="Something"/>
+                                <Image className="ml-1" src={'./modal/linkedin.png'} width={26} height={26} alt="Something"/>
                                 </span> 
                             
                         </Link>

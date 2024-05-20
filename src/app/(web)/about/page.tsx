@@ -23,9 +23,9 @@ export default async function () {
   return (
     <div className="text-base bg-whiteBackground">
       <section className="w-100 flex justify-around items-center min-h-[300px] relative bottom-[-2rem]">
-        <img src="/about/croazan.png" alt="chocolato" className="slide-in-left  w-[40%] left-0 h-auto block absolute" />
-        <img src="/about/chocolato.png" alt="chocolato" className="slide-in-top w-[30%] h-auto block absolute left-20 top-[11rem]" />
-        <img src="/about/coffee.png" alt="chocolato" className="slide-in-right  right-0 w-4/5 h-auto block bottom-3 absolute" />
+        <img src="./about/croazan.png" alt="chocolato" className="slide-in-left  w-[40%] left-0 h-auto block absolute" />
+        <img src="./about/chocolato.png" alt="chocolato" className="slide-in-top w-[30%] h-auto block absolute left-20 top-[11rem]" />
+        <img src="./about/coffee.png" alt="chocolato" className="slide-in-right  right-0 w-4/5 h-auto block bottom-3 absolute" />
       </section>
 
       <section className="px-6">
@@ -66,7 +66,7 @@ export default async function () {
               
           </div>
           <figure className="absolute bottom-0 right-0 slide-in-right-scroll">
-              <Image src="/about/sustainability.png" alt="Sustainability" width={180} height={40} />
+              <Image src="./about/sustainability.png" alt="Sustainability" width={180} height={40} />
           </figure>
       </article>
 
@@ -99,7 +99,7 @@ export default async function () {
       <section className="mt-6">
           <article className="reveal-scroll flex items-end gap-6 px-6">
             <figure className="w-1/2 h-auto">
-              <Image src={'/about/sara.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
+              <Image src={'./about/sara.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
             </figure>
             <div className="reveal-scroll w-1/2">
               <h3 className="text-lavazzaBlue text-xl mb-4">Meet the QargoCoffee family</h3>
@@ -114,7 +114,7 @@ export default async function () {
           </article>
           <article className="px-6 py-6 flex items-end gap-6 mt-12 bg-beigeLight">
             <figure className="reveal-scroll w-1/2 h-auto">
-              <Image src={'/about/drink.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
+              <Image src={'./about/drink.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
             </figure>
             <div className="reveal-scroll w-1/2">
               <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
@@ -138,7 +138,7 @@ export default async function () {
                   title={'CONTACT US'}          />
             </div>
             <figure className="reveal-scroll w-1/2 h-auto">
-              <Image src={'/about/women-call.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
+              <Image src={'./about/women-call.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
             </figure>
           </article>
       </section>

@@ -21,13 +21,13 @@ export default async function () {
       <section className="w-full text-focus-in">
           <section className="absolute w-full h-full flex items-center z-20">
               <figure className="ball">
-                <Image src={'/our-menu/cubo.png'} width={90} height={90} alt="Cubo hielo"/>
+                <Image src={'./our-menu/cubo.png'} width={90} height={90} alt="Cubo hielo"/>
               </figure>
               <figure className="ball">
-                <Image src={'/our-menu/cubo.png'} width={90} height={90} alt="Cubo hielo"/>
+                <Image src={'./our-menu/cubo.png'} width={90} height={90} alt="Cubo hielo"/>
               </figure>
               <figure className="ball">
-                <Image src={'/our-menu/cubo.png'} width={90} height={90} alt="Cubo hielo"/>
+                <Image src={'./our-menu/cubo.png'} width={90} height={90} alt="Cubo hielo"/>
               </figure>
           </section>
             <BannerCategories categories={categories} />

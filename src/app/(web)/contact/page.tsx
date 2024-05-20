@@ -16,12 +16,12 @@ export default function () {
      <section className="px-6 text-left pt-40 ">
       <h2 className="slide-in-left text-3xl text-lavazzaBlue mb-6 ">Contact Us</h2>
       <span className="slide-in-left max-w-[12rem] px-4 py-3 flex gap-3 items-center cursor-pointer rounded-full border border-slate-beige hover:border-indigo-300 ">
-        <Image src={'/logos/cellphone.png'} width={15} height={20} alt="Cellphone" />
+        <Image src={'./logos/cellphone.png'} width={15} height={20} alt="Cellphone" />
         (562)-733-8300
       </span>
 
       <span className="slide-in-left mt-4 max-w-[14rem] px-3 py-3 flex gap-3 items-center cursor-pointer rounded-full border border-slate-beige hover:border-indigo-300 ">
-        <Image src={'/logos/mail.png'} width={22} height={20} alt="Cellphone" />
+        <Image src={'./logos/mail.png'} width={22} height={20} alt="Cellphone" />
         info@qargocoffee.com
       </span>
      </section>

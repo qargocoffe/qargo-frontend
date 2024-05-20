@@ -220,7 +220,7 @@ export const Menu = () => {
       <div className="slide-in-right flex justify-between gap-3 items-center h-6" onClick={() => closeSideMenu()}>
           <Link href={'/'} >
           <Image
-            src={'/menu/' + folderIcons + '/logo.png'}
+            src={'./menu/' + folderIcons + '/logo.png'}
             alt={'QargoCoffee Logo'}
             priority={true}
             width={'230'}
@@ -237,7 +237,7 @@ export const Menu = () => {
             
             onClick={closeSideMenu}
             className="z-20 cursor-pointer"
-            src={'/menu/'+ folderIcons + '/close.png'}
+            src={'./menu/'+ folderIcons + '/close.png'}
             alt='lupa'
             width={28}
             height={28}
@@ -248,7 +248,7 @@ export const Menu = () => {
           <Image
             onClick={openSideMenu}
             className="z-20 cursor-pointer"
-            src={'/menu/'+ folderIcons +'/squads.png'}
+            src={'./menu/'+ folderIcons +'/squads.png'}
             alt='lupa'
             width={28}
             height={28}

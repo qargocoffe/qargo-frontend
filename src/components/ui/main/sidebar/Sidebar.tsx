@@ -65,7 +65,7 @@ export const Sidebar = ({ items }:Props) => {
 
                     {item.Items && item.Items.length > 0 &&(
                         <div className="p-3">
-                            <Image src={'/logos/arrow-down.png'}
+                            <Image src={'./logos/arrow-down.png'}
                             width={20}
                             onClick={() => toggleSubcategory(String(item.slug))}
                             alt="Arrow down"

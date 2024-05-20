@@ -7,7 +7,7 @@ export const BlogCard = ({title , description, content, slug, thumbnail}: Blog) 
     <div className='w-full text-center min-h-[600px] h-auto' >
         <div className='relative'>
             <h3 className='absolute bg-lavazzaBlue text-white rounded p-1'>Latest News</h3>
-            <img src={'/blog/default.png'} />
+            <img src={'./blog/default.png'} />
               
         </div>
         <div className='p-7'>

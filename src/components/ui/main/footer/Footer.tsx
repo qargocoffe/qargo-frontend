@@ -8,38 +8,38 @@ export const Footer = () => {
       <nav className="flex items-center justify-center gap-5 list-none px-12">
         <li>
           <a href="instagram.com">
-            <Image src={'/footer/social/facebook.png'} alt="Coffe" width={20} height={35} />
+            <Image src={'./footer/social/facebook.png'} alt="Coffe" width={20} height={35} />
           </a>
         </li>
         <li>
           <a href="instagram.com">
-            <Image src={'/footer/social/ig.png'} alt="Coffe" width={35} height={35} />
+            <Image src={'./footer/social/ig.png'} alt="Coffe" width={35} height={35} />
           </a>
         </li>
         <li>
           <a href="instagram.com">
-            <Image src={'/footer/social/youtube.png'} alt="Coffe" width={35} height={35} />
+            <Image src={'./footer/social/youtube.png'} alt="Coffe" width={35} height={35} />
           </a>
         </li>
         <li>
           <a href="instagram.com">
-            <Image src={'/footer/social/spotify.png'} alt="Coffe" width={35} height={35} />
+            <Image src={'./footer/social/spotify.png'} alt="Coffe" width={35} height={35} />
           </a>
         </li>
         <li>
           <a href="instagram.com">
-            <Image src={'/footer/social/in.png'} alt="Coffe" width={35} height={35} />
+            <Image src={'./footer/social/in.png'} alt="Coffe" width={35} height={35} />
           </a>
         </li>
         <li>
           <a href="instagram.com">
-            <Image src={'/footer/social/tiktok.png'} alt="Coffe" width={30} height={35} />
+            <Image src={'./footer/social/tiktok.png'} alt="Coffe" width={30} height={35} />
           </a>
         </li>
         
         <li>
           <a href="instagram.com">
-            <Image src={'/footer/social/pinterest.png'} alt="Coffe" width={30} height={35} />
+            <Image src={'./footer/social/pinterest.png'} alt="Coffe" width={30} height={35} />
           </a>
         </li>
       </nav>
