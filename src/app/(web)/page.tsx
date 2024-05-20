@@ -1,8 +1,18 @@
-import { BannerMobile } from "@/components/ui";
+'use client'
+
+import { BannerMobile, ButtonCustomized } from "@/components/ui";
 import { getBlogs } from "@/utils";
 import { getHomePage } from "@/utils/homepage";
 import Image from "next/image";
 import { BannerHomepage } from "@/components/ui";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 
 export default async function () {
 
@@ -34,7 +44,59 @@ export default async function () {
             </div>
         </article>
         <div className="reveal-scroll">
-          <BannerMobile typeBanner='blog' data={blogs}/>
+
+
+        <div className='reveal-scroll bg-beigeLight'>
+        <Swiper pagination={true}
+        navigation={ {
+          nextEl: 'swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        } }
+        id='swiperMobile'
+        modules={[Pagination]} className="mySwiper">
+          
+          <SwiperSlide className='!h-full pb-6 '>
+              <div className='w-full text-center min-h-[600px] h-auto' >
+                <div className='relative'>
+                    <h3 className='absolute bg-lavazzaBlue text-white rounded p-1'>Latest News</h3>
+                    <img src={'/blog/default.png'} />
+                </div>
+              <div className='p-7'>
+                  <h2 className='text-2xl mt-4 text-lavazzaBlue'>{' Coffee Spreads Christmas Cheer to Long Beach Rescue Mission'}</h2>
+                  <p className='mt-4 text-gray'>{'Expresses gratitude to the Long Beach Rescue Mission for the opportunity to contribute to their Christmas celebration.'}</p>
+              </div>
+                <ButtonCustomized
+                type='link'
+                key={'title'}
+                url={'slug'}
+                background={'bg-lavazzaBlue'}
+                fontColor={'text-white'}
+                title={'VIEW MORE'}          />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className='!h-full pb-6 '>
+              <div className='w-full text-center min-h-[600px] h-auto' >
+                <div className='relative'>
+                    <h3 className='absolute bg-lavazzaBlue text-white rounded p-1'>Latest News</h3>
+                    <img src={'/blog/default.png'} />
+                </div>
+              <div className='p-7'>
+                  <h2 className='text-2xl mt-4 text-lavazzaBlue'>{'Qargo Coffee Spreads Christmas Cheer to Long Beach Rescue Mission'}</h2>
+                  <p className='mt-4 text-gray'>{'Expresses gratitude to the Long Beach Rescue Mission for the opportunity to contribute to their Christmas celebration.'}</p>
+              </div>
+                <ButtonCustomized
+                type='link'
+                key={'title'}
+                url={'slug'}
+                background={'bg-lavazzaBlue'}
+                fontColor={'text-white'}
+                title={'VIEW MORE'}          />
+            </div>
+          </SwiperSlide>
+        
+      </Swiper>
+    </div>
+
         </div>
 
         <div className="mt-6 flex justify-center">
