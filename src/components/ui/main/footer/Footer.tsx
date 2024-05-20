@@ -3,8 +3,7 @@ import Image from "next/image"
 
 export const Footer = () => {
   return (
-    <footer className="min-h-[400px] text-beige flex flex-col items-center justify-center bg-whiteBackground">
-      <Image className="mb-4" src={'/footer/coffee.png'} alt="Coffe" width={60} height={60} />
+    <footer className="py-6 text-beige flex flex-col items-center justify-center bg-whiteBackground">
       <span className="font-black mb-4">Follow us</span>
       <nav className="flex items-center justify-center gap-5 list-none px-12">
         <li>

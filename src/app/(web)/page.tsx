@@ -33,7 +33,13 @@ export default async function () {
               </figure>
             </div>
         </article>
-        <BannerMobile typeBanner='blog' data={blogs}/>
+        <div className="reveal-scroll">
+          <BannerMobile typeBanner='blog' data={blogs}/>
+        </div>
+
+        <div className="mt-6 flex justify-center">
+        <Image className="mb-4" src={'/footer/coffee.png'} alt="Coffe" width={60} height={60} />
+        </div>
 
     </div>
   );

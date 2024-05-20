@@ -36,33 +36,36 @@ export default async function () {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           </p>
 
-          <article className="text-center text-beige rounded-xl bg-beigeLight p-5 mb-11 slide-in-right">
+          <article className="reveal-scroll text-center text-beige rounded-xl bg-beigeLight p-5 mb-11 slide-in-right">
               <h3 className="pb-7 text-2xl ">Our Mission</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </article>
 
-          <article className="text-center text-gray p-5">
+          <article className="reveal-scroll text-center text-gray p-5">
               <h3 className="pb-7 text-2xl">Our Vision</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </article>
       </section>
 
-      <article className="bg-coffeStrong relative mt-[5rem]">
+      <article className=" bg-coffeStrong relative mt-[5rem]">
           <div className="ml-5 w-1/2 text-beigeLight max-h-[300px] px-4 py-5">
-              <h2 className="text-2xl ">Sustainability</h2>
-              <p className="mt-5 mb-7">
+              <h2 className="text-2xl slide-in-left-scroll">Sustainability</h2>
+              <p className="mt-5 mb-7 slide-in-left-scroll">
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
-              <ButtonCustomized
-                type="link"
-                key={'VIEW MORE'}
-                url={'/sustainability'}
-                background={'bg-beigeLight'}
-                fontColor={'text-beige'}
-                title={'VIEW MORE'}
-                />
+              <div className="slide-in-left-scroll">
+                <ButtonCustomized
+                  type="link"
+                  key={'VIEW MORE'}
+                  url={'/sustainability'}
+                  background={'bg-beigeLight'}
+                  fontColor={'text-beige'}
+                  title={'VIEW MORE'}
+                  />
+              </div>
+              
           </div>
-          <figure className="absolute bottom-0 right-0">
+          <figure className="absolute bottom-0 right-0 slide-in-right-scroll">
               <Image src="/about/sustainability.png" alt="Sustainability" width={180} height={40} />
           </figure>
       </article>
@@ -94,11 +97,11 @@ export default async function () {
       </section>
 
       <section className="mt-6">
-          <article className="flex items-end gap-6 px-6">
+          <article className="reveal-scroll flex items-end gap-6 px-6">
             <figure className="w-1/2 h-auto">
               <Image src={'/about/sara.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
             </figure>
-            <div className="w-1/2">
+            <div className="reveal-scroll w-1/2">
               <h3 className="text-lavazzaBlue text-xl mb-4">Meet the QargoCoffee family</h3>
               <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
               <ButtonCustomized
@@ -110,10 +113,10 @@ export default async function () {
             </div>
           </article>
           <article className="px-6 py-6 flex items-end gap-6 mt-12 bg-beigeLight">
-            <figure className="w-1/2 h-auto">
+            <figure className="reveal-scroll w-1/2 h-auto">
               <Image src={'/about/drink.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
             </figure>
-            <div className="w-1/2">
+            <div className="reveal-scroll w-1/2">
               <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
               <ButtonCustomized
               type="link"
@@ -125,7 +128,7 @@ export default async function () {
           </article>
           <article className="flex items-end gap-6 px-6 mt-12">
             
-            <div className="w-1/2">
+            <div className="reveal-scroll w-1/2">
               <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
               <ButtonCustomized
               type="link"
@@ -134,7 +137,7 @@ export default async function () {
                   fontColor={'text-white'}
                   title={'CONTACT US'}          />
             </div>
-            <figure className="w-1/2 h-auto">
+            <figure className="reveal-scroll w-1/2 h-auto">
               <Image src={'/about/women-call.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
             </figure>
           </article>

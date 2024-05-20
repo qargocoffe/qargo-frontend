@@ -18,7 +18,7 @@ type Banners = 'blog' | 'banner' | 'partner';
 export const BannerMobile = ({typeBanner, data }: { typeBanner: Banners, data: any}) => {
 
   return (
-    <div className='bg-beigeLight'>
+    <div className='reveal-scroll bg-beigeLight'>
         <Swiper pagination={true}
         navigation={ {
           nextEl: 'swiper-button-next',

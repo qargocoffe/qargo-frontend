@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ButtonCustomized } from "../../button/ButtonCustomized";
 import { RegisterCareers } from "./RegisterCareers";
 import { useUIStore } from "@/store";
+import Link from "next/link";
 
 
 
@@ -37,13 +38,18 @@ export const ModalCareers = () => {
                    <div className="text-center text-gray mt-8">
                         <h2 className="text-2xl">Corporate</h2>
                         <p className="mt-6 w-3/4 m-auto mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <ButtonCustomized
-                            icon={'/modal/linkedin.png'}
-                            type="link"
-                            url={'/team'}
-                            background={'bg-lavazzaBlue'}
-                            fontColor={'text-white'}
-                            title={'VIEW OFFERS'}          />
+                        <Link
+                        style={{
+                            letterSpacing: '0.13rem'
+                        }}
+                            className="" 
+                            href={'/'}> 
+                            <span className="bg-lavazzaBlue text-white flex items-center justify-center m-auto w-auto  min-w-[9rem] max-w-[11rem] px-2  py-[0.6rem] text-center rounded-full text-sm font-bold">
+                                VIEW OFFERS
+                                <Image className="ml-1" src={'/modal/linkedin.png'} width={26} height={26} alt="Something"/>
+                                </span> 
+                            
+                        </Link>
                    </div>
                    <hr className="my-10 text-gray" />
 

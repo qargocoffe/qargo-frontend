@@ -14,8 +14,8 @@ export default async function () {
 
   return (
     <div>
-      <h1 className="text-4xl text-lavazzaBlue text-center">Our Menu</h1>
-      <section className="w-full">
+      <h1 className="text-4xl text-lavazzaBlue text-center slide-in-top">Our Menu</h1>
+      <section className="w-full text-focus-in">
             <BannerCategories categories={categories} />
       </section>
     </div>

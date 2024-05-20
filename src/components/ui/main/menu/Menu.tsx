@@ -74,13 +74,6 @@ export const Menu = () => {
       </div>
 
       <div className="flex gap-4 slide-in-left">
-        <Image
-            src={'/menu/' + folderIcons + '/search.png'}
-            alt='lupa'
-            width={28}
-            height={28}
-            className="cursor-pointer"
-          />
         {isSideMenuOpen && (
             <Image
             

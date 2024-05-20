@@ -16,13 +16,13 @@ export const SustainabilityDetail = ({index, title, description, urlImage}: Prop
     }
  
   return (
-    <div>
+    <div className="reveal-scroll">
         <article className={
-            clsx('my-11 flex justify-between items-center gap-5', {
+            clsx('my-11 flex justify-between items-center gap-5 reveal-scroll', {
                 'flex-row-reverse gap-9':  randomPosition(index)
             })
         }>
-            <div className="">
+            <div className="reveal-scroll">
                 <h3 className="text-2xl text-lavazzaBlue">{title}</h3>
                 <p className="mt-3 text-gray">{description}</p>
             </div>

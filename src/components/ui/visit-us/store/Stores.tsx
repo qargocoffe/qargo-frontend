@@ -10,9 +10,27 @@ export const Stores = () => {
               <StoreCollapse title={'West Palm Beach - Clematis St.'} isOpen={true} />
               <StoreCollapse title={'Washington D.C. - Farragut'} isOpen={true} />
               <StoreCollapse title={'Fountain Valley - Newhope'} isOpen={true} />
+              <StoreCollapse title={'Fountain Valley - Newhope'} isOpen={true} />
+              <StoreCollapse title={'Fountain Valley - Newhope'} isOpen={true} />
+              <StoreCollapse title={'Fountain Valley - Newhope'} isOpen={true} />
+              <StoreCollapse title={'Fountain Valley - Newhope'} isOpen={true} />
+              <StoreCollapse title={'Fountain Valley - Newhope'} isOpen={true} />
+              <StoreCollapse title={'Fountain Valley - Newhope'} isOpen={true} />
+              <StoreCollapse title={'Fountain Valley - Newhope'} isOpen={true} />
+              <StoreCollapse title={'Fountain Valley - Newhope'} isOpen={true} />
               <StoreCollapse title={'San Jose - North Park'} isOpen={false} />
               <StoreCollapse title={'Canton Center Crossing'} isOpen={false} />
               <StoreCollapse title={'Reno - Victoria St.'} isOpen={false} />
+              <StoreCollapse title={'Detroit - Woodward Ave.'} isOpen={false} />
+              <StoreCollapse title={'Detroit - Woodward Ave.'} isOpen={false} />
+              <StoreCollapse title={'Detroit - Woodward Ave.'} isOpen={false} />
+              <StoreCollapse title={'Detroit - Woodward Ave.'} isOpen={false} />
+              <StoreCollapse title={'Detroit - Woodward Ave.'} isOpen={false} />
+              <StoreCollapse title={'Detroit - Woodward Ave.'} isOpen={false} />
+              <StoreCollapse title={'Detroit - Woodward Ave.'} isOpen={false} />
+              <StoreCollapse title={'Detroit - Woodward Ave.'} isOpen={false} />
+              <StoreCollapse title={'Detroit - Woodward Ave.'} isOpen={false} />
+              <StoreCollapse title={'Detroit - Woodward Ave.'} isOpen={false} />
               <StoreCollapse title={'Detroit - Woodward Ave.'} isOpen={false} />
             </section>
     </div>

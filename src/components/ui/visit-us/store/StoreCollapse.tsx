@@ -9,13 +9,13 @@ interface Props {
 
 export const StoreCollapse = ({ isOpen, title }): Props => {
   return (
-    <div className='slide-in-left'>
+    <div className='slide-in-left reveal-scroll'>
             {
               isOpen && (
                 <label>
                   <input className="peer/showLabel absolute scale-0 w-100" type="checkbox" />
                     <Image src='/blog/default.png' height={100} width={100}
-                    layout='responsive' alt='Main' className='transition-all duration-300 mb-4 hidden peer-checked/showLabel:block ' />
+                    layout='responsive' alt='Main' className='transition-all duration-1000 mb-4 hidden peer-checked/showLabel:block ' />
 
                     <div className="block max-h-16 w-full overflow-hidden rounded-lg py-0 transition-all duration-300 peer-checked/showLabel:max-h-96">
                     <div className="flex w-full justify-between px-5 h-14 cursor-pointer items-center">
