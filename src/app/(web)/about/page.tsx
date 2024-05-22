@@ -71,7 +71,7 @@ export default async function () {
       </article>
 
 
-      <section className="px-9">
+      <section>
           <SustainabilityDetail 
           title={'Planet'} 
           description={'Our products are made with Lavazza ¡Tierra! Selection, a sustainable Rainforest Alliance Certified coffee blend, that promotes the rights and well-being of workers communities while meeting rigorous social and environmental '} 

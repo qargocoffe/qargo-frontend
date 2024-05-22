@@ -40,7 +40,7 @@ export const Menu = () => {
   }
 
   const getFolderIcons = () => {
-    if(pathname === '/' || pathname === '/home' || pathname === '') {
+    if(pathname === '/' || pathname === '/home' || pathname === '' || pathname === '/team' ) {
       setFolderIcons('white')
     }
     else{

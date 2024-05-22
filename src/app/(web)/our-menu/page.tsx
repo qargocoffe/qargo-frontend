@@ -4,32 +4,44 @@ import { Category } from '../../../interfaces/our-menu/category.interface';
 import Image from "next/image";
 
 export default async function () {
-
-
     //const categories = await getCategories();
-    const categories = [{"slug":"lavazza-hot-classics"},
-    {"slug":"fresh-and-cool"},{"slug":"tea"},
-    {"slug":"seasonal"},{"slug":"lotus"},{"slug":"kids-and-pets"},
-    {"slug":"taste-of-italy"},{"slug":"food"},{"slug":"grabd-and-go"}];
+    const categories = [
+      {
+          "slug": "lavazza-hot-classics",
+          "image": "/our-menu/image4.png"
+      },
+      {
+          "slug": "fresh-and-cool",
+          "image": "/our-menu/image5.png"
+      },
+      {
+          "slug": "tea",
+          "image": "/our-menu/image6.png"
+      },
+      {
+          "slug": "seasonal",
+          "image": "/our-menu/image7.png"
+      },
+      {
+          "slug": "lotus",
+          "image": "/our-menu/image8.png"
+      },
+      {
+          "slug": "kids-and-pets",
+          "image": "/our-menu/image9.png"
+      },
+      {
+          "slug": "taste-of-italy",
+          "image": "/our-menu/coffee.png"
+      },
+  ];
    
 
   return (
     <div>
       <h1 className="text-4xl text-lavazzaBlue text-center slide-in-top">Our Menu</h1>
-      
-     
       <section className="w-full text-focus-in">
-          <section className="absolute w-full h-full flex items-center z-20">
-              <figure className="ball">
-                <Image src={'/our-menu/cubo.png'} width={90} height={90} alt="Cubo hielo"/>
-              </figure>
-              <figure className="ball">
-                <Image src={'/our-menu/cubo.png'} width={90} height={90} alt="Cubo hielo"/>
-              </figure>
-              <figure className="ball">
-                <Image src={'/our-menu/cubo.png'} width={90} height={90} alt="Cubo hielo"/>
-              </figure>
-          </section>
+          
             <BannerCategories categories={categories} />
       </section>
     </div>

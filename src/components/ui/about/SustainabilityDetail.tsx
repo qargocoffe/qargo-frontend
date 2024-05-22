@@ -11,8 +11,8 @@ interface Props {
 export const SustainabilityDetail = ({index, title, description, urlImage}: Props ) => {
 
     const randomPosition = (index: number) => {
-        if(index % 2 === 0) return false;
-        return true;       
+        if(index % 2 === 0) return true;
+        return false; 
     }
  
   return (
@@ -22,12 +22,16 @@ export const SustainabilityDetail = ({index, title, description, urlImage}: Prop
                 'flex-row-reverse gap-9':  randomPosition(index)
             })
         }>
-            <div className="reveal-scroll">
+            <div className={
+                clsx('reveal-scroll w-1/2', 
+                randomPosition(index) ? 'pr-9': 'pl-9' 
+                )
+            }>
                 <h3 className="text-2xl text-lavazzaBlue">{title}</h3>
                 <p className="mt-3 text-gray">{description}</p>
             </div>
-            <figure>
-                <Image src={urlImage} alt="Coffee" width={1600} height={2} />
+            <figure className="w-1/2">
+                <Image src={urlImage} alt="Coffee" width={1200} height={1200} />
             </figure>
         </article>
     </div>

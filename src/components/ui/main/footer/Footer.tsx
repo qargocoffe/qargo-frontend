@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export const Footer = () => {
   return (
-    <footer className="py-6 text-beige flex flex-col items-center justify-center bg-whiteBackground">
+    <footer className="py-6 text-beige flex flex-col items-center justify-center bg-whiteBackground slide-in-left">
       <span className="font-black mb-4">Follow us</span>
       <nav className="flex items-center justify-center gap-5 list-none px-12">
         <li>
