@@ -33,17 +33,21 @@ export default async function () {
             <h2 className="slide-in-right">Our <br />History</h2>
           </div>
           <p className="text-gray ml-3 text-right mb-11 slide-in-left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Our commitment to bringing Italy’s Finest Coffee & Pastries to the US is the pen that writes our history. Founded in 2020, Our story started with a single store in the golden state of California, quickly spreading our presence to Florida, Colorado, Washington, D.C., and across the USA. Today, we’re creating the new norm: A fusion of Italian quality and tradition and the rich tapestry of flavors from every corner of the USA.
           </p>
 
           <article className="reveal-scroll text-center text-beige rounded-xl bg-beigeLight p-5 mb-11 slide-in-right">
               <h3 className="pb-7 text-2xl ">Our Mission</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>
+              We’re bringing coffee culture back to its rightful status: a morning ritual, an afternoon escape, a moment of respite, an excuse to create new memories with loved ones. Today, many take coffee for granted, and we’re here to change that.
+              </p>
           </article>
 
           <article className="reveal-scroll text-center text-gray p-5">
               <h3 className="pb-7 text-2xl">Our Vision</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p>
+              We stand as a beacon of warmth and connection in every community with a Qargo Coffee shop, a haven where coffee lovers are reminded of why we adore this beverage. It isn’t fast food, and we’re setting a new standard in the industry.
+              </p>
           </article>
       </section>
 
@@ -51,7 +55,7 @@ export default async function () {
           <div className="ml-5 w-1/2 text-beigeLight max-h-[300px] px-4 py-5">
               <h2 className="text-2xl slide-in-left-scroll">Sustainability</h2>
               <p className="mt-5 mb-7 slide-in-left-scroll">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              With Lavazza ¡Tierra! in every coffee cup, our commitment to the planet is at the forefront of our philosophy.
               </p>
               <div className="slide-in-left-scroll">
                 <ButtonCustomized
@@ -97,13 +101,15 @@ export default async function () {
       </section>
 
       <section className="mt-6">
-          <article className="reveal-scroll flex items-end gap-6 px-6">
+          <article className="reveal-scroll flex items-center gap-6 px-6">
             <figure className="w-1/2 h-auto">
-              <Image src={'/about/sara.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
+              <Image src={'/team/miniature.png'} width={500} height={20} alt="Prueba" />
             </figure>
             <div className="reveal-scroll w-1/2">
               <h3 className="text-lavazzaBlue text-xl mb-4">Meet the QargoCoffee family</h3>
-              <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <p className="text-gray text-left mb-9">
+              Our team of expert architects, designers, baristas, and marketing specialists are the backbone of Qargo Coffee.
+              </p>
               <ButtonCustomized
               type="link"
                   url={'/team'}
@@ -117,7 +123,9 @@ export default async function () {
               <Image src={'/about/drink.png'} width={20} height={20} alt="Prueba" layout='responsive'/>
             </figure>
             <div className="reveal-scroll w-1/2">
-              <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <p className="text-gray text-left mb-9">
+              Looking for new opportunities? Discover our open positions and change the future of coffee.
+              </p>
               <ButtonCustomized
               type="link"
                   url={'/team'}
@@ -129,7 +137,9 @@ export default async function () {
           <article className="flex items-end gap-6 px-6 mt-12">
             
             <div className="reveal-scroll w-1/2">
-              <p className="text-gray text-left mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <p className="text-gray text-left mb-9">
+              Reach out if you have any questions regarding upcoming openings, new products, and more.
+              </p>
               <ButtonCustomized
               type="link"
                   url={'/contact'}

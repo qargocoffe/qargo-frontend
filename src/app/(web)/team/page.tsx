@@ -10,7 +10,7 @@ export default function () {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
       }}>
-            <div className="py-9 px-5 slide-in-left flex absolute bottom-0 flex-col justify-start items-start">
+            <div className="text-ceramic py-9 px-5 slide-in-left flex absolute bottom-0 flex-col justify-start items-start">
               <h1 className="text-6xl">Our <br />Team</h1>
               <p className="w-3/5 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
             </div>

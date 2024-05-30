@@ -15,6 +15,9 @@ export default function () {
 
      <section className="px-6 text-left pt-40 ">
       <h2 className="slide-in-left text-3xl text-lavazzaBlue mb-6 ">Contact Us</h2>
+      <p className="slide-in-left mb-9 w-1/2 text-left">
+      Any questions or feedback? We’re glad to hear from you! Just fill out the form below, and we’ll get back to you as soon as possible.
+      </p>
       <span className="slide-in-left max-w-[12rem] px-4 py-3 flex gap-3 items-center cursor-pointer rounded-full border border-slate-beige hover:border-indigo-300 ">
         <Image src={'/logos/cellphone.png'} width={15} height={20} alt="Cellphone" />
         (562)-733-8300
