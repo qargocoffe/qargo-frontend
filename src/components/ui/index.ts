@@ -1,3 +1,6 @@
+export { Article } from './franchisies/Article';
+export { Thumbnail } from './visit-us/order/Thumbnail';
+export { ThumbnailContainer } from './visit-us/order/ThumbnailContainer';
 export { BlogThumbnail } from './blog/BlogThumbnail';
 export { Descriptive } from './descriptive/Descriptive';
 export { TeamContainer } from './team/TeamContainer';

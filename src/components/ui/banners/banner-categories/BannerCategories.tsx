@@ -16,17 +16,7 @@ export const BannerCategories = ({categories}: any ) => {
 
   return (
     <div>
-      {isActive && (
-        <section className="w-full h-full active-slider-section relative">
-          {/* Your conditional content here */}
-          <figure className=" absolute inset-0 top-10 left-2 w-48 h-48 z-40 flex items-center justify-center ">
-            <Image src={'/our-menu/cubo.png'} width={130} height={130} alt="Cubo hielo" className="scale-up-center"/>
-          </figure>
-          <figure className=" absolute inset-0 top-52 left-2 w-48 h-48 z-40 flex items-center justify-center ">
-            <Image src={'/our-menu/cubo.png'} width={300} height={300} alt="Cubo hielo" className="scale-up-center"/>
-          </figure>
-        </section>
-      )}
+      
 
       <Swiper
         effect={'coverflow'}
