@@ -1,6 +1,6 @@
 import { Breadcrumb, ProductItem } from "@/components/ui";
 
-export default function () {
+export default function CategoriesPage() {
   return (
     <div>
         <Breadcrumb/>

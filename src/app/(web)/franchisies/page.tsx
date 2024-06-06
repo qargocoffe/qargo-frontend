@@ -1,8 +1,7 @@
 import { Article, ButtonCustomized, Descriptive } from "@/components/ui";
 import PartnerSlide from "@/components/ui/about/PartnerSlide";
-import Image from "next/image";
 
-export default function() {
+export default function FranchisiesPage() {
   return (
     <div>
       <section className='w-full h-full min-h-[30rem] top-[-6rem] relative slide-in-top' 

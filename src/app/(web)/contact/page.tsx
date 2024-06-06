@@ -1,7 +1,7 @@
 import { RegisterForm } from "@/components/ui";
 import Image from "next/image";
 
-export default function () {
+export default function ContactPage() {
   return (
     <div
     className="bg-scroll bg-whiteBackground text-beige"

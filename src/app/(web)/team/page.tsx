@@ -1,7 +1,7 @@
 import { TeamContainer } from "@/components/ui";
 import Image from "next/image";
 
-export default function () {
+export default function TeamPage() {
   return (
     <div>
       <section className='w-full h-full min-h-[30rem] top-[-6rem] relative slide-in-top' 

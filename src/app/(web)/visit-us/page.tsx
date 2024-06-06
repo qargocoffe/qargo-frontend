@@ -1,6 +1,6 @@
 import { MapContainer, Stores } from "@/components/ui";
 
-export default function () {
+export default function VisitUs() {
     return (
       <div>
         <MapContainer/>

@@ -1,9 +1,6 @@
 import { BannerCategories } from "@/components/ui";
-import { getCategories } from "@/utils";
-import { Category } from '../../../interfaces/our-menu/category.interface';
-import Image from "next/image";
 
-export default async function () {
+export default async function OurMenuPage() {
     //const categories = await getCategories();
     const categories = [
       {
@@ -41,7 +38,6 @@ export default async function () {
     <div>
       <h1 className="text-4xl text-lavazzaBlue text-center slide-in-top">Our Menu</h1>
       <section className="w-full text-focus-in">
-          
             <BannerCategories categories={categories} />
       </section>
     </div>

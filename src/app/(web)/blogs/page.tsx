@@ -1,6 +1,6 @@
 import { BlogThumbnail, ButtonCustomized } from "@/components/ui";
 
-export default function () {
+export default function BlogsPage() {
   return (
     <div className="px-5">
       <h1 className="slide-in-left text-lavazzaBlue font-normal text-6xl">Blog</h1>

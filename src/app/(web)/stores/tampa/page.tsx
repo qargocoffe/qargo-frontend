@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function () {
+export default function TampaPage() {
   return (
     <div>
        <section className='w-full h-full min-h-[30rem] top-[-4rem] relative slide-in-top' 

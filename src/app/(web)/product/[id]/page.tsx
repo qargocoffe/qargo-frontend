@@ -1,7 +1,7 @@
 import { Breadcrumb } from "@/components/ui";
 import Image from "next/image";
 
-export default function () {
+export default function ProductPage() {
   return (
     <div>
         <Breadcrumb/>

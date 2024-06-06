@@ -1,6 +1,6 @@
 import { ThumbnailContainer } from "@/components/ui";
 
-export default function() {
+export default function OrderPage() {
   return (
     <div>
       <section className='w-full h-full min-h-[30rem] top-[-6rem] relative slide-in-top' 

@@ -1,6 +1,6 @@
 import { Descriptive } from "@/components/ui";
 
-export default function () {
+export default function SustainabilityPage() {
   return (
     <div>
       <section className='w-full h-full min-h-[30rem] top-[-6rem] relative slide-in-top' 
