@@ -10,7 +10,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { BlogCard } from '../../blog/BlogCard';
 import { Blog } from '@/interfaces/blog/blog.interface';
-import { Partner } from '@/interfaces';
 import PartnerSlide from '../../about/PartnerSlide';
 
 type Banners = 'blog' | 'banner' | 'partner';
@@ -36,9 +35,9 @@ export const BannerMobile = ({typeBanner, data }: { typeBanner: Banners, data: a
         ))}
 
 
-      {typeBanner === 'partner' &&  data.map((partner: Partner) => (
+      {typeBanner === 'partner' &&  data.map((partner: any) => (
           <SwiperSlide key={partner.title} className='!h-full pb-6 '>
-            <PartnerSlide {...partner} />
+            <PartnerSlide title={partner.title} banner={partner.banner} description={partner.description} />
           </SwiperSlide>
         ))}
       </Swiper>
