@@ -1,9 +1,9 @@
 export interface PartnersResponse {
-    data: Datum[];
-    meta: Meta;
+    data: Datum2[];
+    meta: Meta2;
 }
 
-export interface Datum {
+export interface Datum2 {
     id:         number;
     attributes: Partner;
 }
@@ -11,11 +11,11 @@ export interface Datum {
 export interface Partner {
     title:       string;
     description: null | string;
-    banner:      Banner;
+    banner:      Banner11;
     logo:        Logo;
 }
 
-export interface Banner {
+export interface Banner11 {
     data: BannerData;
 }
 
@@ -75,10 +75,10 @@ export interface Logo {
 
 export interface LogoData {
     id:         number;
-    attributes: FluffyAttributes;
+    attributes: FluffyAttributes1;
 }
 
-export interface FluffyAttributes {
+export interface FluffyAttributes1 {
     name:              string;
     alternativeText:   null;
     caption:           null;
@@ -101,7 +101,7 @@ export interface FluffyFormats {
     thumbnail: Small;
 }
 
-export interface Meta {
+export interface Meta2 {
     pagination: Pagination;
 }
 

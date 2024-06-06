@@ -1,9 +1,9 @@
 export interface BlogsResponse {
-    data: Datum[];
-    meta: Meta;
+    data: Datum1[];
+    meta: Meta1;
 }
 
-export interface Datum {
+export interface Datum1 {
     id:         number;
     attributes: Blog;
 }
@@ -21,22 +21,22 @@ export interface Blog {
 }
 
 export interface Thumbnail {
-    data: Data;
+    data: Data1;
 }
-export interface Data {
+export interface Data1 {
     id:         number;
-    attributes: DataAttributes;
+    attributes: DataAttributes1;
 }
 
-export interface DataAttributes {
+export interface DataAttributes1 {
     url: string;
 }
 
-export interface Meta {
-    pagination: Pagination;
+export interface Meta1 {
+    pagination: Pagination1;
 }
 
-export interface Pagination {
+export interface Pagination1 {
     page:      number;
     pageSize:  number;
     pageCount: number;

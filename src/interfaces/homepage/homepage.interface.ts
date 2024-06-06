@@ -1,7 +1,7 @@
 
 export interface HomepageResponse {
     data: HomepageResponseData;
-    meta: Meta;
+    meta: Meta3;
 }
 
 export interface HomepageResponseData {
@@ -16,11 +16,11 @@ export interface HomePage {
     createdAt?:   Date;
     updatedAt?:   Date;
     publishedAt?: Date;
-    banners:     Banner[];
+    banners:     Banner2[];
     picture:     Picture;
 }
 
-export interface Banner {
+export interface Banner2 {
     id:     number;
     slug:   string;
     banner: Picture;
@@ -32,10 +32,10 @@ export interface Picture {
 
 export interface PictureData {
     id:         number;
-    attributes: FluffyAttributes;
+    attributes: FluffyAttributes2;
 }
 
-export interface FluffyAttributes {
+export interface FluffyAttributes2 {
     name:              string;
     alternativeText:   null;
     caption:           null;
@@ -73,5 +73,5 @@ export interface Medium {
     url:         string;
 }
 
-export interface Meta {
+export interface Meta3 {
 }

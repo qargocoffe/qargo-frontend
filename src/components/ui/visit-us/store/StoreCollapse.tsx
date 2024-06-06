@@ -7,7 +7,7 @@ interface Props {
   title: string
 }
 
-export const StoreCollapse = ({ isOpen, title }): Props => {
+export const StoreCollapse = ({ isOpen, title }: Props )=> {
   return (
     <div className='slide-in-left reveal-scroll'>
             {
