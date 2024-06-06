@@ -1,3 +1,5 @@
+export { ProductItem } from './product/ProductItem';
+export { Breadcrumb } from './main/breadcrumb/Breadcrumb';
 export { Article } from './franchisies/Article';
 export { Thumbnail } from './visit-us/order/Thumbnail';
 export { ThumbnailContainer } from './visit-us/order/ThumbnailContainer';

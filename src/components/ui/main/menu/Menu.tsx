@@ -40,7 +40,7 @@ export const Menu = () => {
   }
 
   const getFolderIcons = () => {
-    if(pathname === '/' || pathname === '/home' || pathname === '' || pathname === '/team' || pathname === '/stores/tampa'  ) {
+    if(pathname === '/' || pathname === '/home' || pathname === '' || pathname === '/team' || pathname === '/stores/tampa' || pathname === '/sustainability'  ) {
       setFolderIcons('white')
     }
     else{
