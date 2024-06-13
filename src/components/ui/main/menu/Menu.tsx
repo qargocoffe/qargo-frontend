@@ -55,8 +55,8 @@ export const Menu = () => {
                       "Items": [
                           {
                               "id": 9,
-                              "title": "Our History",
-                              "slug": "our-history"
+                              "title": "Summer",
+                              "slug": "summer"
                           },
                           {
                               "id": 10,
@@ -214,7 +214,9 @@ export const Menu = () => {
   }
 
   const getFolderIcons = () => {
-    if(pathname === '/' || pathname === '/home' || pathname === '' || pathname === '/team' || pathname === '/stores/tampa' || pathname === '/sustainability' || pathname === '/order-pickup'   ) {
+    if(pathname === '/' || pathname === '/home' || pathname === ''
+       || pathname === '/team' || pathname === '/stores/tampa' || pathname === '/sustainability'
+        || pathname === '/order-pickup'  || pathname === '/summer'  ) {
       setFolderIcons('white')
     }
     else{

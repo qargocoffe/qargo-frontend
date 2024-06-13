@@ -5,7 +5,7 @@ export default function CategoriesPage() {
     <div>
         <Breadcrumb/>
         <section className="px-7">
-          <h1 className="text-lavazzaBlue text-xl font-semibold tracking-wider mb-6">LAVAZZA HOT</h1>
+          <h1 className="text-lavazzaBlue text-xl font-semibold tracking-wider mb-6 slide-in-top">LAVAZZA HOT</h1>
           <ProductItem title="CAFFE AMERICANO" image="/products/image1.png" url="/hey" /> 
           <ProductItem title="Caffe Au Lait" image="/products/image2.png" url="/hey" /> 
           <ProductItem title="Cappuccino" image="/products/image3.png" url="/hey" /> 

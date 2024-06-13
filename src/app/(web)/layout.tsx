@@ -8,7 +8,7 @@ export default function WebLayout({
  children: React.ReactNode;
 }) {
   return (
-    <div className="text-base leading-6 bg-whiteBackground overscroll-x-hidden">
+    <div className="text-base leading-6 bg-whiteBackground !overscroll-x-hidden">
         <Header/>
         <ModalCareers/>
             {children}

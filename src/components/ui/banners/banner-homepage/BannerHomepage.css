@@ -1,10 +1,17 @@
-#swiperHome {
-    /* Set the position to relative to make sure the pagination stays within */
-    position: relative;
+    
+  #swiperHome .swiper-pagination-bullet-active {
+    background-color: #B7AA8C !important; /* Change to your desired active background color */
   }
   
-  .swiper-pagination{
-    /* Style the pagination container */
-    position: absolute !important;
-    top: 35rem !important;  /* Adjust this value according to your design */
-  } 
+  #swiperHome  .swiper-pagination-bullet {
+    width: 12px; /* Change to your desired width */
+    height: 12px; /* Optionally, change the height as well */
+    /* Add any other styles as needed */
+  }
+  
+  #swiperHome  .swiper-pagination-bullet {
+    background: transparent;
+    border: 3px solid #B7AA8C;
+    margin-right: 0.7rem !important; /* Adjust the horizontal margin to increase the gap between bullets */
+    /* Add any other styles as needed */
+  }

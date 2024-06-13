@@ -19,6 +19,7 @@ export const BannerCategories = ({categories}: any ) => {
       
 
       <Swiper
+        id='bannerCategories'
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
@@ -34,10 +35,7 @@ export const BannerCategories = ({categories}: any ) => {
         }}
         centerInsufficientSlides={true}
         pagination={true}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        }}
+       
         onSlideChange={(swiper) => {
           setIsActive(swiper.activeIndex === swiper.realIndex); // Update state based on active slide
         }}
@@ -46,6 +44,7 @@ export const BannerCategories = ({categories}: any ) => {
       >
         {categories && categories.map((category: any, index: number) => (
           <SwiperSlide 
+          id='bannerCategories'
             key={index}
             className='!w-[260px] !h-[500px] bg-cover bg-center rounded-xl border border-grayLight' 
             style={{ backgroundImage: 'url(' + category.image +')' }}
@@ -61,9 +60,6 @@ export const BannerCategories = ({categories}: any ) => {
                 />
               </div>
             </div>
-            <div className="swiper-pagination"></div>
-            <div className="swiper-button-prev"></div>
-            <div className="swiper-button-next"></div>
           </SwiperSlide>
         ))}
       </Swiper>

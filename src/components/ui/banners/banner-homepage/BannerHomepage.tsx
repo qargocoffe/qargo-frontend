@@ -3,7 +3,7 @@
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-//import './BannerHomepage.css';
+import './BannerHomepage.css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -19,10 +19,7 @@ export const BannerHomepage = () => {
   return (
     <div className='fade-in-fwd mb-20 bg-grayBackground '>
       <Swiper pagination={true}
-        navigation={ {
-          nextEl: 'swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        } }
+        
         id='swiperHome' 
         modules={[Pagination]}
         className="mySwiper !pt-0 m-[-5rem] !max-h-[560px] !min-h-[500px]">

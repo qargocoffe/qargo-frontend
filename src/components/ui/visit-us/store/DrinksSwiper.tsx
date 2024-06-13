@@ -38,11 +38,6 @@ export const DrinksSwiper = (drinks: Drink[]) => {
         }}
         centerInsufficientSlides={true}
         pagination={true}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        }}
-      
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper top-[-4rem] relative">
         
@@ -57,7 +52,7 @@ export const DrinksSwiper = (drinks: Drink[]) => {
               <div className='w-1/2 text-left tracking-widest '>
                 <h3 className='text-lavazzaBlue mb-3 font-semibold'>GUATA </h3>
                 <p className='text-gray'>Inspired by the Big Guava nickname, a classic latte with sweet guava notes|</p>
-                <Link href={'/'} className='text-center rounded-full bg-lavazzaBlue py-2  block mt-3'>
+                <Link href={'/'} className='text-center rounded-full bg-lavazzaBlue py-2 w-2/3 block mt-3'>
                   <span className='font-semibold text-sm text-white'>
                     ORDER HERE
                   </span>
@@ -71,19 +66,20 @@ export const DrinksSwiper = (drinks: Drink[]) => {
             >
             <article className='flex flex-row justify-center items-center text-center '>
               <figure className='my-2 w-1/2'>
-                <Image src={'/stores/drinks/image1.png'} layout='responsive' width={90} height={60} alt='Eny' />
+                <Image src={'/stores/drinks/image2.png'} layout='responsive' width={90} height={60} alt='Eny' />
               </figure>
               <div className='w-1/2 text-left tracking-widest '>
-                <h3 className='text-lavazzaBlue mb-3 font-semibold'>GUATA </h3>
+                <h3 className='text-lavazzaBlue mb-3 font-semibold'>COLORADO ROX FRAPPE </h3>
                 <p className='text-gray'>Inspired by the Big Guava nickname, a classic latte with sweet guava notes|</p>
-                <Link href={'/'} className='text-center rounded-full bg-lavazzaBlue py-2  block mt-3'>
-                  <span className='font-semibold text-sm text-white'>
+                <Link href={'/'} className='text-center rounded-full bg-lavazzaBlue py-2  w-2/3 block mt-3'>
+                  <span className='font-semibold  text-sm text-white'>
                     ORDER HERE
                   </span>
                 </Link>
               </div>
             </article>
           </SwiperSlide>
+          
       </Swiper>
     </div>
   )

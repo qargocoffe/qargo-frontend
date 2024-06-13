@@ -1,3 +1,4 @@
+export { ProductArticle } from './campaign/ProductArticle';
 export { NutritionalItem } from './product/NutritionalItem';
 export { NutritionalFacts } from './product/NutritionalFacts';
 export { DrinksSwiper } from './visit-us/store/DrinksSwiper';

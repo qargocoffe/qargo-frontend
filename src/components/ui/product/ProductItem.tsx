@@ -12,7 +12,7 @@ interface Props {
 export const ProductItem = ({title, url, image}: Props) => {
   return (
     <Link href={'/product/1'} >
-      <div className=" py-3 grid gap-1 justify-items-center items-center grid-cols-3">
+      <div className="text-focus-in py-3 grid gap-1 justify-items-center items-center grid-cols-3">
               <Image src={image}
                                       width={65}
                                       

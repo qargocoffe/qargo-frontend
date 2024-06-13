@@ -20,7 +20,8 @@ export default function FranchisiesPage() {
                 Discover our franchise system and kickstart a prosperous coffee venture.
           </p>
           <div className="slide-in-right">
-            <ButtonCustomized background='bg-lavazzaBlue' fontColor='text-white' title='START NOW' url={''} type='button' />
+            <ButtonCustomized background='bg-lavazzaBlue' fontColor='text-white' title='START NOW' 
+            url={'/franchisies/register'} type='link' />
           </div>
         </section>
 
@@ -95,7 +96,7 @@ export default function FranchisiesPage() {
                 </figure>
                 <h3 className=' w-3/4 m-auto text-lavazzaBlue text-center pt-6 tracking-widest uppercase font-semibold'>Take the first step to join us!</h3>
                 <div className="pb-6">
-                  <ButtonCustomized background='bg-lavazzaBlue' fontColor='text-white' title='CLICK HERE' url={''} type='button' />
+                  <ButtonCustomized background='bg-lavazzaBlue' fontColor='text-white' title='CLICK HERE' url={'/franchisies/register'} type='link' />
                 </div>
             </div>
           </section>
