@@ -1,3 +1,9 @@
+export { NutritionalItem } from './product/NutritionalItem';
+export { NutritionalFacts } from './product/NutritionalFacts';
+export { DrinksSwiper } from './visit-us/store/DrinksSwiper';
+export { FranciseeForm } from './franchisies/FranciseeForm';
+export { ContactForm } from './franchisies/ContactForm';
+export { ArticleStore } from './franchisies/ArticleStore';
 export { ProductItem } from './product/ProductItem';
 export { Breadcrumb } from './main/breadcrumb/Breadcrumb';
 export { Article } from './franchisies/Article';
@@ -25,3 +31,5 @@ export { Sidebar } from "./main/sidebar/Sidebar";
 export { BannerMobile } from "./banners/banner-mobile/BannerMobile";
 export { BannerHomepage } from "./banners/banner-homepage/BannerHomepage";
 export { SustainabilityDetail } from "./about/SustainabilityDetail";
+
+

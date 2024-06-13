@@ -214,7 +214,7 @@ export const Menu = () => {
   }
 
   const getFolderIcons = () => {
-    if(pathname === '/' || pathname === '/home' || pathname === '' || pathname === '/team' || pathname === '/stores/tampa' || pathname === '/sustainability'  ) {
+    if(pathname === '/' || pathname === '/home' || pathname === '' || pathname === '/team' || pathname === '/stores/tampa' || pathname === '/sustainability' || pathname === '/order-pickup'   ) {
       setFolderIcons('white')
     }
     else{

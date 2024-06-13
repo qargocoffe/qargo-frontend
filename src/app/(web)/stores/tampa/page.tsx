@@ -1,7 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
+import { DrinksSwiper } from '../../../../components/ui/visit-us/store/DrinksSwiper';
 
 export default function TampaPage() {
+
+
+  const drinks = [
+    {
+      title: "GUAVA JAVA LATE",
+      description: "Inspired by the Big Guava nickname, a classic latte with sweet guava notes.",
+      image: "/stores/drinks/image1.png"
+    },
+    {
+      title: "COLORADO ROX FRAPPE",
+      description: "Inspired by the Big Guava nickname, a classic latte with sweet guava notes.",
+      image: "/stores/drinks/image2.png"
+    },
+    {
+      title: "GUAVA JAVA LATE",
+      description: "Inspired by the Big Guava nickname, a classic latte with sweet guava notes.",
+      image: "/stores/drinks/image1.png"
+    },
+  ]
+
   return (
     <div>
       <section 
@@ -33,6 +54,10 @@ export default function TampaPage() {
           EXCLUSIVE DRINKS
         </h2>
       </section>
+
+      <DrinksSwiper {...drinks} />
+
+      
       <iframe 
         className="w-full min-h-[409px] mb-9" 
         allow={'clipboard-write'} 

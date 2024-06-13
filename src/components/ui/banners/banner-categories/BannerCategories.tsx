@@ -54,7 +54,7 @@ export const BannerCategories = ({categories}: any ) => {
               <div className='mb-5'>
                 <ButtonCustomized
                   type="link"
-                  url={'/team'}
+                  url={'/categories/1'}
                   background={'bg-lavazzaBlue'}
                   fontColor={'text-white'}
                   title={category.slug.replace(/-/g, ' ').toUpperCase()}

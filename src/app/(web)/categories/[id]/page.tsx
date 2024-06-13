@@ -12,6 +12,7 @@ export default function CategoriesPage() {
           <ProductItem title="Chai Tea Latte" image="/products/image4.png" url="/hey" /> 
           <ProductItem title="Cortado" image="/products/image5.png" url="/hey" /> 
           <ProductItem title="CAFFE AMERICANO" image="/products/image6.png" url="/hey" /> 
+      
         </section>
     </div>
   );

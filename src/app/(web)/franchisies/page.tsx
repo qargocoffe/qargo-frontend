@@ -1,5 +1,6 @@
-import { Article, ButtonCustomized, Descriptive } from "@/components/ui";
+import { Article, ArticleStore, ButtonCustomized, ContactForm, Descriptive } from "@/components/ui";
 import PartnerSlide from "@/components/ui/about/PartnerSlide";
+import Image from "next/image";
 
 export default function FranchisiesPage() {
   return (
@@ -75,6 +76,31 @@ export default function FranchisiesPage() {
             banner="/partners/image4.png"
             description="We’ve teamed-up with the biggest name in coffee to bring you an exceptional product for your customers. Backed by 125 years of experience, we can assure that with every cup served at your location, your customers will only receive the best."/>
 
+          </section>
+          <section className="">
+            <h3 className="text-lavazzaBlue text-center tracking-widest text-2xl py-6">OUR STORES</h3>
+            <ArticleStore 
+            image="/franchisies/stores/image1.png"
+            title="Sleek and modern style" 
+            description=" Inspired by industrial design and architectural trends. Every Qargo Coffee store will transform the landscape of your city." />
+            
+            <ArticleStore 
+            image="/franchisies/stores/image2.png"
+            title="Kiosk and Drive-Thrustores available" 
+            description=" We adapt to the market needs with stand-alone, kiosk or drive-thru locations. At Qargo Coffee, possibilities are endless." />
+
+            <div className='mb-6 bg-beigeLight'>
+                <figure className="w-full">
+                        <Image src={'/franchisies/stores/image3.png'} layout='responsive' width={300} height={200} alt="Grados" />  
+                </figure>
+                <h3 className=' w-3/4 m-auto text-lavazzaBlue text-center pt-6 tracking-widest uppercase font-semibold'>Take the first step to join us!</h3>
+                <div className="pb-6">
+                  <ButtonCustomized background='bg-lavazzaBlue' fontColor='text-white' title='CLICK HERE' url={''} type='button' />
+                </div>
+            </div>
+          </section>
+          <section >
+            <ContactForm />
           </section>
     </div>
   );
