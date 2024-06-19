@@ -1,3 +1,4 @@
+
 export { ProductArticle } from './campaign/ProductArticle';
 export { NutritionalItem } from './product/NutritionalItem';
 export { NutritionalFacts } from './product/NutritionalFacts';
@@ -32,5 +33,6 @@ export { Sidebar } from "./main/sidebar/Sidebar";
 export { BannerMobile } from "./banners/banner-mobile/BannerMobile";
 export { BannerHomepage } from "./banners/banner-homepage/BannerHomepage";
 export { SustainabilityDetail } from "./about/SustainabilityDetail";
+
 
 

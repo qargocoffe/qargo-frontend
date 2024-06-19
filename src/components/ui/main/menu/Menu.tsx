@@ -54,24 +54,19 @@ export const Menu = () => {
                       "slug": "#",
                       "Items": [
                           {
-                              "id": 9,
-                              "title": "Summer",
-                              "slug": "summer"
-                          },
-                          {
                               "id": 10,
-                              "title": "Our Mission",
-                              "slug": "our-mission"
+                              "title": "Our History",
+                              "slug": "about"
                           },
                           {
                               "id": 17,
-                              "title": "About",
+                              "title": "Our Mission",
                               "slug": "about"
                           },
                           {
                               "id": 11,
                               "title": "Our Vision",
-                              "slug": "our-vision"
+                              "slug": "about"
                           },
                           {
                               "id": 12,
@@ -80,7 +75,7 @@ export const Menu = () => {
                           },
                           {
                               "id": 13,
-                              "title": "Team",
+                              "title": "The Team",
                               "slug": "team"
                           },
                           {
@@ -101,6 +96,18 @@ export const Menu = () => {
                       ]
                   },
                   {
+                    "id": 10,
+                    "title": "SUSTAINABILITY",
+                    "slug": "sustainability",
+                    "Items": []
+                  },
+                  {
+                    "id": 10,
+                    "title": "OUR TEAM",
+                    "slug": "team",
+                    "Items": []
+                  },
+                  {
                       "id": 10,
                       "title": "FRANCHISES",
                       "slug": "franchisies",
@@ -111,6 +118,18 @@ export const Menu = () => {
                       "title": "BLOG & NEWS",
                       "slug": "blogs",
                       "Items": []
+                  },
+                  {
+                    "id": 11,
+                    "title": "CAREERS",
+                    "slug": "careers",
+                    "Items": []
+                  },
+                  {
+                    "id": 11,
+                    "title": "CONTACT US",
+                    "slug": "contact",
+                    "Items": []
                   }
               ],
               "logo": {

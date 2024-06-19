@@ -14,7 +14,7 @@ import { ButtonCustomized } from '../../button/ButtonCustomized';
 export const BannerHomepage = () => {
 
     const image1 = '/home/slide1.png';
-    const image2 = '/home/slide2.png';
+    const image2 = '/campaign/image1.png';
 
   return (
     <div className='fade-in-fwd mb-20 bg-grayBackground '>
@@ -57,7 +57,7 @@ export const BannerHomepage = () => {
                   <ButtonCustomized
                     type="link"
                     key={'VIEW MORE'}
-                    url={'/sustainability'}
+                    url={'/summer'}
                     background={'bg-beigeLight'}
                     fontColor={'text-beige'}
                     title={'VIEW MORE'}

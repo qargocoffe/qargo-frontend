@@ -14,8 +14,8 @@ export default function OrderPage() {
             </div>
         </section>
 
-        <section className="mb-9">
-        <p className="text-gray px-7 text-right">
+        <section className="top-[-4rem] relative">
+        <p className="text-gray  px-7 text-center">
               We are ready to take your order anywhere you are!
               <br />
               <br />

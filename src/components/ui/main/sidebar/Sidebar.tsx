@@ -1,128 +1,93 @@
 'use client'
 
-import { MenuItem } from "@/interfaces/ui/menu/menu.interface"
-import { useUIStore } from "@/store"
-import clsx from "clsx"
-import Image from "next/image"
-import Link from "next/link"
+import { MenuItem } from "@/interfaces/ui/menu/menu.interface";
+import { useUIStore } from "@/store";
+import clsx from "clsx";
+import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
     items: MenuItem[];
 }
 
-interface CategoryState {
-    [key: string]: boolean;
-}
-
-
-export const Sidebar = ({ items }:Props) => {
-
+export const Sidebar = ({ items }: Props) => {
     const isSideMenuOpen = useUIStore(state => state.isSideMenuOpen);
     const isSubcategoryOpen = useUIStore(state => state.isSubcategoryOpen);
     const toggleSubcategory = useUIStore(state => state.toggleSubcategory);
     const closeSideMenu = useUIStore(state => state.closeSideMenu);
-    const isModalOpen = useUIStore(state => state.isModalOpen);
-    const toggleModal = useUIStore(state => state.toggleModal);
 
-  return (
+    return (
+        <>
+            {/* Background overlay */}
+            {isSideMenuOpen && (
+                <div 
+                    className="fixed top-0 left-0 w-full h-full z-10 bg-black opacity-20" 
+                    onClick={closeSideMenu}
+                ></div>
+            )}
 
-    <>
-        {/* Background black */}
-        {isSideMenuOpen && (
-            <div className="fixed top-0 w-screen h-screen z-10 bg-black opacity-20" onClick={() => closeSideMenu()}></div>
-        )}
-
-        {/* Blur */}
-
-        {isSideMenuOpen && (
-            <div className="fade-in fixed top-0 left-0 w-screen h-screen z-10 backdrop-filter "  onClick={() => closeSideMenu()}></div>
-        )}
-        
-
-        {/* Sidemenu */}
-        <nav className={
-            clsx(
-                "scale-up-right transition-all duration-300 ease-in-out fixed m-0 overflow-auto right-0 top-13 w-1/2 tracking-wider h-auto z-20 shadow-2xl l:hidden",
-                {
-                    "translate-x-full": !isSideMenuOpen
-                }
-            )
-        }>
-            {items &&
-            items.map((item) => (
-                <div key={item.slug} className="transition-all duration-300"  onClick={() => {
-                    if (item.Items && item.Items.length === 0) {
-                        closeSideMenu()
+            {/* Sidemenu */}
+            <nav
+                className={clsx(
+                    "scale-up-right fixed top-13 right-0 w-1/2 h-auto z-20 shadow-2xl transition-transform transform duration-300",
+                    {
+                        "translate-x-0": isSideMenuOpen,
+                        "translate-x-full": !isSideMenuOpen
                     }
-                }}>
-                {/* Links categories */}
-                {item.Items!.length > 0 ? (
-                    <span key={item.slug}
-                    className="font-medium flex justify-between text-beigeStrong text-xl bg-white border-0 p-4 my-1"
-                    onClick={() => closeSideMenu }>
-                    <span className="text-focus-in mx-2">{item.title}</span>
-                    {/* Arrow down image in category with subcategory */}
-
-                    {item.Items && item.Items.length > 0 &&(
-                        <div className="p-3">
-                            <Image src={'/logos/arrow-down.png'}
-                            width={20}
-                            onClick={() => toggleSubcategory(String(item.slug))}
-                            alt="Arrow down"
-                            height={11}/>
-                        </div>
-                    )}  
-                    </span>
-                ): (
-                <Link
-                    key={item.slug}
-                    className="font-medium flex justify-between text-beigeStrong text-xl bg-white border-0 p-4 my-1"
-                    onClick={() => closeSideMenu }
-                    href={'/' + item.slug}>
-                    <span className="text-focus-in mx-2">{item.title}</span>
-                
-                </Link>
                 )}
+            >
+                {items.map((item) => (
+                    <div
+                        key={item.slug}
+                        className="p-3 bg-white m-1"
+                        onClick={() => {
+                            if (!item.Items || item.Items.length === 0) {
+                                closeSideMenu();
+                            }
+                        }}
+                    >
+                        {/* Category Link */}
+                        {item.Items && item.Items.length > 0 ? (
+                            <div
+                                className="flex justify-between items-center cursor-pointer"
+                                onClick={() => toggleSubcategory(String(item.slug))}>
+                                <span className="text-focus-in text-lg text-beigeStrong font-medium">
+                                    {item.title}
+                                </span>
+                                <Image
+                                    src="/logos/arrow-down.png"
+                                    width={20}
+                                    height={11}
+                                    alt="Arrow down"
+                                />
+                            </div>
+                        ) : (
+                            <Link
+                                href={`/${item.slug}`}
+                                className="block text-focus-in text-lg text-beigeStrong font-medium"
+                                onClick={closeSideMenu}>
+                                {item.title}
+                            </Link>
+                        )}
 
-                {/* Links subcategories */}
-
-                {item.Items &&
-                    item.Items.map((subcategory) => (
-                        <div key={subcategory.slug} className={`flex bg-white justify-between ${
-                            isSubcategoryOpen[String(item.slug)] ? '' : 'hidden'
-                          }`}
-                          onClick={() => closeSideMenu()}
-                          >
-                            {
-                                subcategory.slug !== 'careers'  && (
+                        {/* Subcategories */}
+                        {item.Items && isSubcategoryOpen[String(item.slug)] && (
+                            <div className="ml-6 mt-4">
+                                {item.Items.map((subcategory) => (
                                     <Link
-                                        key={subcategory.id}
-                                        className=" text-beigeStrong text-xm font-medium tracking-widest block  
-                                        duration-300  text-focus-in border-0 p-4"
-                                        href={'/' + subcategory.slug}>
-                                        <span className="ml-7" onClick={() => closeSideMenu() }>{subcategory.title}</span>
-                                    </Link>
-                                )
-                            }
-
-                            {
-                                subcategory.slug === 'careers' && (
-                                    <span key={subcategory.id}
-                                    className=" text-beigeStrong text-xm font-medium tracking-widest block  
-                                    duration-300  text-focus-in border-0 p-4"
-                                    onClick={() => toggleModal() }>
-                                        <span className="ml-7">
+                                        key={subcategory.slug}
+                                        href={`/${subcategory.slug}`}
+                                        className="block text-xm mt-2 tracking-widest text-beigeStrong text-focus-in"
+                                        onClick={closeSideMenu}
+                                    >
                                         {subcategory.title}
-                                        </span>
-                                    </span>
-                                )
-                            }
-                        </div>
-                
-                    ))}
-                </div>
-            ))}
-        </nav>
-    </>
-  )
-}
+                                    </Link>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </nav>
+        </>
+    );
+};

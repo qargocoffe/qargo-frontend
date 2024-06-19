@@ -4,40 +4,46 @@ export default async function OurMenuPage() {
     //const categories = await getCategories();
     const categories = [
       {
-          "slug": "lavazza-hot-classics",
-          "image": "/our-menu/image4.png"
-      },
-      {
-          "slug": "fresh-and-cool",
-          "image": "/our-menu/image5.png"
-      },
-      {
           "slug": "tea",
-          "image": "/our-menu/image6.png"
+          "image": "/our-menu/image4.png",
+          "animation": "/our-menu/cubo.png"
       },
       {
           "slug": "seasonal",
-          "image": "/our-menu/image7.png"
+          "image": "/our-menu/image5.png",
+          "animation": "/our-menu/leaves.png"
       },
       {
           "slug": "lotus",
-          "image": "/our-menu/image8.png"
+          "image": "/our-menu/image6.png",
+          "animation": "/our-menu/cubo2.png"
       },
       {
           "slug": "kids-and-pets",
-          "image": "/our-menu/image9.png"
+          "image": "/our-menu/image7.png",
+          "animation": "/our-menu/leaves2.png"
+      },
+      {
+          "slug": "delicacies",
+          "image": "/our-menu/image8.png",
+          "animation": "/our-menu/chocolato.png"
+      },
+      {
+          "slug": "grab-and-go",
+          "image": "/our-menu/image9.png",
+          "animation": "/our-menu/coffe-seed.png"
       },
       {
           "slug": "taste-of-italy",
-          "image": "/our-menu/coffee.png"
+          "image": "/our-menu/coffee.png",
+          "animation": "/our-menu/burger.png"
       },
   ];
    
 
   return (
     <div>
-      <h1 className="text-4xl text-lavazzaBlue text-center slide-in-top">Our Menu</h1>
-      <section className="w-full text-focus-in">
+      <section className="w-full text-focus-in mt-8">
             <BannerCategories categories={categories} />
       </section>
     </div>

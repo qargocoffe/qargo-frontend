@@ -49,11 +49,6 @@ export const Footer = () => {
       </div>
 
       <div className="font-light mt-8 text-sm">
-        <p className="text-center">701 Brickell Ave. Suite 1550 Miami, FL 33131</p>      
-        <p className="text-center"> (786) 913-9991 | info@qargocoffee.com</p>
-      </div>
-
-      <div className="font-light mt-8 text-sm">
         <p className="text-center">© 2024 Qargo Coffee. All rights reserved.</p>      
       </div>
     </footer>

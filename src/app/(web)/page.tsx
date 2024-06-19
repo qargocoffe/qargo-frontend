@@ -11,8 +11,10 @@ export default async function HomePage() {
 
   return (
     <div className="bg-ceramic">
-
+      {/* Swiper Banners Home */}
       <BannerHomepage />
+
+      {/* Croazan and white coffe */}
      <article style={{
        backgroundImage: `url('/home/background-gray.png')`,
        backgroundRepeat: 'no-repeat',
@@ -20,29 +22,31 @@ export default async function HomePage() {
        margin: 0,
        padding: 0,
       }}>
-     <section 
-     className="w-100 flex justify-around items-center min-h-[17rem]">
-        <figure className="slide-in-left  w-[72%] left-0 h-auto block absolute">
-          <Image src="/home/coffee1.png" alt="chocolato" width={30} height={30} layout="responsive" />
-        </figure>
-        <figure className="slide-in-right  right-0 w-[52%] h-auto block absolute">
-          <Image src="/home/coffee2.png" alt="chocolato" width={30} height={30} layout="responsive"  />
-        </figure>
-      </section>
+          <div 
+           className="w-100 flex justify-around items-center min-h-[17rem]">
+            <figure className="slide-in-left  w-[72%] mt-10 left-0 h-auto block absolute">
+              <Image src="/home/coffee1.png" alt="chocolato" width={30} height={30} layout="responsive" />
+            </figure>
+            <figure className="slide-in-right  right-0 w-[42%] mt-10 h-auto block absolute">
+              <Image src="/home/coffee2.png" alt="chocolato" width={30} height={30} layout="responsive"  />
+            </figure>
+          </div>
           <h2 className="px-7 py-5 text-2xl tracking-widest font-normal text-lavazzaBlue text-left">ITALY’S FINEST  <br />COFFEE & PASTRIES</h2>
           <div className='px-7 py-2 flex w-full text-center' >
               <p className="mt-4 mb-14 text-gray text-left">Capturing the essence of Italian tradition and standards, we redefine the essence of coffee culture with unique recipes, taken to a new level with the premium quality of Lavazza, and freshly baked Italian pastries, creating a wide spectrum of flavor profiles and textures.</p>
-              <figure className="w-full">
-                <Image className="mb-4" src={'/footer/coffee.png'} alt="Coffe" width={120} height={120} />
+              <figure className="ml-2 w-full">
+                <Image className="mb-4" src={'/home/coffee-sm.png'} alt="Coffe" width={120} height={120} />
               </figure>
             </div>
         </article>
+
+        {/* Banner blogs */}
         <div className="reveal-scroll">
           <BannerMobile typeBanner='blog' data={blogs}/>
         </div>
-
+        {/* Coffe seed  */}
         <div className="mt-6 flex justify-center">
-        <Image className="mb-4" src={'/footer/coffee.png'} alt="Coffe" width={60} height={60} />
+          <Image className="mb-4" src={'/footer/coffee.png'} alt="Coffe" width={60} height={60} />
         </div>
 
     </div>
