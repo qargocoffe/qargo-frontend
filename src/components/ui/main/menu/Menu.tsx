@@ -9,10 +9,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 
-
 export const Menu = () => {
   const [menu, setMenu] = useState<MenuAttributes | null>(null);
-  const [folderIcons, setFolderIcons] = useState<string>('white');
   const [isLoading, setLoading] = useState(true);
   const openSideMenu = useUIStore(state => state.openSideMenu);
   const closeSideMenu = useUIStore(state => state.closeSideMenu);
@@ -54,19 +52,24 @@ export const Menu = () => {
                       "slug": "#",
                       "Items": [
                           {
-                              "id": 10,
+                              "id": 9,
                               "title": "Our History",
-                              "slug": "about"
+                              "slug": "our-history"
+                          },
+                          {
+                              "id": 10,
+                              "title": "Our Mission",
+                              "slug": "our-mission"
                           },
                           {
                               "id": 17,
-                              "title": "Our Mission",
+                              "title": "About",
                               "slug": "about"
                           },
                           {
                               "id": 11,
                               "title": "Our Vision",
-                              "slug": "about"
+                              "slug": "our-vision"
                           },
                           {
                               "id": 12,
@@ -75,7 +78,7 @@ export const Menu = () => {
                           },
                           {
                               "id": 13,
-                              "title": "The Team",
+                              "title": "Team",
                               "slug": "team"
                           },
                           {
@@ -96,18 +99,6 @@ export const Menu = () => {
                       ]
                   },
                   {
-                    "id": 10,
-                    "title": "SUSTAINABILITY",
-                    "slug": "sustainability",
-                    "Items": []
-                  },
-                  {
-                    "id": 10,
-                    "title": "OUR TEAM",
-                    "slug": "team",
-                    "Items": []
-                  },
-                  {
                       "id": 10,
                       "title": "FRANCHISES",
                       "slug": "franchisies",
@@ -118,18 +109,6 @@ export const Menu = () => {
                       "title": "BLOG & NEWS",
                       "slug": "blogs",
                       "Items": []
-                  },
-                  {
-                    "id": 11,
-                    "title": "CAREERS",
-                    "slug": "careers",
-                    "Items": []
-                  },
-                  {
-                    "id": 11,
-                    "title": "CONTACT US",
-                    "slug": "contact",
-                    "Items": []
                   }
               ],
               "logo": {
@@ -232,32 +211,17 @@ export const Menu = () => {
     //   });
   }
 
-  const getFolderIcons = () => {
-    if(pathname === '/' || pathname === '/home' || pathname === ''
-       || pathname === '/team' || pathname === '/stores/tampa' || pathname === '/sustainability'
-        || pathname === '/order-pickup'  || pathname === '/summer'  ) {
-      setFolderIcons('white')
-    }
-    else{
-      setFolderIcons('blue')
-    } 
-  } 
-  
-  
   useEffect(() => {
-    getFolderIcons(),
     getMenu()
   }, [pathname]);
 
-
-
   return (
     <>
-    <nav className="flex items-center justify-between px-3 py-4 b z-20 relative">
+    <nav className="w-full fade-in fixed z-10 backdrop-filter backdrop-blur-md bg-white/30 flex items-center justify-between px-3 py-3 b">
       <div className="slide-in-right flex justify-between gap-3 items-center h-6" onClick={() => closeSideMenu()}>
           <Link href={'/'} >
           <Image
-            src={'/menu/' + folderIcons + '/logo.png'}
+            src={'/menu/blue/logo.png'}
             alt={'QargoCoffee Logo'}
             priority={true}
             width={'230'}
@@ -269,15 +233,15 @@ export const Menu = () => {
       </div>
 
       <div className="flex gap-4 slide-in-left">
+        
         {isSideMenuOpen && (
             <Image
-            
             onClick={closeSideMenu}
             className="z-20 cursor-pointer"
-            src={'/menu/'+ folderIcons + '/close.png'}
+            src={'/menu/blue/close.png'}
             alt='lupa'
-            width={28}
-            height={28}
+            width={24}
+            height={24}
           />
         )}
 
@@ -285,10 +249,10 @@ export const Menu = () => {
           <Image
             onClick={openSideMenu}
             className="z-20 cursor-pointer"
-            src={'/menu/'+ folderIcons +'/squads.png'}
+            src={'/menu/blue/squads.png'}
             alt='lupa'
-            width={28}
-            height={28}
+            width={24}
+            height={24}
           />
         )}
            

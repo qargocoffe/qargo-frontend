@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function FranchisiesPage() {
   return (
     <div>
-      <section className='w-full h-full min-h-[30rem] top-[-6rem] relative slide-in-top' 
+      <section className='w-full h-full min-h-[30rem]  relative slide-in-top' 
         style={{
         backgroundImage: "url(/franchisies/banner.png)", 
         backgroundRepeat: 'no-repeat',
@@ -13,7 +13,7 @@ export default function FranchisiesPage() {
       }}>
         </section>
 
-        <section className="text-center top-[-4rem] relative px-4">
+        <section className="text-center my-8 px-4">
             <h2 className="slide-in-left px-7  mb-5 uppercase text-2xl tracking-widest font-normal text-lavazzaBlue">Ready to discover the Qargo Coffee Franchise Program?</h2>
             <p className="text-gray text-center mb-10 slide-in-left ">
             Join a new business venture with Qargo Coffee, leveraging the benefits of a recognized and established brand. Our team of franchise experts will support you throughout the entire process, providing guidance to successfully launching your new coffee shop. <br /><br />

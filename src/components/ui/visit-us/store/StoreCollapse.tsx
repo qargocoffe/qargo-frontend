@@ -13,7 +13,7 @@ export const StoreCollapse = ({ isOpen, title }: Props )=> {
             {
               isOpen && (
                 <label>
-                  <input className="peer/showLabel absolute scale-0 w-100" type="checkbox" />
+                  <input className="peer/showLabel absolute scale-0 w-full" type="checkbox" />
                     <Image src='/blog/default.png' height={100} width={100}
                     layout='responsive' alt='Main' className='transition-all duration-1000 mb-4 hidden peer-checked/showLabel:block ' />
 
@@ -71,7 +71,7 @@ export const StoreCollapse = ({ isOpen, title }: Props )=> {
             {
               !isOpen && (
                 <label>
-                  <input className="peer/showLabel absolute scale-0 w-100" type="checkbox" />
+                  <input className="peer/showLabel absolute scale-0 w-full" type="checkbox" />
                   <Image src='/blog/open-soon.png' 
                     height={100} width={100}
                     layout='responsive' 

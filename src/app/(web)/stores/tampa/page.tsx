@@ -1,9 +1,9 @@
+import { DrinksSwiper } from "@/components/ui";
 import Image from "next/image";
 import Link from "next/link";
-import { DrinksSwiper } from '../../../../components/ui/visit-us/store/DrinksSwiper';
+
 
 export default function TampaPage() {
-
 
   const drinks = [
     {
@@ -26,14 +26,14 @@ export default function TampaPage() {
   return (
     <div>
       <section 
-        className="w-full h-full min-h-[30rem] top-[-4rem] relative slide-in-top" 
+        className="w-full min-w-full h-full min-h-[25rem] relative slide-in-top" 
         style={{
           backgroundImage: "url(/stores/initial.png)", 
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain"
         }}
       ></section>
-      <section className="slide-in-left px-6 top-[-9rem] relative">
+      <section className="slide-in-left px-6 ">
         <h1 className="text-lavazzaBlue tracking-widest font-semibold">TAMPA</h1>
         <article className="flex items-start gap-6 mb-6 mt-8">
           <Image src={"/logos/ubication.png"} width={30} height={20} alt="Phone" />
@@ -49,7 +49,7 @@ export default function TampaPage() {
         </article>
       </section>
       <section>
-        <Image className="scroll-reveal top-[-6rem] relative" src="/stores/map.png" width={30} height={30} alt="Map" layout="responsive" />
+        <Image className="scroll-reveal mt-6" src="/stores/map.png" width={30} height={30} alt="Map" layout="responsive" />
         <h2 className="top-[-2rem] relative slide-in-left px-7 text-center mb-7 uppercase text-xl tracking-widest font-semibold text-lavazzaBlue">
           EXCLUSIVE DRINKS
         </h2>
@@ -57,7 +57,6 @@ export default function TampaPage() {
 
       <DrinksSwiper {...drinks} />
 
-      
       <iframe 
         className="w-full min-h-[409px] mb-9" 
         allow={'clipboard-write'} 

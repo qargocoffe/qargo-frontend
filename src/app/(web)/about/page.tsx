@@ -21,7 +21,7 @@ export default function AboutPage() {
 
   return (
     <div className="text-base bg-whiteBackground">
-      <section className="w-100 flex justify-around items-center min-h-[300px] relative bottom-[-2rem]">
+      <section className="w-full flex justify-around items-center min-h-[300px] relative bottom-[-4rem]">
         <figure className="slide-in-left  w-[40%] left-0 h-auto block absolute">
           <Image src="/about/croazan.png" alt="chocolato" width={30} height={30} layout="responsive" />
         </figure>

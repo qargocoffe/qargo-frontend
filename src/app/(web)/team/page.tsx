@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function TeamPage() {
   return (
     <div>
-      <section className='w-full h-full min-h-[30rem] top-[-6rem] relative slide-in-top' 
+      <section className='w-full h-full min-h-[30rem] slide-in-top' 
         style={{
         backgroundImage: "url(/team/initial.png)", 
         backgroundRepeat: 'no-repeat',

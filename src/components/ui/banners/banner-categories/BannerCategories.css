@@ -19,7 +19,7 @@
 }
 
 #bannerCategories .swiper-pagination-bullet-active {
-  background-color: #00377A !important; /* Change to your desired active background color */
+  background-color: #917360 !important; /* Change to your desired active background color */
 }
 
 #bannerCategories .swiper-pagination-bullet {
@@ -30,7 +30,7 @@
 
 #bannerCategories .swiper-pagination-bullet {
   background: transparent;
-  border: 2px solid #00377A;
+  border: 2px solid #917360;
   margin-right: 0.7rem !important; /* Adjust the horizontal margin to increase the gap between bullets */
   /* Add any other styles as needed */
 }

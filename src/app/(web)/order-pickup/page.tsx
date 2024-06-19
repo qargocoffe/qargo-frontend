@@ -3,7 +3,7 @@ import { ThumbnailContainer } from "@/components/ui";
 export default function OrderPage() {
   return (
     <div>
-      <section className='w-full h-full min-h-[25rem] top-[-6rem] relative slide-in-top' 
+      <section className='w-full h-full min-h-[25rem] relative slide-in-top' 
         style={{
         backgroundImage: "url(/order/initial.png)", 
         backgroundRepeat: 'no-repeat',
@@ -14,7 +14,7 @@ export default function OrderPage() {
             </div>
         </section>
 
-        <section className="top-[-4rem] relative">
+        <section className="mt-5">
         <p className="text-gray  px-7 text-center">
               We are ready to take your order anywhere you are!
               <br />

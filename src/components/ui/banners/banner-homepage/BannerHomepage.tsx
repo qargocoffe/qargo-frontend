@@ -17,23 +17,17 @@ export const BannerHomepage = () => {
     const image2 = '/campaign/image1.png';
 
   return (
-    <div className='fade-in-fwd mb-20 bg-grayBackground '>
+    <div className='fade-in-fwd top-[-2rem] relative bg-grayBackground '>
       <Swiper pagination={true}
-        
-        id='swiperHome' 
+        id='swiperHome'
         modules={[Pagination]}
-        className="mySwiper !pt-0 m-[-5rem] !max-h-[560px] !min-h-[500px]">
+        autoHeight={true}
+        className="mySwiper">
           <SwiperSlide>
-            <div className='absolute flex flex-col place-content-center'>
+            <div className='relative flex flex-col place-content-center'>
                 <img src={image1} className='h-full' alt="Menu" />
-                  <div className='bottom-0 absolute m-0 p-0' style={{
-                    position: 'absolute',
-                    
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    
-                  }}>
-                  <ButtonCustomized
+                  <div className='absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+                     <ButtonCustomized
                     type="link"
                     key={'VIEW MORE'}
                     url={'/sustainability'}
@@ -41,20 +35,15 @@ export const BannerHomepage = () => {
                     fontColor={'text-beige'}
                     title={'VIEW MORE'}
                     />
-              </div>
+                  </div>
             </div>
           
           </SwiperSlide>
           <SwiperSlide>
-            <div className='absolute flex flex-col place-content-center'>
+            <div className=' relative flex flex-col place-content-center'>
                 <img src={image2} className='h-full' alt="Menu" />
-                  <div className='bottom-0 absolute m-0 p-0' style={{
-                    position: 'absolute',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    
-                  }}>
-                  <ButtonCustomized
+                  <div className='absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+                     <ButtonCustomized
                     type="link"
                     key={'VIEW MORE'}
                     url={'/summer'}
@@ -62,12 +51,9 @@ export const BannerHomepage = () => {
                     fontColor={'text-beige'}
                     title={'VIEW MORE'}
                     />
-              </div>
+                  </div>
             </div>
-          
           </SwiperSlide>
-          
-        
       </Swiper>
     </div>
   )

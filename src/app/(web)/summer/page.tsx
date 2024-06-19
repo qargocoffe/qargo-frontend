@@ -4,14 +4,14 @@ export default function SummerPage() {
   return (
     <div>
       <section 
-        className="w-full h-full min-h-[30rem] top-[-4rem] relative slide-in-top" 
+        className="w-full h-full min-h-[30rem] relative slide-in-top" 
         style={{
           backgroundImage: "url(/campaign/image1.png)", 
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover"
         }}
       ></section>
-      <section className="px-6">
+      <section className="px-6 my-4">
         <p className="text-gray text-center slide-in-left">
         Amore di Summer is a celebration of the electrifying and captivating the Summer Love experience, embracing that passion and taking it to a romantic Italian setting.
         </p>

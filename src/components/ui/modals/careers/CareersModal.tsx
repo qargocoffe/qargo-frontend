@@ -1,7 +1,6 @@
 'use client'
 
 import Image from "next/image";
-import { ButtonCustomized } from "../../button/ButtonCustomized";
 import { RegisterCareers } from "./RegisterCareers";
 import { useUIStore } from "@/store";
 import Link from "next/link";
