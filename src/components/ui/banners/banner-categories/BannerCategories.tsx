@@ -11,7 +11,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const BannerCategories = ({ categories }: any) => {
-  const [animationKey, setAnimationKey] = useState<number | null>(categories[0].animation); // Initialize animationKey state
+  const [animationKey, setAnimationKey] = useState<string | null>(categories[0].animation); // Initialize animationKey state
   const [isAnimating, setIsAnimating] = useState(true); // Track if animation is active
   
 
