@@ -17,16 +17,28 @@ type Banners = 'blog' | 'banner' | 'partner';
 export const BannerMobile = ({typeBanner, data }: { typeBanner: Banners, data: any}) => {
 
   return (
-    <div className='reveal-scroll bg-beigeLight'>
+    <div className=' bg-beigeLight'>
         <Swiper pagination={true}
-        navigation={ {
-          nextEl: 'swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        } }
+        breakpoints={{
+          0: {
+            navigation:{ 
+              nextEl: 'swiper-button-next',
+              prevEl: '.swiper-button-prev'
+            } 
+          },
+          768: {
+            navigation: {
+              prevEl: '.swiper-button-prev-custom',
+              nextEl: '.swiper-button-next-custom',
+            },
+          },
+        }}
+        
+
         id='swiperMobile'
-        modules={[Pagination]} className="mySwiper">
+        modules={[Pagination]} className="mySwiper ">
         {typeBanner === 'blog' && data.map((blog: Blog) => (
-          <SwiperSlide key={blog.slug} className='!h-full pb-6 '>
+          <SwiperSlide key={blog.slug} className='!h-full pb-6'>
             <BlogCard {...blog} />
             <div className="swiper-pagination"></div>
             <div className="swiper-button-prev"></div>
@@ -39,6 +51,7 @@ export const BannerMobile = ({typeBanner, data }: { typeBanner: Banners, data: a
           <SwiperSlide key={partner.title} className='!h-full pb-6 '>
             <PartnerSlide title={partner.title} banner={partner.banner} description={partner.description} />
           </SwiperSlide>
+          
         ))}
       </Swiper>
     </div>

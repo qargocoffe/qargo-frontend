@@ -1,3 +1,5 @@
+
+
 #swiperHome {
   padding-bottom: 0px !important;
 } 
@@ -22,4 +24,12 @@
     border: 3px solid #917360;
     margin-right: 0.7rem !important; /* Adjust the horizontal margin to increase the gap between bullets */
     /* Add any other styles as needed */
+  }
+
+
+  @media (min-width: 1080px) {
+    #swiperHome .swiper-slide {
+      background-color: #f0f0f0;
+      height: auto !important;
+    }
   }

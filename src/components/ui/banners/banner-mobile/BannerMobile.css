@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0; 
 }
+
+
+@media (max-width: 1280px) {
+    /* styles for desktop devices */
+    #swiperMobile .swiper-slide{
+        width: 100% !important;
+        height: 100% !important;
+    }
+  }

@@ -5,7 +5,7 @@ import { StoreCollapse } from './StoreCollapse';
 export const Stores = () => {
   return (
     <div>
-        <section className="grid place-items-center relative top-[-6rem]">
+        <section className="xl:w-desktop lg:w-desktop  md:w-desktop m-auto grid place-items-center relative top-[-6rem]">
               <StoreCollapse title={'Santa Monica Place'} isOpen={true} />
               <StoreCollapse title={'West Palm Beach - Clematis St.'} isOpen={true} />
               <StoreCollapse title={'Washington D.C. - Farragut'} isOpen={true} />

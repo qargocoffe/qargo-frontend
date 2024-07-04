@@ -286,7 +286,8 @@ export const Map = () => {
     
       return isLoaded ? (
         <GoogleMap
-        mapContainerStyle={{backgroundImage: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 12%, transparent 26%, transparent)', transition: 'background-image 0.5s ease' ,width: "100%", height: "600px"}}
+          mapContainerStyle={{backgroundImage: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 12%, transparent 26%, transparent)', 
+          transition: 'background-image 0.5s ease' ,width: "100%", minHeight: "600px"}}
           center={center}
           zoom={10}
           options={{
