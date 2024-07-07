@@ -3,8 +3,6 @@
 
 import {
     GoogleMap,
-    InfoWindowF,
-    MarkerF,
     useJsApiLoader,
   } from "@react-google-maps/api";
 import Image from "next/image";
@@ -287,7 +285,7 @@ export const Map = () => {
       return isLoaded ? (
         <GoogleMap
           mapContainerStyle={{backgroundImage: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 12%, transparent 26%, transparent)', 
-          transition: 'background-image 0.5s ease' ,width: "100%", minHeight: "600px"}}
+          transition: 'background-image 0.5s ease' ,width: "100%", minHeight: "800px"}}
           center={center}
           zoom={10}
           options={{
@@ -310,7 +308,8 @@ export const Map = () => {
             </div>
 
           { /* Child components, such as markers, info windows, etc. */ }
-          <></>
+          <>
+          </>
         </GoogleMap>
     ) : <></>
 }

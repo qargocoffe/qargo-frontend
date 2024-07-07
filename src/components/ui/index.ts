@@ -1,3 +1,5 @@
+export { Opened } from './visit-us/store/isOpen/Opened';
+export { Closed } from './visit-us/store/closed/Closed';
 export { ButtonCustomized } from './button/ButtonCustomized';
 export { ProductArticle } from './campaign/ProductArticle';
 export { NutritionalItem } from './product/NutritionalItem';
@@ -32,6 +34,7 @@ export { Sidebar } from "./main/sidebar/Sidebar";
 export { BannerMobile } from "./banners/banner-mobile/BannerMobile";
 export { BannerHomepage } from "./banners/banner-homepage/BannerHomepage";
 export { SustainabilityDetail } from "./about/SustainabilityDetail";
+
 
 
 

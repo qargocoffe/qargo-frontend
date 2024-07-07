@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './BannerCategories.css';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, FreeMode} from 'swiper/modules';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -46,6 +46,7 @@ export const BannerCategories = ({ categories }: any) => {
         centeredSlides={true}
         slidesPerView={'auto'}
         spaceBetween={70} // Separate by 70px between sliders
+        freeMode={true} 
         coverflowEffect={{
           rotate: 0,
           stretch: 20,
@@ -54,16 +55,17 @@ export const BannerCategories = ({ categories }: any) => {
           modifier: 1,
           slideShadows: false,
         }}
+    
         centerInsufficientSlides={true}
         pagination={true}
         onSlideChange={handleSlideChange}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow, Pagination, FreeMode]}
         className="mySwiper !pt-2"
       >
         {categories && categories.map((category : any, index: number) => (
           <SwiperSlide
             key={index} // Use animation as the key
-            className='!w-[260px] !h-[500px] bg-cover bg-center rounded-xl border border-grayLight'
+            className='!w-[260px] !h-[500px] bg-cover bg-center rounded-xl border border-grayLight md:!h-[700px] md:!w-[430px]'
             style={{ backgroundImage: `url(${category.image})` }}
           >
             <div className='h-full flex flex-row justify-center items-end text-center'>

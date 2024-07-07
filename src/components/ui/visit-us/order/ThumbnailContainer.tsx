@@ -3,7 +3,7 @@ import { Thumbnail } from "./Thumbnail"
 export const ThumbnailContainer = () => {
 
   return (
-    <div className="px-5 grid grid-cols-2 gap-4 ">
+    <div className="px-5 grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-12 ">
         <Thumbnail 
         subtitle="Currently"
         title="Long Beach"

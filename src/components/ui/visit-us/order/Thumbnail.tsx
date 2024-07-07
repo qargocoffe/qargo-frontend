@@ -10,7 +10,7 @@ interface Props {
 }
 export const Thumbnail = ( {title, subtitle, image}: Props) => {
   return (
-    <article className='slide-in-left w-full reveal-scroll'>
+    <article className='w-full reveal-scroll transition-transform duration-300 ease-in-out transform hover:scale-110 slide-in-right'>
         <Link href={'/stores/tampa'} >
           <Image src={image} width={200} height={200} alt='Image' layout='responsive'/>   
           <div className='p-5 slide-in-top text-center'>
