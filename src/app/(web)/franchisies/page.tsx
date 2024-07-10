@@ -11,7 +11,7 @@ export default function FranchisiesPage() {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
       }}>
-        </section>
+      </section>
 
         <section className="text-center my-8 px-4">
             <h2 className="slide-in-left px-7  mb-5 uppercase text-2xl tracking-widest font-normal text-lavazzaBlue">Ready to discover the Qargo Coffee Franchise Program?</h2>

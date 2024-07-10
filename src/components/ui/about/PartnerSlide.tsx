@@ -12,13 +12,14 @@ interface Props {
 
     // const urlBanner = banner!.data!.attributes.url;
     // const urlLogo = logo!.data!.attributes.url;
-    
   return (
-    <div className='bg-beigeLight reveal-scroll md:flex items-center justify-center'>
-        <figure>
-          <Image src={banner} alt="Partner" width={30} height={30} layout='responsive'/>
+    <div className='bg-beigeLight reveal-scroll'>
+        <figure className='md:hidden'>
+          <Image src={banner} alt="Partner" width={30} height={30} layout='responsive' />
         </figure>
-        <p className='px-5 py-9 text-center text-beige'>{description}</p>
+        <p className='px-5 py-9 text-center text-beige w-full md:w-1/2 m-auto md:text-lg'>{description}
+        </p>
+        
     </div>
   )
 }

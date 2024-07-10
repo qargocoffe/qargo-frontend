@@ -1,9 +1,6 @@
-
-
+export { MenuIframe } from './stores/MenuIframe';
 export { MainBanner } from './about/MainBanner';
-
 export { LaReserva } from './about/LaReserva';
-
 export { BoxInfo } from './contact/BoxInfo';
 export { Warranty } from './product/Warranty';
 export { Opened } from './visit-us/store/isOpen/Opened';

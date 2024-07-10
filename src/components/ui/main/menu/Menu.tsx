@@ -54,12 +54,12 @@ export const Menu = () => {
                           {
                               "id": 9,
                               "title": "Our History",
-                              "slug": "our-history"
+                              "slug": "about"
                           },
                           {
                               "id": 10,
                               "title": "Our Mission",
-                              "slug": "our-mission"
+                              "slug": "about"
                           },
                           {
                               "id": 17,
@@ -69,7 +69,7 @@ export const Menu = () => {
                           {
                               "id": 11,
                               "title": "Our Vision",
-                              "slug": "our-vision"
+                              "slug": "about"
                           },
                           {
                               "id": 12,

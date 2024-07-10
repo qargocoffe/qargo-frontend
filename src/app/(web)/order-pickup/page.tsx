@@ -16,15 +16,15 @@ export default function OrderPage() {
         </section>
 
         <section className="mt-5">
-        <p className="text-gray  px-7 text-center md:text-lg m-auto md:w-1/2">
-              We are ready to take your order anywhere you are!
-              <br />
-              <br />
-                Dive into our incredible menu packed with irresistible Lavazza Coffee drinks, delicious Bindi pastries, and multiple grab-and-go options. Whether you crave an iced latte, bold espresso, or refreshing cold brew, we’ve got the perfect brew for you to taste greatness. Just customize your order to match your coffee cravings!
+          <p className="text-gray  px-7 text-center md:text-lg m-auto md:w-1/2">
+                We are ready to take your order anywhere you are!
                 <br />
                 <br />
-                Don’t miss out on this epic coffee adventure and place your order today at Qargo Coffee!
-        </p>
+                  Dive into our incredible menu packed with irresistible Lavazza Coffee drinks, delicious Bindi pastries, and multiple grab-and-go options. Whether you crave an iced latte, bold espresso, or refreshing cold brew, we’ve got the perfect brew for you to taste greatness. Just customize your order to match your coffee cravings!
+                  <br />
+                  <br />
+                  Don’t miss out on this epic coffee adventure and place your order today at Qargo Coffee!
+          </p>
         </section>
         <section className="md:w-desktop md:m-auto">
             <h2 className="slide-in-left px-7 text-center mb-5 uppercase text-xl tracking-widest font-semibold text-lavazzaBlue md:text-2xl md:mt-12">

@@ -77,8 +77,9 @@ export const FranciseeForm = () => {
             />
           </div>
           <div>
+        <div className='md:flex'>
         <div className='mt-10 '>
-            <p className='text-lavazzaBlue mb-4'>What is the amount of the personal funds you plan to dedicate to your project?</p>
+            <p className='text-lavazzaBlue mb-4 md:text-lg'>What is the amount of the personal funds you plan to dedicate to your project?</p>
             <label className='block py-2 text-gray'>
               <input
                 className='mr-2'
@@ -125,7 +126,7 @@ export const FranciseeForm = () => {
             </label>
         </div>
         <div className='mt-10 '>
-            <p className='text-lavazzaBlue mb-4'>How soon would you like to open your own 
+            <p className='text-lavazzaBlue mb-4 md:text-lg'>How soon would you like to open your own 
               Qargo Coffee store?</p>
             <label className='block py-2 text-gray'>
               <input
@@ -162,8 +163,9 @@ export const FranciseeForm = () => {
               6 - 12 Months
             </label>
         </div>
+        </div>
         <div className='mt-10'>
-          <p className='text-lavazzaBlue mb-4'>
+          <p className='text-lavazzaBlue mb-4 md:text-lg'>
           Why are you interested in opening 
             a Qargo Coffee store?
           </p>
