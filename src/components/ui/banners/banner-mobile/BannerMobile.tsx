@@ -34,7 +34,6 @@ export const BannerMobile = ({typeBanner, data }: { typeBanner: Banners, data: a
           },
         }}
         
-
         id='swiperMobile'
         modules={[Pagination]} className="mySwiper ">
         {typeBanner === 'blog' && data.map((blog: Blog) => (

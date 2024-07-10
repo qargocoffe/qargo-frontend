@@ -22,7 +22,7 @@ export const ProductArticle = ({ title, description, image}: Props) => {
                   <span className='font-semibold  text-sm text-white'>
                     ORDER HERE
                   </span>
-            </Link>
+                </Link>
             </p>
             
         </div>  

@@ -1,3 +1,11 @@
+
+
+export { MainBanner } from './about/MainBanner';
+
+export { LaReserva } from './about/LaReserva';
+
+export { BoxInfo } from './contact/BoxInfo';
+export { Warranty } from './product/Warranty';
 export { Opened } from './visit-us/store/isOpen/Opened';
 export { Closed } from './visit-us/store/closed/Closed';
 export { ButtonCustomized } from './button/ButtonCustomized';
@@ -33,7 +41,10 @@ export { Menu } from "./main/menu/Menu";
 export { Sidebar } from "./main/sidebar/Sidebar";
 export { BannerMobile } from "./banners/banner-mobile/BannerMobile";
 export { BannerHomepage } from "./banners/banner-homepage/BannerHomepage";
-export { SustainabilityDetail } from "./about/SustainabilityDetail";
+export { SustainabilityDetail } from "./about/Sustainability/SustainabilityDetail";
+export { SustainabilityLayout } from './about/Sustainability/SustainabilityLayout';
+
+
 
 
 

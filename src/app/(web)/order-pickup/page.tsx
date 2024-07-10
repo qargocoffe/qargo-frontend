@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function OrderPage() {
   return (
     <div>
-      <section className='w-full h-full min-h-[25rem] relative slide-in-top md:min-h-[40rem] bg-no-repeat ' >   
+      <section className='w-full h-full min-h-[25rem] relative slide-in-top md:min-h-desktop bg-no-repeat ' >   
         <Image src={'/order/initial.png'} alt={'Order'} width={30} height={30 } layout="responsive" className="md:hidden" />
         <Image src={'/order/initial-desktop.png'} alt={'Order'} 
            layout="fill"

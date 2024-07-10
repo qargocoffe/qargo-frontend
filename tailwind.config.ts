@@ -11,6 +11,9 @@ const config: Config = {
       width: {
         desktop: '1100px'
       },
+      height: {
+        desktop: '40rem'
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
