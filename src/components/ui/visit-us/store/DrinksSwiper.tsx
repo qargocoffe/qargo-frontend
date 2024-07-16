@@ -1,86 +1,79 @@
 'use client'
-// Import necessary hooks and components
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
-import { ButtonCustomized } from '@/components/ui';
-import Image from 'next/image';
-import Link from 'next/link';
+
+import { DrinkItem } from '@/components/ui'; // Assuming DrinkItem is the component to render each drink
+import { EffectCoverflow, FreeMode, Pagination } from 'swiper/modules';
 
 
-interface Drink {
-    title: string,
-    description: string,
-    image: string
-}
-
-export const DrinksSwiper = (drinks: Drink[]) => {
+interface DrinksSwiperProps {
+    drinks: Drink[];
+  }
   
-  return (
-    <div>
+  interface Drink {
+    title: string;
+    description: string;
+    image: string;
+  }
 
-        <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        spaceBetween={70} // Separate by 25px between sliders
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 20,
-          depth: 100,
-          scale: 1,
-          modifier: 1,
-          slideShadows: false,
-        }}
-        centerInsufficientSlides={true}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper top-[-4rem] relative">
-        
-        <SwiperSlide 
-            key={1}
-            className='w-full ' 
-            >
-            <article className='flex flex-row justify-center items-center text-center '>
-              <figure className='my-2 w-1/2'>
-                <Image src={'/stores/drinks/image1.png'} layout='responsive' width={60} height={60} alt='Eny' />
-              </figure>
-              <div className='w-1/2 text-left tracking-widest '>
-                <h3 className='text-lavazzaBlue mb-3 font-semibold'>GUATA </h3>
-                <p className='text-gray'>Inspired by the Big Guava nickname, a classic latte with sweet guava notes|</p>
-                <Link href={'/'} className='text-center rounded-full bg-lavazzaBlue py-2 w-2/3 block mt-3'>
-                  <span className='font-semibold text-sm text-white'>
-                    ORDER HERE
-                  </span>
-                </Link>
-              </div>
-            </article>
-          </SwiperSlide>
-          <SwiperSlide 
-            key={1}
-            className='w-full ' 
-            >
-            <article className='flex flex-row justify-center items-center text-center '>
-              <figure className='my-2 w-1/2'>
-                <Image src={'/stores/drinks/image2.png'} layout='responsive' width={90} height={60} alt='Eny' />
-              </figure>
-              <div className='w-1/2 text-left tracking-widest '>
-                <h3 className='text-lavazzaBlue mb-3 font-semibold'>COLORADO ROX FRAPPE </h3>
-                <p className='text-gray'>Inspired by the Big Guava nickname, a classic latte with sweet guava notes|</p>
-                <Link href={'/'} className='text-center rounded-full bg-lavazzaBlue py-2  w-2/3 block mt-3'>
-                  <span className='font-semibold  text-sm text-white'>
-                    ORDER HERE
-                  </span>
-                </Link>
-              </div>
-            </article>
-          </SwiperSlide>
-          
-      </Swiper>
-    </div>
-  )
-}
+  export const DrinksSwiper = ({ drinks }: DrinksSwiperProps) => {
+
+    return (
+        <div className='md:m-auto md:w-desktop my-9'>
+        { /* EXCLUSIVE DRINKS TITLE*/ }
+        <h3 className='text-lavazzaBlue text-center text-xl lg:text-2xl  tracking-widest font-semibold mb-8'>EXCLUSIVE DRINKS</h3>
+        { /* For mobile the swiper */ }
+            <div className='md:hidden'>
+            <Swiper
+                breakpoints={{
+                    768: {
+                        slidesPerView: 4,
+                        grabCursor: true,
+                        effect: 'freemode',
+                        centeredSlidesBounds: true,
+                        centeredSlides: true,
+                        centerInsufficientSlides: true
+                    },
+                    320: {
+                        slidesPerView: 'auto',
+                        grabCursor: false,
+                    },
+                }}
+                effect={'coverflow'}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={'auto'}
+                spaceBetween={70}
+                coverflowEffect={{
+                    rotate: 0,
+                    stretch: 20,
+                    depth: 100,
+                    scale: 1,
+                    modifier: 1,
+                    slideShadows: false,
+                }}
+                centerInsufficientSlides={true}
+                pagination={true}
+                modules={[EffectCoverflow, Pagination, FreeMode ]}
+                className="mySwiper top-[-4rem] relative">
+                {drinks.map((drink, index) => (
+                    <SwiperSlide key={index} className='w-full'>
+                        <DrinkItem {...drink} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+            </div>
+
+        { /* For desktop grid products */ }
+        <div className='hidden md:grid grid-cols-4 gap-10 mb-20'>
+            {drinks.map((drink, index) => (
+                <DrinkItem key={index} {...drink} />
+            ))}
+        </div>
+
+        </div>
+    );
+};

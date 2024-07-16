@@ -26,7 +26,7 @@ export default function OrderPage() {
                   Don’t miss out on this epic coffee adventure and place your order today at Qargo Coffee!
           </p>
         </section>
-        <section className="md:w-desktop md:m-auto">
+        <section className="lg:w-desktop lg:m-auto">
             <h2 className="slide-in-left px-7 text-center mb-5 uppercase text-xl tracking-widest font-semibold text-lavazzaBlue md:text-2xl md:mt-12">
                 Select your nearest store to place your order:
             </h2>

@@ -26,7 +26,7 @@ export default function AboutPage() {
       <MainBanner/>
 
       {/* Banner About */}
-      <section className="px-6 md:w-desktop md:m-auto">
+      <section className="px-6 lg:w-desktop lg:m-auto">
           <div className="text-right text-lavazzaBlue text-4xl pb-4 md:text-5xl">
             <h2 className="slide-in-right">Our <br />History</h2>
           </div>
@@ -62,7 +62,7 @@ export default function AboutPage() {
       </section>
 
       <section>
-          <article className="md:py-12 py-6 sm:reveal-scroll flex items-center gap-6 px-6 md:w-desktop md:m-auto">
+          <article className="md:py-12 py-6 sm:reveal-scroll flex items-center gap-6 px-6 lg:w-desktop lg:m-auto">
             <figure className="w-1/2 h-auto md:hidden">
               <Image src={'/about/meet-the-qargo.png'} width={500} height={20} alt="Prueba" />
             </figure>
@@ -85,7 +85,7 @@ export default function AboutPage() {
             </div>
           </article>
           <div className="bg-beigeLight">
-            <article className="md:py-12 py-6 px-6 py-6 flex items-end gap-6  md:w-desktop md:m-auto md:items-center">
+            <article className="md:py-12 py-6 px-6 py-6 flex items-end gap-6  lg:w-desktop lg:m-auto md:items-center">
               <div className="sm:reveal-scroll w-1/2">
                 <p className="text-gray text-left md:text-center mb-9 md:text-lg">
                 Looking for new opportunities? Discover our open positions and change the future of coffee.
@@ -107,7 +107,7 @@ export default function AboutPage() {
             </article>
           </div>
           
-          <article className="md:py-12 py-6 flex items-end gap-6 px-6 md:w-desktop md:m-auto">
+          <article className="md:py-12 py-6 flex items-end gap-6 px-6 lg:w-desktop lg:m-auto">
           <figure className="w-1/2 h-auto md:hidden">
               <Image src={'/about/women-call.png'} width={20} height={20} alt="Prueba" layout='responsive'/>  
             </figure>

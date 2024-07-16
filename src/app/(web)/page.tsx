@@ -19,7 +19,7 @@ export default async function HomePage() {
       <BannerHomepage />
 
       {/* Croazan and white coffe */}
-        <section className="md:w-desktop md:m-auto" >
+        <section className="lg:w-desktop lg:m-auto" >
           <div className="w-full flex justify-between items-center">
             <figure className="slide-in-left">
               <Image src={'/home/coffee1.png'} width={300} height={200} alt="Name" className="md:w-[600px]"  />

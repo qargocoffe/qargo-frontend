@@ -217,7 +217,7 @@ export const Menu = () => {
 
   return (
     <>
-    <nav className="w-full fade-in fixed z-10 backdrop-filter backdrop-blur-md bg-white/30 flex items-center justify-between px-3 py-3 md:p-5">
+    <nav className="w-full fade-in fixed z-10 backdrop-filter backdrop-blur-md bg-white/30 flex items-center justify-between px-3 py-3 md:p-4">
       <div className="slide-in-right flex justify-between gap-3 items-center h-6" onClick={() => closeSideMenu()}>
           <Link href={'/'} >
           <Image
@@ -226,7 +226,7 @@ export const Menu = () => {
             priority={true}
             width={'230'}
             height={38}
-            className="h-[28px] w-auto cursor-pointer md:h-auto"
+            className="h-[28px] w-auto cursor-pointer lg:h-auto"
           />
           </Link>
         

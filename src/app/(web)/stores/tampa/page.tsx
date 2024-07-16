@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
+
 export default function TampaPage() {
 
   const drinks = [
@@ -19,7 +20,12 @@ export default function TampaPage() {
     {
       title: "GUAVA JAVA LATE",
       description: "Inspired by the Big Guava nickname, a classic latte with sweet guava notes.",
-      image: "/stores/drinks/image1.png"
+      image: "/stores/drinks/image3.png"
+    },
+    {
+      title: "GUAVA JAVA LATE",
+      description: "Inspired by the Big Guava nickname, a classic latte with sweet guava notes.",
+      image: "/stores/drinks/image4.png"
     },
   ]
 
@@ -34,7 +40,7 @@ export default function TampaPage() {
         }}
       ></section>
 
-        <div className="md:flex md:w-desktop md:m-auto md:py-12">
+        <div className="md:flex lg:w-desktop lg:m-auto md:py-12">
             <section className="slide-in-left px-6">
             <h1 className="text-lavazzaBlue tracking-widest font-semibold">TAMPA</h1>
             <article className="flex items-start gap-6 mb-6 mt-8">
@@ -53,42 +59,42 @@ export default function TampaPage() {
 
           <section>
             <Image className="scroll-reveal mt-6" src="/stores/map.png" width={30} height={30} alt="Map" layout="responsive" />
-            <h2 className="top-[-2rem] relative slide-in-left px-7 text-center mb-7 uppercase text-xl tracking-widest font-semibold text-lavazzaBlue">
-              EXCLUSIVE DRINKS
-            </h2>
           </section>
         </div>
 
       
         { /* Exclusive Drinks Swiper */ }
-        <DrinksSwiper {...drinks} />
+        <DrinksSwiper drinks={drinks} />
         
         { /* Menu Iframe */ }
         <MenuIframe url="https://e.issuu.com/embed.html?d=qcsantamonicamenu&amp;u=qargocoffee" />
-        
-      <section className="md:w-desktop md:m-auto">
-        <h2 className="slide-in-left px-7 text-center uppercase text-xl tracking-widest font-semibold text-lavazzaBlue">
+
+      { /* Partners ORDER NOW */ }  
+      <section className="lg:w-desktop lg:m-auto w-full">
+        <h2 className="slide-in-left px-7 text-center uppercase text-xl tracking-widest font-semibold text-lavazzaBlue lg:text-2xl">
           ORDER NOW
         </h2>
-        <figure className="flex items-center gap-10 py-9 px-16">
-          <Image src={"/stores/doordash.png"} width={26} height={20} alt="Doordash" layout="responsive" />
-          <Image src={"/stores/grubhub.png"} width={26} height={20} alt="Grubhub" layout="responsive" />
-          <Image src={"/stores/uber-eats.png"} width={16} height={10} alt="Grubhub" layout="responsive" />
-        </figure>
-        <div className="m-auto text-center  max-w-[11rem] mt-4 p-3 bg-lavazzaBlue rounded-full">
+        <div className="flex items-center justify-center gap-10 lg:gap-20 py-9 px-16 w-auto lg:w-1/4 lg:m-auto">
+          <Image src={"/stores/doordash.png"} width={30} height={20} alt="Doordash"  layout="responsive" />
+          <Image src={"/stores/grubhub.png"} width={30} height={20} alt="Grubhub"  layout="responsive" />
+          <Image src={"/stores/uber-eats.png"} width={30} height={20} alt="Grubhub"  layout="responsive" />
+        </div>
+        <div className="m-auto text-center lg:my-12  max-w-[11rem] mt-4 p-3 bg-lavazzaBlue rounded-full">
           <Link className="text-white font-bold" href={"/"}>IN STORE PICK UP</Link>
         </div>
       </section>
+
+      { /* Partners ORDER NOW */ }  
       <section 
-        className="w-full h-full min-h-[15rem] mt-12 slide-in-top relative md:w-desktop md:m-auto" 
+        className="w-full h-full min-h-[15rem] mt-12 slide-in-top relative lg:w-desktop lg:m-auto" 
         style={{
           backgroundImage: "url(/stores/coffee.png)", 
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain"
         }}
       >
-        <div className="w-1/2 text-right uppercase absolute right-0 p-4">
-          <p className="text-lavazzaBlue tracking-widest font-semibold text-[13px]">
+        <div className="w-1/2 text-right uppercase absolute right-0 p-4 lg:top-8">
+          <p className="text-lavazzaBlue tracking-widest font-semibold text-[13px] lg:text-lg lg:text-center">
             Don&apos;t miss out on our latest news and exclusive offers
           </p>
           <div className="m-auto text-center max-w-[9rem] mt-4 p-2 bg-lavazzaBlue rounded-full">
@@ -96,8 +102,8 @@ export default function TampaPage() {
           </div>
         </div>
       </section>
-      <section className="md:w-desktop md:m-auto">
-        <h2 className="slide-in-left mb-6 px-7 text-center uppercase text-xl tracking-widest font-semibold text-lavazzaBlue">
+      <section className="lg:w-desktop lg:m-auto">
+        <h2 className="slide-in-left mb-6 px-7 text-center uppercase text-xl tracking-widest font-semibold text-lavazzaBlue lg:text-2xl">
           AS SEEN ON
         </h2>
         <div className="flex gap-6 items-center justify-around px-12 ">

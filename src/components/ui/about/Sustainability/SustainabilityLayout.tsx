@@ -2,7 +2,7 @@ import { SustainabilityDetail } from './SustainabilityDetail'
 
 export const SustainabilityLayout = () => {
   return (
-    <section className="md:w-desktop md:m-auto md:flex md:gap-6">
+    <section className="lg:w-desktop lg:m-auto md:flex md:gap-6">
           <SustainabilityDetail
           title={'Planet'} 
           description={'Our products are made with Lavazza ¡Tierra! Selection, a sustainable Rainforest Alliance Certified coffee blend, that promotes the rights and well-being of workers communities while meeting rigorous social and environmental '} 

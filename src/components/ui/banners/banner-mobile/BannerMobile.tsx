@@ -30,7 +30,7 @@ export const BannerMobile = ({ typeBanner, data }: { typeBanner: Banners, data: 
 
   return (
     <div className='bg-beigeLight'>
-      <div className='md:flex items-center md:w-desktop md:m-auto'>
+      <div className='md:flex items-center lg:w-desktop lg:m-auto'>
         <figure className='hidden md:block md:relative md:w-full md:h-auto'>
           <Image 
             src={currentImage} 

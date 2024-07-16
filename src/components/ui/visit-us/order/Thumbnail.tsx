@@ -16,7 +16,6 @@ export const Thumbnail = ( {title, subtitle, image}: Props) => {
           <div className='p-5 slide-in-top text-center'>
               <h2 className='text-lavazzaBlue'>{title}</h2>
               <p className="text-lavazzaBlue">{subtitle}</p>
-              
           </div>
         </Link>
     </article>
