@@ -25,6 +25,7 @@ const config: Config = {
         beigeLight: '#EEECE0',
         lavazzaBlue: '#00377A',
         gray: '#919191',
+        graySoft: '#F1F1F1',
         grayLight: '#B8B8B8',
         grayBackground: '#D8D4D0',
         ceramic: '#FEFFFA',

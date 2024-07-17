@@ -44,7 +44,7 @@ export const BannerCategories = ({ categories }: BannerCategoriesProps) => {
   return (
     <div >
       {animationKey && (
-        <figure className={`w-full absolute bottom-0 left-0 right-0 top-0 grid place-items-center !z-20 ${isAnimating ? 'scale-up-center' : ''}`}>
+        <figure className={`w-full m-auto lg:w-1/2 absolute bottom-0 left-0 right-0 top-0 grid place-items-center !z-20 ${isAnimating ? 'scale-up-center' : ''}`}>
           <Image src={animationKey} width={300} height={300} layout='responsive' alt='Animation'  />
         </figure>
       )}
@@ -100,7 +100,7 @@ export const BannerCategories = ({ categories }: BannerCategoriesProps) => {
               className='h-full flex flex-row justify-center items-end text-center bg-cover bg-center rounded-3xl'
               style={{ backgroundImage: `url(${category.image})` }}>
               <div className='absolute bottom-0 mb-5 w-full lg:w-1/2 lg:m-auto lg:mb-5'>
-                <Link href={'/'} className='text-center m-auto rounded-full min-w-[12rem] bg-lavazzaBlue py-2 block mt-3 text-white font-semibold text-sm'>
+                <Link href={'/categories/1'} className='text-center m-auto rounded-full min-w-[12rem] bg-lavazzaBlue py-2 block mt-3 text-white font-semibold text-sm'>
                     {category.slug.replace(/-/g, ' ').toUpperCase()}
                 </Link>
               </div>
