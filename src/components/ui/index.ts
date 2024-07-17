@@ -1,3 +1,4 @@
+export { ProductArticleSummer } from './campaign/ProductArticleSummer';
 export { DrinkItem } from './stores/drinks/DrinkItem';
 export { MenuIframe } from './stores/MenuIframe';
 export { MainBanner } from './about/MainBanner';

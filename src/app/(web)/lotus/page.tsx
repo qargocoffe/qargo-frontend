@@ -1,4 +1,5 @@
 import { ProductArticle } from "@/components/ui";
+import Image from "next/image";
 
 
 
@@ -38,17 +39,17 @@ export default function LotusPage() {
     }
   ]
 
-
   return (
     <div className="bg-beigeLight">
+
       <section 
-        className="w-full h-full min-h-[30rem] relative slide-in-top" 
-        style={{
-          backgroundImage: "url(/home/slide1.png)", 
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
-        }}
-      ></section>
+        className="w-full h-full min-h-[30rem] lg:min-h-[50rem] relative slide-in-top" >
+        <Image src={'/home/slide1.png'} alt={'Order'} width={30} height={30 } layout="responsive" className="md:hidden" />
+        <Image src={'/campaign/lotus/initial.png'} alt={'Order'} 
+           layout="fill"
+          objectFit="cover"
+          className="w-full hidden md:block " />
+        </section>
       <section className="px-6 my-4 lg:w-desktop md:m-auto">
         <p className="text-gray text-center slide-in-left lg:text-lg lg:p-5 lg:w-2/3 m-auto">
         Our ColorFuel Smoothies are your new natural energy boost, packed with all the energy your day demands and the flavor your heart desires.

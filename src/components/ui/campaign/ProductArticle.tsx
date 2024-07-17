@@ -14,7 +14,6 @@ interface Product {
 
 interface ProductResponse {
   product: Product,
-  
 }
 
 export const ProductArticle = ({ product }: ProductResponse) => {

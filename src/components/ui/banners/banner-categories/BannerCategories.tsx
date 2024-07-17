@@ -95,7 +95,7 @@ export const BannerCategories = ({ categories }: BannerCategoriesProps) => {
         {categories.map((category, index) => (
           <SwiperSlide
             key={index}
-            className='!w-[260px] !h-[500px] lg:!w-[350px] lg:!h-[800px]'>
+            className='!w-[260px] !h-[500px] lg:!w-[350px] lg:!h-[700px] xl:!h-[700px]'>
             <div
               className='h-full flex flex-row justify-center items-end text-center bg-cover bg-center rounded-3xl'
               style={{ backgroundImage: `url(${category.image})` }}>

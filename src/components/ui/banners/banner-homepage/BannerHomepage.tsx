@@ -15,8 +15,8 @@ export const BannerHomepage = () => {
 
     const image1 = '/home/slide1.png';
     const image2 = '/home/slide1-desktop.png';
-    const image3 = '/campaign/image1.png';
-    const image4 = '/campaign/image1-desktop.png';
+    const image3 = '/campaign/summer/image1.png';
+    const image4 = '/campaign/summer/image1-desktop.png';
 
   return (
     <div className='fade-in-fwd top-[-2rem] md:top-[-2rem] lg:top-[-1rem] xl:top-[-13rem] relative bg-grayBackground '>
