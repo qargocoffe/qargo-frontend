@@ -1,3 +1,4 @@
+import { setLeftOrRightPosition } from "@/utils"
 import clsx from "clsx"
 import Image from "next/image"
 
@@ -11,21 +12,17 @@ interface Props {
 
 export const SustainabilityDetail = ({index, title, description, urlImage, urlImageDesktop}: Props ) => {
 
-    const randomPosition = (index: number) => {
-        if(index % 2 === 0) return true;
-        return false; 
-    }
  
   return (
     <div className="reveal-scroll">
         <article className={
             clsx('my-11 flex justify-between items-center gap-5 reveal-scroll md:flex-col ', {
-                'flex-row-reverse md:flex-col-reverse gap-9':  randomPosition(index)
+                'flex-row-reverse md:flex-col-reverse gap-9':  setLeftOrRightPosition(index)
             })
         }>
             <div className={
                 clsx('reveal-scroll w-1/2 md:w-full', 
-                randomPosition(index) ? 'pr-9': 'pl-9' 
+                setLeftOrRightPosition(index) ? 'pr-9': 'pl-9' 
                 )
             }>
                 <h3 className="text-2xl text-lavazzaBlue">{title}</h3>

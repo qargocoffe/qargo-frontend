@@ -13,13 +13,13 @@ export default function FranchisiesPage() {
       }}>
       </section>
 
-        <section className="text-center my-8 px-4">
-            <h2 className="slide-in-left px-7  mb-5 uppercase text-2xl tracking-widest font-normal text-lavazzaBlue">Ready to discover the Qargo Coffee Franchise Program?</h2>
-            <p className="text-gray text-center mb-10 slide-in-left ">
+        <section className="text-center my-8 px-4 lg:w-desktop lg:m-auto ">
+            <h2 className="slide-in-left px-7  mb-5 uppercase text-2xl tracking-widest font-normal text-lavazzaBlue lg:w-2/3 lg:m-auto lg:text-2xl lg:my-7 ">Ready to discover the Qargo Coffee Franchise Program?</h2>
+            <p className="text-gray text-center mb-10 slide-in-left lg:w-2/3 lg:m-auto lg:text-lg">
             Join a new business venture with Qargo Coffee, leveraging the benefits of a recognized and established brand. Our team of franchise experts will support you throughout the entire process, providing guidance to successfully launching your new coffee shop. <br /><br />
                 Discover our franchise system and kickstart a prosperous coffee venture.
           </p>
-          <div className="slide-in-right">
+          <div className="slide-in-right lg:mb-10">
             <ButtonCustomized background='bg-lavazzaBlue' fontColor='text-white' title='START NOW' 
             url={'/franchisies/register'} type='link' />
           </div>
@@ -32,8 +32,8 @@ export default function FranchisiesPage() {
           We have the expertise to get your location up and running and a team driven by an unstoppable passion to achieve continuous growth and better outcomes for your franchise.
           Join Qargo Coffee and enjoy the freedom of having your own business and being part of the next generation coffee brand." 
           />
-          <section className="px-6">
-            <h1 className="text-lavazzaBlue tracking-wider uppercase py-5">Why Qargo?</h1>
+          <section className="px-6 lg:w-desktop lg:m-auto">
+            <h1 className="text-lavazzaBlue tracking-wider uppercase py-5 lg:text-center lg:text-3xl lg:tracking-widest">Why Qargo?</h1>
 
             <Article
               image="/franchisies/articles/image1.png" 
