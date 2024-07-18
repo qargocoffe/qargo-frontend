@@ -16,14 +16,14 @@ import { useState } from 'react';
 type Banners = 'blog' | 'banner' | 'partner';
 
 export const BannerMobile = ({ typeBanner, data }: { typeBanner: Banners, data: any }) => {
-  const [currentImage, setCurrentImage] = useState('/blog/default2.png');
+  const [currentImage, setCurrentImage] = useState(data[0].banner );
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const handleSlideChange = (swiper: any) => {
     const currentIndex = swiper.activeIndex;
     setIsTransitioning(true);
     setTimeout(() => {
-      setCurrentImage('/blog/default2.png');
+      setCurrentImage(data[currentIndex].banner);
       setIsTransitioning(false);
     }, 300); // Duration should match the transition duration in Tailwind classes
   };
@@ -46,18 +46,6 @@ export const BannerMobile = ({ typeBanner, data }: { typeBanner: Banners, data: 
           grabCursor={true}
           navigation={true}
           onSlideChange={handleSlideChange}
-  
-          breakpoints={{
-            0: {
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
-              }
-            },
-            768: {
-              
-            },
-          }}
           id='swiperMobile'
           modules={[Pagination, Navigation]} 
           className="mySwiper md:w-1/2">
@@ -77,6 +65,10 @@ export const BannerMobile = ({ typeBanner, data }: { typeBanner: Banners, data: 
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* Navigation buttons */}
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
       </div>
     </div>
   )

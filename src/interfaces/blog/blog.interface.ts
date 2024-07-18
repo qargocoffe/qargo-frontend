@@ -14,6 +14,7 @@ export interface Blog {
     publishied?:  Date;
     content?:     string;
     slug?:        string;
+    banner: string,
     createdAt?:   Date;
     updatedAt?:   Date;
     publishedAt?: Date;

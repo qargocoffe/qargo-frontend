@@ -12,8 +12,9 @@ export default function TeamPage() {
           className="w-full hidden md:block " />
             <div className="text-ceramic py-9 px-5 slide-in-left flex absolute bottom-0 flex-col justify-start items-start">
               <h1 className="text-6xl md:text-8xl">Our <br />Team</h1>
-              <p className="w-3/5 text-sm md:text-lg md:w-1/3">
-              Meet the backbone of Qargo Coffee, a family of expert creators throughout multiple fields, all dedicated to set a new coffee standard..</p>
+              <p className="w-full lg:3/5 text-sm md:text-lg md:w-1/3 text-gray md:text-white">
+              Meet the backbone of Qargo Coffee, a family of expert creators throughout multiple fields, all dedicated to set a new coffee standard..
+              </p>
             </div>
         </section>
         <TeamContainer/>

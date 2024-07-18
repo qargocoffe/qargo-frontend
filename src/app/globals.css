@@ -26,3 +26,21 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.swiper-pagination-bullet {
+  width: 12px !important; /* Change to your desired width */
+  height: 12px !important; /* Optionally, change the height as well */
+  background: transparent ;
+  border: 3px solid #917360 !important;
+  margin-right: 0.7rem !important; /* Adjust the horizontal margin to increase the gap between bullets */
+  /* Add any other styles as needed */
+}
+
+.swiper-pagination {
+  bottom: 1rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #917360 !important; /* Change to your desired active background color */
+}

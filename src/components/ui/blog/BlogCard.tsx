@@ -2,7 +2,7 @@ import { Blog } from '@/interfaces/blog/blog.interface'
 import { ButtonCustomized } from '../button/ButtonCustomized'
 import Image from 'next/image'
 
-export const BlogCard = ({title , description, content, slug, thumbnail}: Blog) => {
+export const BlogCard = ({title , description, content, slug, thumbnail, banner}: Blog) => {
   return (
     <div className='w-full md:flex items-center text-center min-h-[600px] md:min-h-[400px] h-auto' >
         <div className='relative md:w-1/2 md:hidden'>
