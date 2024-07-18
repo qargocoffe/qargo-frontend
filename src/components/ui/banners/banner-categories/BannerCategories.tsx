@@ -90,16 +90,15 @@ export const BannerCategories = ({ categories }: BannerCategoriesProps) => {
         }}
         onSlideChange={handleSlideChange}
         modules={[EffectCoverflow, Pagination, Autoplay]}
-        className="mySwiper !pt-2 lg:max-w-[1100px]"
-      >
+        className="mySwiper !pt-2 lg:max-w-[1100px]">
         {categories.map((category, index) => (
           <SwiperSlide
             key={index}
             className='!w-[260px] !h-[500px] lg:!w-[350px] lg:!h-[700px] xl:!h-[700px]'>
             <div
-              className='h-full flex flex-row justify-center items-end text-center bg-cover bg-center rounded-3xl'
+              className='h-full flex flex-row justify-center items-end text-center bg-cover bg-center rounded-3xl '
               style={{ backgroundImage: `url(${category.image})` }}>
-              <div className='absolute bottom-0 mb-5 w-full lg:w-1/2 lg:m-auto lg:mb-5'>
+              <div className='absolute bottom-0 mb-5 w-full lg:w-1/2 lg:m-auto lg:mb-5 lg:shadow-2xl'>
                 <Link href={'/categories/1'} className='text-center m-auto rounded-full min-w-[12rem] bg-lavazzaBlue py-2 block mt-3 text-white font-semibold text-sm'>
                     {category.slug.replace(/-/g, ' ').toUpperCase()}
                 </Link>

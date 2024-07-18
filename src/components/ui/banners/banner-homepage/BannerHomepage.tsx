@@ -7,7 +7,7 @@ import './BannerHomepage.css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 import { ButtonCustomized } from '../../button/ButtonCustomized';
 
 
@@ -16,13 +16,17 @@ export const BannerHomepage = () => {
     const image1 = '/home/slide1.png';
     const image2 = '/home/slide1-desktop.png';
     const image3 = '/campaign/summer/image1.png';
-    const image4 = '/campaign/summer/image1-desktop.png';
+    const image4 = '/home/slide2-desktop.png';
 
   return (
     <div className='fade-in-fwd top-[-2rem] md:top-[-2rem] lg:top-[-1rem] xl:top-[-13rem] relative bg-grayBackground '>
       <Swiper pagination={true}
         id='swiperHome'
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
         autoHeight={true}
         className="mySwiper">
           <SwiperSlide>

@@ -16,7 +16,8 @@ export default function SustainabilityPage() {
             </div>
         </section>
 
-        <section className="py-6 flex justify-center items-center lg:w-desktop lg:m-auto md:bg-contain md:bg-no-repeat"  style={{
+        <section className="py-6 lg:my-7 flex justify-center items-center lg:w-desktop lg:m-auto md:bg-contain md:bg-no-repeat 
+        lg:rounded-xl lg:border-solid lg:border-2 lg:border-gray lg:shadow-xl"  style={{
           backgroundImage: 'url(/sustainability/background.png)'
         }}>
           <figure>

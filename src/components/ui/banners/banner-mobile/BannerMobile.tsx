@@ -16,22 +16,22 @@ import { useState } from 'react';
 type Banners = 'blog' | 'banner' | 'partner';
 
 export const BannerMobile = ({ typeBanner, data }: { typeBanner: Banners, data: any }) => {
-  const [currentImage, setCurrentImage] = useState(data[0].banner);
+  const [currentImage, setCurrentImage] = useState('/blog/default2.png');
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const handleSlideChange = (swiper: any) => {
     const currentIndex = swiper.activeIndex;
     setIsTransitioning(true);
     setTimeout(() => {
-      setCurrentImage(data[currentIndex].banner);
+      setCurrentImage('/blog/default2.png');
       setIsTransitioning(false);
     }, 300); // Duration should match the transition duration in Tailwind classes
   };
 
   return (
     <div className='bg-beigeLight'>
-      <div className='md:flex items-center lg:w-desktop lg:m-auto'>
-        <figure className='hidden md:block md:relative md:w-full md:h-auto'>
+      <div className='md:flex items-center'>
+        <figure className='hidden md:block md:relative md:w-1/2 md:h-auto'>
           <Image 
             src={currentImage} 
             alt="Partner" 
@@ -60,8 +60,8 @@ export const BannerMobile = ({ typeBanner, data }: { typeBanner: Banners, data: 
           }}
           id='swiperMobile'
           modules={[Pagination, Navigation]} 
-          className="mySwiper"
-        >
+          className="mySwiper md:w-1/2">
+            
           {typeBanner === 'blog' && data.map((blog: Blog) => (
             <SwiperSlide key={blog.slug} className='!h-full pb-6'>
               <BlogCard {...blog} />
