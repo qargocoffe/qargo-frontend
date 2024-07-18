@@ -131,7 +131,7 @@ const articleStores = [
           {/* Reasons Articles iteration */}
             {
               articles.map((article)=> (
-                <Article article={article} />
+                <Article article={article} key={article.id} />
               ))
             }
           </section>  
@@ -141,6 +141,7 @@ const articleStores = [
           {
             bannerSlides.map((slide)=> (
               <PartnerSlide 
+              key={slide.id}
               id={slide.id}
               imageDesktop={slide.banner}
               banner={slide.banner}
@@ -163,6 +164,7 @@ const articleStores = [
             {
               articleStores.map((store)=> (
               <ArticleStore 
+                key={store.id}
                 id={store.id}
                 image={store.image}
                 title={store.title}

@@ -24,7 +24,11 @@ interface Props {
     }>
         <figure className='lg:w-1/2'>
           <Image src={banner} alt="Partner" width={30} height={30} layout='responsive' className='md:hidden'/>
-          <Image src={imageDesktop} alt="Partners" width={30} height={30} layout='responsive' className='hidden md:block'/>
+          {
+            imageDesktop && (
+              <Image src={imageDesktop} alt="Partners" width={30} height={30} layout='responsive' className='hidden md:block'/>
+            )
+          }
         </figure>
         <p className='lg:w-1/3 w-full px-5 py-9 text-center text-beige m-auto md:w-1/2 md:text-lg'>{description}
         </p>
