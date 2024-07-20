@@ -1,5 +1,5 @@
 import { Article, ArticleStore, ButtonCustomized, ContactForm, Descriptive } from "@/components/ui";
-import PartnerSlide from "@/components/ui/about/PartnerSlide";
+import PartnerBasic from "@/components/ui/about/PartnerBasic";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -140,7 +140,7 @@ const articleStores = [
           <section className="">
           {
             bannerSlides.map((slide)=> (
-              <PartnerSlide 
+              <PartnerBasic 
               key={slide.id}
               id={slide.id}
               imageDesktop={slide.banner}

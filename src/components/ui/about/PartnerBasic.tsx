@@ -12,7 +12,7 @@ interface Props {
 }
 
 //export default function PartnerSlide({ title, banner, description, logo }: Partner) {
-  export default function PartnerSlide({ id = 1, title, banner,imageDesktop, description}: Props) {
+  export default function PartnerBasic({ id = 1, title, banner,imageDesktop, description}: Props) {
 
     // const urlBanner = banner!.data!.attributes.url;
     // const urlLogo = logo!.data!.attributes.url;
@@ -22,7 +22,7 @@ interface Props {
         'flex-row-reverse': setLeftOrRightPosition(id) === true
       })
     }>
-        <figure className='lg:w-1/2 lg:hidden'>
+        <figure className='lg:w-1/2'>
           <Image src={banner} alt="Partner" width={30} height={30} layout='responsive' />
         </figure>
         <p className='lg:w-1/2 w-full px-5 py-9 text-center text-beige m-auto md:w-1/2 md:text-lg'>{description}
