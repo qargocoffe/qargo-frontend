@@ -95,11 +95,12 @@ const articleStores = [
     <>
         {/*Banners mobile and desktop  */}
       <section 
-        className="w-full h-full min-h-[20rem] lg:min-h-[50rem] relative slide-in-top" >
+        className="w-full h-full min-h-auto relative slide-in-top" >
         <Image src={'/franchisies/banner.png'} alt={'Order'} width={30} height={30 } layout="responsive" className="md:hidden" />
         <Image src={'/franchisies/initial-desktop.png'} alt={'Order'} 
-           layout="fill"
-          objectFit="cover"
+           layout="responsive"
+          width={30}
+          height={30}
           className="w-full hidden md:block " />
         </section>
         

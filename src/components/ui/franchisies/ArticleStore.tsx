@@ -12,7 +12,7 @@ interface Props {
 
 export const ArticleStore = ({ id, image, title, description}: Props) => {
   return (
-    <div className={clsx('mb-6 lg:m-0 md:flex items-center bg-graySoft', {
+    <div className={clsx('pb-6 lg:p-0 md:flex items-center bg-graySoft', {
       'flex-row-reverse': setLeftOrRightPosition(id) === true
     })}>
       

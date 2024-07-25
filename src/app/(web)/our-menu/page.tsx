@@ -42,7 +42,7 @@ export default async function OurMenuPage() {
 
   return (
     <div>
-      <section className="w-full text-focus-in mt-20  m-auto lg:w-desktop ">
+      <section className="w-full text-focus-in mt-20  m-auto lg:w-desktop bg-whiteBackground">
             <BannerCategories categories={categories} />
       </section>
     </div>
