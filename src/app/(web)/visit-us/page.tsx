@@ -1,10 +1,18 @@
 import { MapContainer, Stores } from "@/components/ui";
+import { getStores } from "@/utils";
 
-export default function VisitUs() {
+export default async function VisitUs() {
+
+  const stores = await getStores();
+
     return (
-      <div>
-        <MapContainer/>
-        <Stores/>
-      </div>
+      <>
+        {stores && (
+          <div>
+            <MapContainer  stores={stores} />
+            <Stores stores={stores} />
+          </div>
+        )} 
+      </>
     );
   }

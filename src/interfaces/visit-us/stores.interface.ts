@@ -1,3 +1,5 @@
+import { Thumbnail } from "../thumbnail/thumbnail.interface";
+
 export interface StoresResponse {
     data: DatumStore[];
     meta: MetaStore;
@@ -14,9 +16,11 @@ export interface Store {
     createdAt:   Date;
     updatedAt:   Date;
     publishedAt: Date;
+    isOpen: boolean,
     telephone:   string;
     lng:         null | string;
     lat:         null | string;
+    thumbnail:   Thumbnail;
 }
 
 export interface MetaStore {

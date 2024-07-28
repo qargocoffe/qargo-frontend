@@ -3,4 +3,5 @@ export * from "./about";
 export * from "./homepage";
 export * from "./coffee";
 export * from "./randomPosition";
+export * from "./store";
 

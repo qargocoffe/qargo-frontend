@@ -25,26 +25,3 @@ export const getAllStores = async() :Promise<Store[] | undefined> => {
   }
 
 
-  export const getStoreByName = async() :Promise<Store | undefined> => { 
-    try {
-        const storesResponse: StoresResponse = await fetch(`http://localhost:1337/api/stores`)
-            .then(res => res.json());
-
-    const store = storesResponse.data.map(({ attributes}) => {
-      return {
-        title: attributes.title ,
-        direction: attributes.direction ,
-        createdAt: attributes.createdAt ,
-        updatedAt: attributes.updatedAt ,
-        publishedAt: attributes.publishedAt ,
-        telephone: attributes.telephone ,
-        lng: attributes.lng ,
-        lat: attributes.lat ,
-      }
-    })
-    return store;
-  
-    } catch (error) {
-        return undefined;
-    }
-  }

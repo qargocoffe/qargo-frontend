@@ -16,7 +16,8 @@ import { useState } from 'react';
 type Banners = 'blog' | 'banner' | 'partner';
 
 export const BannerMobile = ({ typeBanner, data }: { typeBanner: Banners, data: any }) => {
-  const [currentImage, setCurrentImage] = useState(data[0].banner );
+  console.log(data)
+  const [currentImage, setCurrentImage] = useState('/blog/thumbnails/image8.png'  );
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const handleSlideChange = (swiper: any) => {
