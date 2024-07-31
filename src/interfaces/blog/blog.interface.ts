@@ -18,6 +18,3 @@ export interface Blog {
   publishedAt: Date;
   thumbnail:   Thumbnail;
 }
-
-
-

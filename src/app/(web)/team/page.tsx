@@ -1,7 +1,10 @@
 import { TeamContainer } from "@/components/ui";
+import { getWorkers } from "@/utils/worker";
 import Image from "next/image";
 
-export default function TeamPage() {
+export default async function TeamPage() {
+  const workers = await getWorkers();
+
   return (
     <div>
       <section className='w-full h-full min-h-[30rem] md:min-h-[40rem] slide-in-top' >
@@ -17,7 +20,7 @@ export default function TeamPage() {
               </p>
             </div>
         </section>
-        <TeamContainer/>
+        <TeamContainer workers={workers} />
     </div>
   );
 }

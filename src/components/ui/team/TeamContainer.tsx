@@ -1,31 +1,21 @@
 
 import React from 'react'
-import { Worker } from './Worker'
+import { WorkerCard } from './WorkerCard'
+import { Worker } from '@/interfaces'
 
-export const TeamContainer = () => {
+
+interface Props {
+  workers: Worker[]
+}
+
+export const TeamContainer = ({workers}: Props) => {
   return (
-    <section className='md:w-desktop m-auto flex flex-wrap  relative md:top-0'>
-        <Worker image='/team/alba.png'/>
-        <Worker image='/team/member1.png'/>
-        <Worker image='/team/member2.png'/>
-        <Worker image='/team/member3.png'/>
-        <Worker image='/team/member4.png'/>
-        <Worker image='/team/member5.png'/>
-        <Worker image='/team/member6.png'/>
-        <Worker image='/team/member7.png'/>
-        <Worker image='/team/miniature.png'/>
-        <Worker image='/team/member7.png'/>
-        <Worker image='/team/alba.png'/>
-        <Worker image='/team/member1.png'/>
-        <Worker image='/team/member2.png'/>
-        <Worker image='/team/member3.png'/>
-        <Worker image='/team/member4.png'/>
-        <Worker image='/team/member5.png'/>
-        <Worker image='/team/member6.png'/>
-        <Worker image='/team/member7.png'/>
-        <Worker image='/team/miniature.png'/>
-        <Worker image='/team/member7.png'/>
-
+    <section className='md:w-desktop m-auto grid grid-cols-3 md:grid-cols-2 lg:grid-cols-5  relative md:top-0'>
+         {workers.map((worker) => (
+                <div key={worker.id}>        
+                    <WorkerCard {...worker} />
+                </div>
+          ))}
     </section>
   )
 }

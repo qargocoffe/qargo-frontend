@@ -9,11 +9,7 @@ export const getStores = async (pagination: number = 4): Promise<Store[] | undef
           thumbnail: {
               fields: ['url', 'id']
           }
-      },
-        pagination: {
-          pageSize: pagination,
-          page: 1,
-        },
+      }
       });
 
     try {

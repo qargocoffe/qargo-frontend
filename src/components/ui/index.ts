@@ -24,7 +24,7 @@ export { ThumbnailContainer } from './visit-us/order/ThumbnailContainer';
 export { BlogThumbnail } from './blog/BlogThumbnail';
 export { Descriptive } from './descriptive/Descriptive';
 export { TeamContainer } from './team/TeamContainer';
-export { Worker } from './team/Worker';
+export { WorkerCard } from './team/WorkerCard';
 export { Stores } from './visit-us/store/Stores';
 export { StoreCollapse } from './visit-us/store/StoreCollapse';
 export { Map } from "./visit-us/Map";
